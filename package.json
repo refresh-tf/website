@@ -1,0 +1,16 @@
+{
+  "name": "refresh-website",
+  "version": "1.0.0",
+  "description": "Refresh Website",
+  "author": "Maxime Dupuis <mdupuis@hotmail.ca>",
+  "dependencies": {
+    "@nuxt/content": "^1.15.1",
+    "nuxt": "latest"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  }
+}

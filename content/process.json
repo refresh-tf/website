@@ -1,0 +1,17 @@
+{
+  "prefix": "cp",
+  "name": "process",
+  "versions": [{
+    "suffix": "f9",
+    "download": "",
+    "date": "",
+    "changes": [{ "type": "fix",
+                  "message": "More of the same lol" }]
+  }, {
+    "suffix": "f8",
+    "download": "",
+    "date": "",
+    "changes": [{ "type": "fix",
+                  "message": "More of the same lol" }]
+  }]
+}
