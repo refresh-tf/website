@@ -14,21 +14,21 @@ The JSON crash course:
 
 - A json object is delimited by `{}`.
 - Objects have properties. Each property has a name and value. 
-- Name/value pairs are linked by `:`.
-- Properties are separated by `,`.
 ```
 {
   "propertyname1": "propertyvalue1",
   "propertyname2": "propertyvalue2",
 }
 ```
+- Name/value pairs are linked by `:`.
 - Properties are separated by a `,`.
 - The property name is always a string, delimited by `""`.
 - The property value can have different types. Here, we only use strings `""`, arrays `[]` and objects `{}`.
+
 - An array contains multiple values. Values are separated by `,`.
 ```["item1", "item2", "item3"]```
 
-That's all there is to it, you can combine these things to achieve more complex structures
+That's all there is to it, you can combine these simple things to achieve more complex structures
 ```
 {
   "prefix": "cp",
