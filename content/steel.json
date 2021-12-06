@@ -16,7 +16,6 @@
                   "message": "The change message." },
                 { "type": "custom",
                   "message": "The change message." }]
-				  
   }, {
     "suffix": "f7",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=32887",
@@ -26,6 +25,6 @@
                 { "type": "improved",
                   "message": "The rockwall in the connector from Lobby/Whiteroom to D." },
                 { "type": "added",
-                  "message": "Block bullets to the front of the metal shed on A and Clipbrushes to the dirt around B." },
+                  "message": "Block bullets to the front of the metal shed on A and Clipbrushes to the dirt around B." }]
   }]
 }
