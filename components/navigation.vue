@@ -2,14 +2,14 @@
 <header>
   <div class="header_container">
     <div>
-      <a href="/"><img src="~/assets/Hammer_long.png" alt=""></a>
+      <NuxtLink to="/"><img src="~/assets/Hammer_long.png" alt=""></NuxtLink>
     </div>
 
     <div class="header_navigation">
       <ul>
-        <a href="/"><li>Home</li></a>
-        <a href="/maps"><li>Maps</li></a>
-        <a href="/about"><li>About</li></a>
+        <NuxtLink to="/"><li>Home</li></NuxtLink>
+        <NuxtLink to="/maps"><li>Home</li></NuxtLink>
+        <NuxtLink to="/about"><li>About</li></NuxtLink>
       </ul>
     </div>
   </div>
@@ -24,6 +24,7 @@ header {
     position: fixed;
     z-index: 100;
     top: 0;
+
     .header_container {
         max-width: 1000px;
         margin: 0 auto;
