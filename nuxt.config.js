@@ -19,6 +19,7 @@ module.exports = {
   loading: { color: '#3B8070' },
   modules: ["@nuxt/content"],
   router: {
+    base: '/website/',
     async extendRoutes(routes, resolve) {
       const {$content} = require('@nuxt/content');
       const { maps } = await $content('maps').fetch();
