@@ -17,7 +17,7 @@ The JSON crash course:
 ```
 {
   "propertyname1": "propertyvalue1",
-  "propertyname2": "propertyvalue2",
+  "propertyname2": "propertyvalue2"
 }
 ```
 - Name/value pairs are linked by `:`.
