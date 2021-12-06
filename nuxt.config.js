@@ -15,14 +15,13 @@ module.exports = {
       { rel: 'stylesheet', href: "https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css"},
     ]
   },
-  css: ['~/assets/styles/style.css'],
+  css: ['~/assets/styles/style.scss'],
   loading: { color: '#3B8070' },
   modules: ["@nuxt/content"],
   router: {
     async extendRoutes(routes, resolve) {
       const {$content} = require('@nuxt/content');
       const { maps } = await $content('maps').fetch();
-      console.log('pages', maps);
       maps.forEach(map => {
         routes.push({
           path: '/map/' + map + '/',

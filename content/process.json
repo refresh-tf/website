@@ -1,16 +1,25 @@
 {
   "prefix": "cp",
   "name": "process",
+  "thumbnail": "cp_process.jpeg",
+  "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro autem dolore ipsum. Soluta amet itaque corporis, mollitia dolore earum iste molestiae quia sunt minus eum expedita dignissimos, libero exercitationem molestias.",
+
   "versions": [{
     "suffix": "f9",
-    "download": "",
-    "date": "",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=32201",
+    "date": "12/30/2020",
     "changes": [{ "type": "fix",
+                  "message": "More of the same lol" },
+                { "type": "improved",
+                  "message": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro autem dolore ipsum. Soluta amet itaque corporis, mollitia dolore earum iste molestiae quia sunt minus eum expedita dignissimos, libero exercitationem molestias." },
+                { "type": "revert",
+                  "message": "More of the same lol" },
+                { "type": "custom",
                   "message": "More of the same lol" }]
   }, {
     "suffix": "f8",
     "download": "",
-    "date": "",
+    "date": "12/30/2020",
     "changes": [{ "type": "fix",
                   "message": "More of the same lol" }]
   }]
