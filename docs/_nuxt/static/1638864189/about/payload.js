@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/about", {data:[{}],fetch:{"0":{maps:["process","steel"]}},mutations:void 0});
