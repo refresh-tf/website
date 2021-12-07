@@ -19,7 +19,16 @@
 </template>
 
 <script>
+import { meta } from '~/js/utils';
 export default {
+  head() {
+    let baseUrl = 'https://refresh-tf.github.io';
+    let url = baseUrl + '/website/'
+    let imageUrl =  baseUrl + require('~/assets/Hammer_long.png');
+    let title = 'Refresh'
+    let description = 'The Refresh project'
+    return meta(title, description, url, imageUrl);
+  },
   async asyncData({ $content, params }) {
     const mapsData = await $content('maps').fetch();
     const maps = [];

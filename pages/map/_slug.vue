@@ -13,7 +13,7 @@
         </a>
       </div>
       <div class="column">
-        <img :src="require('~/assets/images/' + map.thumbnail)"/>
+        <img ref="thumbnail" :src="imgUrl"/>
       </div>
     </div>
 
@@ -59,9 +59,20 @@ const types = {
 let tagType = (type) => {
   return types[type] || type;
 }
+import { meta } from '~/js/utils';
 export default {
   head() {
-    return {title: this.map.name};
+    let baseUrl = 'https://refresh-tf.github.io';
+    let url = baseUrl + '/website/map/' + this.map.name.toLowerCase();
+    let imageUrl =  baseUrl + this.imgUrl;
+    let title = 'Refresh - ' + this.mapname();
+    let description = this.map.description;
+    return meta(title, description, url, imageUrl);
+  },
+  computed: {
+    imgUrl(){
+      return require('~/assets/images/' + this.map.thumbnail);
+    },
   },
   methods: {
     tagType(type){
@@ -81,6 +92,10 @@ export default {
     },
     filename(version){
       return [this.map.prefix, this.map.name, version.suffix].join('_')
+    },
+    mapname(){
+      return this.map.prefix.toLowerCase() + ' ' +
+        this.map.name.charAt(0).toUpperCase() + this.map.name.slice(1);
     }
   },
   async asyncData({$content, params}) {

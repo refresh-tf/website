@@ -38,7 +38,7 @@ body {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-image: linear-gradient(0deg, black, #0002), url(https://wiki.teamfortress.com/w/images/thumb/8/82/Cp_process_middle_point.jpeg/1280px-Cp_process_middle_point.jpeg);
+    background-image: linear-gradient(0deg, black, #0002), url('/website/_nuxt/assets/images/cp_process.jpeg');
 }
 
 #core {
