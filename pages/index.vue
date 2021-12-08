@@ -24,7 +24,7 @@ export default {
   head() {
     let baseUrl = 'https://refresh-tf.github.io';
     let url = baseUrl + '/website/'
-    let imageUrl =  baseUrl + require('~/assets/Hammer_long.png');
+    let imageUrl =  baseUrl + require('~/assets/refresh.png');
     let title = 'Refresh'
     let description = 'The Refresh project'
     return meta(title, description, url, imageUrl);

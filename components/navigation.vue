@@ -1,8 +1,8 @@
 <template>
 <header>
   <div class="header_container">
-    <div>
-      <NuxtLink to="/"><img src="~/assets/Hammer_long.png" alt=""></NuxtLink>
+    <div class="logo">
+      <NuxtLink to="/"><img src="~/assets/refresh.png" alt=""></NuxtLink>
     </div>
 
     <div class="header_navigation">
@@ -37,17 +37,18 @@ export default {
 
 <style lang="scss">
 header {
-    width: 100%;
+    padding: 0 10px;
     box-shadow: 0px 0px 5px #000a;
     background-color: #262626;
+    font-weight: bold;
     color: #f2f2f2;
     a { color: #f2f2f2; }
 
     position: fixed;
-    font-weight: bold;
-
     z-index: 100;
     top: 0;
+    left: 0;
+    right: 0;
 
     .header_container {
         max-width: 1000px;
