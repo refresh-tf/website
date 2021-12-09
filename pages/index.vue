@@ -30,10 +30,10 @@ export default {
     return meta(title, description, url, imageUrl);
   },
   async asyncData({ $content, params }) {
-    const mapsData = await $content('maps').fetch();
+    const meta = await $content('meta').fetch();
     const maps = [];
-    for (let i = 0; i < mapsData.maps.length; i++ ){
-      maps.push( await $content(mapsData.maps[i]).only(['name', 'thumbnail']).fetch())
+    for (let i = 0; i < meta.maps.length; i++ ){
+      maps.push( await $content(meta.maps[i]).only(['name', 'thumbnail']).fetch())
     }
     return { maps };
   },

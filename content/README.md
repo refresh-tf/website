@@ -3,7 +3,7 @@ Contributing content
 
 To add a new map:
 - Create a file named "mapname.json" `in website/content/`
-- Add the mapname to the list in `website/content/maps.json`
+- Add the mapname to the list in `website/content/meta.json`
 - Images that you refence in your files need to be placed in `website/assets/image/`
 
 Refer to other maps for the expected structure of mapname.json.
@@ -13,7 +13,7 @@ The JSON crash course:
 ----------------------
 
 - A json object is delimited by `{}`.
-- Objects have properties. Each property has a name and value. 
+- Objects have properties. Each property has a name and value.
 ```
 {
   "propertyname1": "propertyvalue1",

@@ -29,8 +29,8 @@ export default {
     }
   },
   async fetch() {
-    const mapsData = await this.$content('maps').fetch();
-    this.maps = mapsData.maps;
+    const meta = await this.$content('meta').fetch();
+    this.maps = meta.maps;
   },
 }
 </script>

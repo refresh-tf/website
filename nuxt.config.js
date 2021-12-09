@@ -30,7 +30,7 @@ module.exports = {
     base: '/website/',
     async extendRoutes(routes, resolve) {
       const {$content} = require('@nuxt/content');
-      const { maps } = await $content('maps').fetch();
+      const { maps } = await $content('meta').fetch();
       maps.forEach(map => {
         routes.push({
           path: '/map/' + map + '/',
