@@ -5,7 +5,7 @@
     <h2>About</h2>
     <div class="summary">
       <div class="column">
-        <p>{{ map.description }}</p>
+        <p style="white-space: pre-line">{{ map.description }}</p>
         <a class="button large" v-if="map.versions.length > 0"
            :href="map.versions[0].download" target="_blank">
           <i class="mdi mdi-download"></i>
@@ -86,13 +86,14 @@ export default {
       let ttype = tagType(type);
       if (ttype == 'improvement'){
         return 'green';
-      } else if (ttype == 'reverted'){
+      } else if (ttype == 'reverted'){ // red
         return 'yellow';
       } else if (ttype == 'fixed'){
         return 'red';
-      } else {
+      } else { // white
         return 'blue';
       }
+      // removed light-red
     },
     filename(version){
       return [this.map.prefix, this.map.name, version.suffix].join('_')
