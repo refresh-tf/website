@@ -1,6 +1,6 @@
 <template>
 <div id="maps_page_info" class="container">
-  <div class="page_title">Welcome to Refresh!</div>
+  <h1>Welcome to Refresh!</h1>
   <div class="page_container">
     <div class="maps_grid">
       <NuxtLink :to="'map/' + map.name" v-for="map in maps" :key="map.name">

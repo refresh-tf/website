@@ -74,6 +74,10 @@ export default {
       return require('~/assets/images/' + this.map.thumbnail);
     },
   },
+  created(){
+    this.$store.commit('CHANGE_LAYOUT_BG',
+                       require('~/assets/images/' + this.map.thumbnail));
+  },
   methods: {
     tagType(type){
       return tagType(type)

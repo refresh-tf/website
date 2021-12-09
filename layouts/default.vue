@@ -1,6 +1,8 @@
 <template>
 <div>
-  <div id="background"></div>
+  <div id="background">
+    <img :src="background"/>
+  </div>
   <div id="core">
     <navigation></navigation>
     <div class="content">
@@ -15,12 +17,17 @@ import navigation from '../components/navigation.vue';
 export default {
   components: {
     navigation: navigation,
+  },
+  computed: {
+    background() {
+      return this.$store.state.backgroundImg;
+    }
   }
 }
 </script>
 
 
-<style>
+<style lang="scss">
 body {
     margin: 0;
     padding: 0;
@@ -33,12 +40,17 @@ body {
     z-index: 0;
     width: 100%;
     height: 100vh;
-
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #131313;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(0deg, black, #0002), url('/website/_nuxt/assets/images/cp_process.jpeg');
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 #core {
