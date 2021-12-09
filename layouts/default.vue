@@ -37,15 +37,22 @@ body {
 
 #background {
     position: fixed;
-    z-index: 0;
-    width: 100%;
-    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 0;
     background-color: #131313;
 
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(0deg, black, #0002);
+    }
     img {
         width: 100%;
         height: 100%;
