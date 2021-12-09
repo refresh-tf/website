@@ -2,7 +2,7 @@
   "prefix": "pl",
   "name": "borneo",
   "thumbnail": "pl_borneo.png",
-  "description": "This version of pl_borneo has hundreds of small changes which significantly improve competitive suitability. The original map pl_borneo was made by Sean "Heyo" Cutino and Matt "vhalin" Leahy",
+  "description": "This version of pl_borneo has hundreds of small changes which significantly improve competitive suitability. The original map pl_borneo was made by Sean \"Heyo\" Cutino and Matt \"vhalin\" Leahy",
 
   "versions": [{
     "suffix": "f1",
@@ -15,14 +15,13 @@
                 { "type": "revert",
                   "message": "The change message." },
                 { "type": "added",
-                  "message": "chickenwire beneath the staircase next to corn"
-				  "message": "chickenwire to the picket-fences surrounding the map"
-				  "message": "chickenwire to the trackside of the barn"
-				  "message": "chickenwire underneath the shed outside of blue spawn"
-				  "message": "clipping the bridge before garage outside third"
-				  "message": "clipping to the windows on last"
-				}
-				{ "type": "removed",
+                  "message": "chickenwire beneath the staircase next to corn"},
+				        {"message": "chickenwire to the picket-fences surrounding the map"},
+				        {"message": "chickenwire to the trackside of the barn"},
+				        {"message": "chickenwire underneath the shed outside of blue spawn"},
+				        {"message": "clipping the bridge before garage outside third"},
+				        {"message": "clipping to the windows on last"},
+				        { "type": "removed",
                   "message": "The change message." }]
   }]
 }
