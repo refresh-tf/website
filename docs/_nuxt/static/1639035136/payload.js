@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", (function(a,b){return {data:[{maps:[{name:a,thumbnail:"cp_process.jpeg"},{name:b,thumbnail:"cp_steel.jpg"}]}],fetch:{"0":{maps:[a,b]}},mutations:[]}}("process","steel")));

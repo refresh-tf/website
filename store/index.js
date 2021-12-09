@@ -1,5 +1,5 @@
 export const state = () => ({
-  backgroundImg: require('~/assets/images/cp_process.jpeg'),
+  backgroundImg: require('~/assets/images/background.jpg'),
 })
 
 export const mutations = {
