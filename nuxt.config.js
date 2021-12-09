@@ -1,3 +1,4 @@
+baseurl = '/website/'
 module.exports = {
   head: {
     title: 'Refresh',
@@ -10,12 +11,12 @@ module.exports = {
       { name: "theme-color", content: "#ffffff" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-      { rel: "manifest", href: "/site.webmanifest" },
-      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#5bbad5" },
+      { rel: 'icon', type: 'image/x-icon', href: baseurl + 'favicon.ico' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: baseurl + 'favicon-16x16.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: baseurl + 'favicon-32x32.png' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: baseurl + 'apple-touch-icon.png' },
+      { rel: "manifest", href: baseurl + 'site.webmanifest' },
+      { rel: "mask-icon", href: baseurl + 'safari-pinned-tab.svg', color: '#5bbad5' },
 
       { rel: 'preconnect', href: "https://fonts.googleapis.com" },
       { rel: 'preconnect', href: "https://fonts.gstatic.com" },
@@ -27,7 +28,7 @@ module.exports = {
   loading: { color: '#3B8070' },
   modules: ["@nuxt/content"],
   router: {
-    base: '/website/',
+    base: baseurl,
     async extendRoutes(routes, resolve) {
       const {$content} = require('@nuxt/content');
       const { maps } = await $content('meta').fetch();
