@@ -9,7 +9,7 @@
     "download": "https://tf2maps.net/downloads/refresh-pl_borneo.11835/download?version=31889",
     "date": "20/09/2021",
     "changes": [{ "type": "improved",
-                  "message": "optimization" },
+                  "message": "Optimization" },
 						{ "type": "improved",
 						  "message": "The clipping around the beams in garage" },
 						{ "type": "improved",
