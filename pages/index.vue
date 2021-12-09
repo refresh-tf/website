@@ -46,7 +46,6 @@ export default {
     .maps_grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, 5vw);
         grid-gap: 60px;
         padding: 30px;
         margin-top: 20px;
