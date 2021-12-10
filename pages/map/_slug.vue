@@ -14,12 +14,26 @@
             Download latest version
           </a>
           <div class="sublinks">
-            <a class="button" :href="map.workshopLink" v-if="map.workshopLink">
-              Workshop</a>
-            <a class="button" :href="map.tftvLink" v-if="map.tftvLink">
-              TeamFortress.tv</a>
-            <a class="button" :href="map.tf2mLink" v-if="map.tf2mLink">
-              TF2maps</a>
+            <a :href="map.workshopLink" target="_blank"
+               v-if="map.workshopLink" title="workshop">
+              <img :src="require('~/assets/icons/steam.png')">
+            </a>
+            <a :href="map.tftvLink" target="_blank"
+               v-if="map.tftvLink" title="teamfortress.tv">
+              <img :src="require('~/assets/icons/teamfortress_tv.png')">
+            </a>
+            <a :href="map.tf2mLink" target="_blank"
+               v-if="map.tf2mLink" title="TF2Maps">
+              <img :src="require('~/assets/icons/tf2maps.png')">
+            </a>
+            <a :href="map.githubLink" target="_blank"
+               v-if="map.githubLink" title="Photo album">
+              <img :src="require('~/assets/icons/github.png')">
+            </a>
+            <a :href="map.albumLink" target="_blank"
+               v-if="map.albumLink" title="Photo album">
+              <img :src="require('~/assets/icons/image.png')">
+            </a>
           </div>
         </div>
       </div>
@@ -155,7 +169,39 @@ export default {
             display: inline-block;
             .sublinks {
                 a {
+                    height: 40px;
+                    width: 40px;
+                    display: inline-block;
+                    cursor: pointer;
                     margin: 10px 3px 0px;
+                    position: relative;
+                    padding: 5px;
+
+                    &:after, &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                    &:after { top: 60%;}
+                    &:before { top: 25%;}
+                    &:hover {
+                        background: radial-gradient(ellipse at 50% 50%,
+                                                    rgba(255, 255, 255, 0.20) 30%,
+                                                    rgba(255, 255, 255, 0) 75%);
+                        &:after {
+                            background: radial-gradient(ellipse at 50% 50%,
+                                                        rgba(255, 255, 255, 0.4) 30%,
+                                                        rgba(255, 255, 255, 0) 75%);
+                        }
+                        &:before {
+                            background: radial-gradient(ellipse at 50% 50%,
+                                                        rgba(255, 255, 255, 0.4) 10%,
+                                                        rgba(255, 255, 255, 0) 55%);
+                        }
+                    }
                     &:first-child {
                         margin-left: 0;
                     }

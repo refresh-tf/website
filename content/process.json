@@ -4,6 +4,12 @@
   "thumbnail": "cp_process.jpeg",
   "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
 
+  "tf2mLink": null,
+  "tftvLink": null,
+  "workshopLink": null,
+  "albumLink": null,
+  "githubLink": null,
+
   "versions": [{
     "suffix": "f9",
     "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=32201",
