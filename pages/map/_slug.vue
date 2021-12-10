@@ -90,13 +90,13 @@ export default {
     tagColor(type){
       let ttype = this.tagType(type);
       if (ttype == 'improvement'){
-        return 'green';
+        return 'lime';
       } else if (ttype == 'reverted'){
-        return 'red';
+        return 'yellow';
       } else if (ttype == 'removed'){
         return 'red';
       } else if (ttype == 'fixed'){
-        return 'red';
+        return 'green';
       } else if (ttype == 'added'){
         return 'blue';
       } else {
@@ -107,8 +107,7 @@ export default {
       return [this.map.prefix, this.map.name, version.suffix].join('_')
     },
     mapname(){
-      return this.map.prefix.toLowerCase() + ' ' +
-        this.map.name.charAt(0).toUpperCase() + this.map.name.slice(1);
+      return this.map.name.charAt(0).toUpperCase() + this.map.name.slice(1);
     }
   },
   async asyncData({$content, store, params}) {
@@ -211,6 +210,7 @@ export default {
         text-transform: uppercase;
         &.red { background: var(--red); }
         &.blue { background: var(--blue); }
+        &.lime { background: var(--lime); }
         &.green { background: var(--green); }
         &.yellow { background: var(--yellow); }
         &.white { background: var(--white); }
