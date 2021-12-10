@@ -39,5 +39,9 @@
     "suffix": "f8a",
     "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=31567",
     "date": "2/9/2020",
+    "changes": [{
+      "type": "fix",
+      "message": "The change message"
+    }]
   }]
 }
