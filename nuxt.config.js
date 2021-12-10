@@ -41,8 +41,5 @@ module.exports = {
       });
     }
   },
-  generate: {
-    dir: 'docs'
-  },
   target: 'static',
 }
