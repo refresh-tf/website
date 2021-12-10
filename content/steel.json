@@ -5,7 +5,7 @@
   "description": "Steel is a classic highlander map beloved by most, but is not without its flaws. \nBeing a map from 2008 Steel really starts to show its age from unclipped stairs through to cluttered props and chokey corridors. In this project we have aimed to fix issues with map geometry as well as minor aesthetic and performance improvements while also adjusting some of the layout for a more modern TF2. \nThe original map cp_steel was made by Jamie "Fishbus" Manson, Dan "Irish Taxi Driver" Merboth and FLOOR_MASTER",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_steel.10850/",
-  "tftvLink": "https://www.teamfortress.tv/58369/refresh-cp-steel",
+  "tftvLink": "https://www.teamfortress.tv/58369/refresh-cp-steel",t its flaws. \nBeing a map from 2008 Steel really starts to show its age from unclipped stairs through to cluttered 
   "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=2376443257",
   "albumLink": null,
   "githubLink": null,
@@ -24,45 +24,44 @@
       "type": "added",
       "message": "Block bullets to the front of the metal shed on A and Clipbrushes to the dirt around B."
     }]
-  {
+  }, {
     "suffix": "f6",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=32097",
     "date": "9/10/2021",
-  }
+  },
   {
     "suffix": "f5a",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=31624",
     "date": "6/9/2021",
-  }
+  },
   {
     "suffix": "f5",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=31576",
     "date": "3/9/2021",
-  }
+  },
   {
     "suffix": "f4",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=30591",
     "date": "8/7/2021",
-  }
+  },
   {
     "suffix": "f3",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=29681",
     "date": "16/5/2021",
-  }
+  },
   {
     "suffix": "f2a",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=28161",
     "date": "3/2/2021",
-  }
+  },
   {
     "suffix": "f2",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=28132",
     "date": "1/2/2021",
-  }
+  },
   {
     "suffix": "f1",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=28040",
     "date": "28/1/2021",
-  }
   }]
 }
