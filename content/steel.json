@@ -29,17 +29,8 @@
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=32097",
     "date": "9/10/2021",
     "changes": [{
-      "type": "fix",
-	  "message": "The change message."
-    }, {
-      "type": "improved",
-      "message": "The change message."
-    }, {
-      "type": "revert",
-      "message": "The change message."
-    }, {
-      "type": "custom",
-      "message": "The change message."
+      "type": null,
+	  "message": null
     }]
   }]
 }
