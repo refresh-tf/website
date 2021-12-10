@@ -2,7 +2,7 @@
   "prefix": "cp",
   "name": "steel",
   "thumbnail": "cp_steel.jpg",
-  "description": "Steel is a classic highlander map beloved by most, but is not without its flaws. \nBeing a map from 2008 Steel really starts to show its age from unclipped stairs through to cluttered props and chokey corridors. In this project we have aimed to fix issues with map geometry as well as minor aesthetic and performance improvements while also adjusting some of the layout for a more modern TF2. \nThe original map cp_steel was made by Jamie \"Fishbus\" Manson, Dan \"Irish Taxi Driver\" Merboth and FLOOR_MASTER",
+  "description": "Steel is a classic highlander map beloved by most, but is not without its flaws. \nBeing a map from 2008 Steel really starts to show its age from unclipped stairs through to cluttered props and chokey corridors. In this project we have aimed to fix issues with map geometry as well as minor aesthetic and performance improvements while also adjusting some of the layout for a more modern TF2.",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_steel.10850/",
   "tftvLink": "https://www.teamfortress.tv/58369/refresh-cp-steel",
@@ -11,10 +11,24 @@
   "githubLink": null,
 
   "versions": [{
+    "suffix": "f7",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=32887",
+    "date": "5/12/2020",
+"changes": [{
+      "type": "fix",
+      "message": "Collision on all Red Spawn shutters, The clipping on the staircase in Death Corridor and some miscellaneous textures that were incorrectly alligned throughout the map."
+    }, {
+      "type": "improved",
+      "message": "The rockwall in the connector from Lobby/Whiteroom to D."
+    }, {
+      "type": "added",
+      "message": "Block bullets to the front of the metal shed on A and Clipbrushes to the dirt around B."
+    }]
+  }, {
     "suffix": "f6",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=32097",
     "date": "9/10/2021",
-"changes": [{
+    "changes": [{
       "type": "fix",
 	  "message": "The change message."
     }, {
@@ -26,20 +40,6 @@
     }, {
       "type": "custom",
       "message": "The change message."
-    }]
-  }, {
-    "suffix": "f7",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=32887",
-    "date": "5/12/2020",
-    "changes": [{
-      "type": "fix",
-      "message": "Collision on all Red Spawn shutters, The clipping on the staircase in Death Corridor and some miscellaneous textures that were incorrectly alligned throughout the map."
-    }, {
-      "type": "improved",
-      "message": "The rockwall in the connector from Lobby/Whiteroom to D."
-    }, {
-      "type": "added",
-      "message": "Block bullets to the front of the metal shed on A and Clipbrushes to the dirt around B."
     }]
   }]
 }
