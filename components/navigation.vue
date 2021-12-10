@@ -7,14 +7,16 @@
 
     <div class="header_navigation">
       <NuxtLink to="/">Home</NuxtLink>
+
       <span class="header-item dropdown">
-        <span>Maps</span>
+        <NuxtLink to="/">Maps</NuxtLink>
         <ul class="dropdown-menu">
           <li v-for="map in maps" :key="map">
             <NuxtLink :to="'/map/' + map" >{{map}}</NuxtLink>
           </li>
         </ul>
       </span>
+
       <NuxtLink to="/about">About</NuxtLink>
     </div>
   </div>
@@ -62,8 +64,7 @@ header {
         }
     }
     .header_navigation {
-        a, .header-item {
-            text-decoration: none;
+        >a, .header-item {
             line-height: 60px;
             float: left;
             height: 60px;
@@ -78,15 +79,19 @@ header {
                 background: #ffffff08;
             }
         }
+        a {
+            text-transform: capitalize;
+            text-decoration: none;
+        }
     }
 
     .dropdown {
         position: relative;
 
-        &:not([open]) > *:not(span) {
+        &:not([open]) > *:not(a) {
             display: none !important;
         }
-        >span {
+        >a {
             -ms-touch-action: manipulation;
             touch-action: manipulation;
             -webkit-user-select: none;

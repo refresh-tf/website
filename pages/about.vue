@@ -37,9 +37,11 @@ export default {
       contributors: []
     }
   },
-  async fetch() {
-    const meta = await this.$content('meta').fetch()
-    this.contributors = meta.contributors;
+  async asyncData({ $content, store, params }) {
+    const meta = await $content('meta').fetch();
+    const contributors = meta.contributors;
+    store.commit('RESET_LAYOUT_BG');
+    return { contributors }
   },
   mounted(){
     shuffleArr(this.contributors);

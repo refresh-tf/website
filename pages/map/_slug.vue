@@ -4,13 +4,24 @@
   <div class="page_container">
     <h2>About</h2>
     <div class="summary">
+
       <div class="column">
         <p style="white-space: pre-line">{{ map.description }}</p>
-        <a class="button large" v-if="map.versions.length > 0"
-           :href="map.versions[0].download" target="_blank">
-          <i class="mdi mdi-download"></i>
-          Download latest version
-        </a>
+        <div class="links">
+          <a class="button large" v-if="map.versions.length > 0"
+             :href="map.versions[0].download" target="_blank">
+            <i class="mdi mdi-download"></i>
+            Download latest version
+          </a>
+          <div class="sublinks">
+            <a class="button" :href="map.workshopLink" v-if="map.workshopLink">
+              Workshop</a>
+            <a class="button" :href="map.tftvLink" v-if="map.tftvLink">
+              TeamFortress.tv</a>
+            <a class="button" :href="map.tf2mLink" v-if="map.tf2mLink">
+              TF2maps</a>
+          </div>
+        </div>
       </div>
       <div class="column">
         <img ref="thumbnail" :src="imgUrl"/>
@@ -48,17 +59,14 @@
 </template>
 
 <script>
-const types = {
+const type_remaps = {
   'fix': 'fixed',
-  'fixed': 'fixed',
   'revert': 'reverted',
-  'reverted': 'reverted',
-  'improvement': 'improvement',
   'improved': 'improvement',
+  'remove' : 'removed',
+  'add': 'added'
 }
-let tagType = (type) => {
-  return types[type] || type;
-}
+
 import { meta } from '~/js/utils';
 export default {
   head() {
@@ -74,26 +82,26 @@ export default {
       return require('~/assets/images/' + this.map.thumbnail);
     },
   },
-  created(){
-    this.$store.commit('CHANGE_LAYOUT_BG',
-                       require('~/assets/images/' + this.map.thumbnail));
-  },
   methods: {
     tagType(type){
-      return tagType(type)
+      let t = type.toLowerCase()
+      return type_remaps[t] || t;
     },
     tagColor(type){
-      let ttype = tagType(type);
+      let ttype = this.tagType(type);
       if (ttype == 'improvement'){
         return 'green';
-      } else if (ttype == 'reverted'){ // red
-        return 'yellow';
+      } else if (ttype == 'reverted'){
+        return 'red';
+      } else if (ttype == 'removed'){
+        return 'red';
       } else if (ttype == 'fixed'){
         return 'red';
-      } else { // white
+      } else if (ttype == 'added'){
         return 'blue';
+      } else {
+        return 'white';
       }
-      // removed light-red
     },
     filename(version){
       return [this.map.prefix, this.map.name, version.suffix].join('_')
@@ -103,12 +111,15 @@ export default {
         this.map.name.charAt(0).toUpperCase() + this.map.name.slice(1);
     }
   },
-  async asyncData({$content, params}) {
+  async asyncData({$content, store, params}) {
     const map = await $content(params.slug).fetch();
+    store.commit('CHANGE_LAYOUT_BG',
+                 require('~/assets/images/' + map.thumbnail));
     return { map };
   }
 }
 </script>
+
 
 <style lang="scss">
 #map_page_info {
@@ -128,20 +139,6 @@ export default {
             color: #555;
         }
     }
-    .changelog {
-        list-style: none;
-        div.tag {
-            text-align: center;
-            display: inline-block;
-            min-width: 90px;
-            margin-right: 4px;
-            text-transform: uppercase;
-        }
-    }
-    .changelog,
-    section p {
-        padding-left: 10px;
-    }
 
     .summary {
         display: grid;
@@ -155,6 +152,68 @@ export default {
                 height: auto;
             }
         }
+        .links {
+            display: inline-block;
+            .sublinks {
+                a {
+                    margin: 10px 3px 0px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .changelog,
+    section p {
+        padding-left: 10px;
+    }
+
+    .changelog {
+        list-style: none;
+        .tag {
+            min-width: 90px;
+            margin-right: 4px;
+            text-transform: uppercase;
+        }
+        li {
+            position: relative;
+            margin-left: 110px;
+        }
+        li + li {
+            margin-top: 4px;
+        }
+        .tag {
+            position: absolute;
+            top: 2px;
+            left: -110px;
+        }
+        .update_title{
+            color: #ccc;
+            font-weight: bold;
+        }
+    }
+
+    .tag {
+        display: inline-block;
+
+        font-weight: 700;
+        font-size: 11px;
+        padding: 2px 5px;
+        border-radius: 5px;
+
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+        &.red { background: var(--red); }
+        &.blue { background: var(--blue); }
+        &.green { background: var(--green); }
+        &.yellow { background: var(--yellow); }
+        &.white { background: var(--white); }
     }
 }
 </style>

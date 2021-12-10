@@ -8,19 +8,26 @@
     "suffix": "f9",
     "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=32201",
     "date": "12/30/2020",
-    "changes": [{ "type": "fix",
-                  "message": "The change message." },
-                { "type": "improved",
-                  "message": "The change message." },
-                { "type": "revert",
-                  "message": "The change message." },
-                { "type": "custom",
-                  "message": "The change message." }]
+    "changes": [{
+      "type": "fix",
+      "message": "The change message."
+    }, {
+      "type": "improved",
+      "message": "The change message."
+    }, {
+      "type": "revert",
+      "message": "The change message."
+    }, {
+      "type": "custom",
+      "message": "The change message."
+    }]
   }, {
     "suffix": "f8",
     "download": "",
     "date": "12/30/2020",
-    "changes": [{ "type": "fix",
-                  "message": "The change message" }]
+    "changes": [{
+      "type": "fix",
+      "message": "The change message"
+    }]
   }]
 }

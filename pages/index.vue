@@ -29,12 +29,13 @@ export default {
     let description = 'The Refresh project'
     return meta(title, description, url, imageUrl);
   },
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, store, params }) {
     const meta = await $content('meta').fetch();
     const maps = [];
     for (let i = 0; i < meta.maps.length; i++ ){
       maps.push( await $content(meta.maps[i]).only(['name', 'thumbnail']).fetch())
     }
+    store.commit('RESET_LAYOUT_BG');
     return { maps };
   },
 };
@@ -49,6 +50,7 @@ export default {
         grid-gap: 60px;
         padding: 30px;
         margin-top: 20px;
+        text-transform: capitalize;
     }
 
     .grid_map {
