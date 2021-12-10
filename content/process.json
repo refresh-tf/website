@@ -18,14 +18,14 @@
       "type": "fix",
       "message": "One of the improved rock models used around the second points has been found to crash some configs and has been replaced."
     }, {
-      "type": "improved",
-      "message": "Reflective surfaces have better cubemap allocations."
+      "type": "fix",
+      "message": "A tiny positional difference between the platforms above the two last points has been fixed."
     }, {
       "type": "fix",
       "message": "Decals missing from last point areas have been added back."
     }, {
-      "type": "fix",
-      "message": "A tiny positional difference between the platforms above the two last points has been fixed."
+      "type": "improved",
+      "message": "Reflective surfaces have better cubemap allocations."
     }]
   }, {
     "suffix": "f9",
