@@ -2,35 +2,43 @@
   "prefix": "cp",
   "name": "process",
   "thumbnail": "cp_process.jpeg",
-  "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+  "description": "We aimed to keep the map structure and appearance as close to the original as possible with over a hundred changes being completely invisible, for example player clips and blockbullet brushes. The main target of these changes were improved collision on steps, slopes, doorways, ceilings and props, predominantly where splash bugs occurred. Some examples of this are on top of the crates on mid, the concrete ledges leading up to the grass area on mid, player collision fixes on doorways so you cannot get stuck and finally the geometry of the last point has been improved to match the visuals, pipes only collide with stickies and grenades, thus rocket jumping should be facilitated. \nThe original map cp_process was made by Ian \"ScorpioUprising\" Cuslidge",
 
-  "tf2mLink": null,
-  "tftvLink": null,
-  "workshopLink": null,
-  "albumLink": null,
+  "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_process.9042/",
+  "tftvLink": "https://www.teamfortress.tv/55063/refresh-cp-process",
+  "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=2302948105",
+  "albumLink": "https://github.com/tom288/Refresh/blob/master/Process/ALBUM.md",
   "githubLink": null,
 
   "versions": [{
-    "suffix": "f9",
+    "suffix": "f9a",
     "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=32201",
-    "date": "12/30/2020",
+    "date": "16/10/2021",
     "changes": [{
       "type": "fix",
-      "message": "The change message."
+      "message": "One of the improved rock models used around the second points has been found to crash some configs and has been replaced."
     }, {
       "type": "improved",
-      "message": "The change message."
+      "message": "Reflective surfaces have better cubemap allocations."
     }, {
-      "type": "revert",
-      "message": "The change message."
+      "type": "fix",
+      "message": "Decals missing from last point areas have been added back."
     }, {
-      "type": "custom",
-      "message": "The change message."
+      "type": "fix",
+      "message": "A tiny positional difference between the platforms above the two last points has been fixed."
     }]
   }, {
-    "suffix": "f8",
-    "download": "",
-    "date": "12/30/2020",
+    "suffix": "f9",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=32201",
+    "date": "14/9/2021",
+    "changes": [{
+      "type": "fix",
+      "message": "The change message"
+    }]
+  }, {
+    "suffix": "f8a",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=31567",
+    "date": "2/9/2020",
     "changes": [{
       "type": "fix",
       "message": "The change message"
