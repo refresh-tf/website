@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/about", {data:[{contributors:["76561197999878878"]}],fetch:{"0":{maps:["process","steel","borneo","metalworks"]}},mutations:[["RESET_LAYOUT_BG",void 0]]});
