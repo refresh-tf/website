@@ -1,0 +1,61 @@
+{
+  "prefix": "cp",
+  "name": "metalworks",
+  "thumbnail": "cp_metalworks.jpeg",
+  "description": "In this edit of Metalworks we have aspired to keep things as close to vanilla as possible with hundreds of small edits to clipping and prop placement. Our main target was to correct a lot of the loose decoration around the map commonly used as obstacles or cover by adding block bullet brushes to the afformention stacks or replacing them with brush made structures. Finally the geometry of the last point has been improved to match the visuals, in original Metalworks players may struggle with combat around the paint as props are used to build up rickity ramps, in Refresh we have adjusted this to be a brush ramp allowing fights to be much more clean. \nThe original map cp_metalworks was made by Ian \"ScorpioUprising\" Cuslidge",
+
+  "tf2mLink": "https://tf2maps.net/downloads/refresh-metalworks.11992/",
+  "tftvLink": "https://www.teamfortress.tv/60587/refresh-cp-metalworks",
+  "workshopLink": "https://www.teamfortress.tv/60587/refresh-cp-metalworks",
+  "albumLink": "https://github.com/tom288/Refresh/blob/master/Metalworks/Metalworks_F1_Changelog.md",
+  "githubLink": null,
+
+  "versions": [{
+    "suffix": "f1",
+    "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/download?version=32541",
+    "date": "9/11/2021",
+    "changes": [{
+      "type": "fix",
+      "message": "Splash damage through the metal structure around last point."
+    }, {
+      "type": "fix",
+	  "message": "The arrow signs near dropdown to be mirrored."
+    }, {
+      "type": "fix",
+	  "message": "The shutter on Blue Second not fully opening."
+    }, {
+      "type": "improved",
+      "message": "Movement and collision around propstacks."
+    }, {
+      "type": "improved",
+	  "message": "Replaced the clipbrush behind the trucks on mid with blockbullets"
+    }, {
+      "type": "improved",
+      "message": "Replaced the clipbrushes around the last point with solid visible brushes."
+    }, {
+      "type": "removed",
+      "message": "Solidity from the heads of all the tall lightposts around the map."
+    }, {
+      "type": "custom",
+      "message": "Filled decorative holes in most ceilings."
+    }, {
+      "type": "custom",
+      "message": "Filled in most minor gaps (such as windows and between vents) with block bullet brushes."
+    }, {
+      "type": "custom",
+      "message": "Filled in problematic gaps under ramps."
+    }, {
+      "type": "custom",
+      "message": "Made all decorative support beams nonsolid."
+    }, {
+      "type": "custom",
+      "message": "Made all overhead lights nonsolid."
+    }, {
+      "type": "custom",
+      "message": "Raised all packs to be 8 hammer units off the ground."
+    }, {
+      "type": "custom",
+      "message": "Compiled the map using Fubar's BSPreveal."
+    }]
+  }]
+}
