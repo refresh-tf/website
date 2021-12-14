@@ -1,7 +1,7 @@
 {
   "prefix": "cp",
   "name": "process",
-  "thumbnail": "cp_process.jpeg",
+  "thumbnail": "cp_process.jpg",
   "description": "We aimed to keep the map structure and appearance as close to the original as possible with over a hundred changes being completely invisible, for example player clips and blockbullet brushes. The main target of these changes were improved collision on steps, slopes, doorways, ceilings and props, predominantly where splash bugs occurred. Some examples of this are on top of the crates on mid, the concrete ledges leading up to the grass area on mid, player collision fixes on doorways so you cannot get stuck and finally the geometry of the last point has been improved to match the visuals, pipes only collide with stickies and grenades, thus rocket jumping should be facilitated. \nThe original map cp_process was made by Ian \"ScorpioUprising\" Cuslidge",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_process.9042/",
@@ -34,14 +34,285 @@
     "changes": [{
       "type": "fix",
       "message": "The change message"
-    }]
+    }, {
+	  "type": "custom",
+      "message": "Compiled with BSPReveal."
+	}]
   }, {
     "suffix": "f8a",
     "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=31567",
     "date": "2/9/2020",
     "changes": [{
       "type": "fix",
-      "message": "The change message"
+      "message": "Corrected rotation of rocks on mid"
     }]
+  }, {
+    "suffix": "f8",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=31116",
+    "date": "8/8/2021",
+    "changes": [{
+      "type": "fix",
+      "message": "The crack between mid crates by mirroring crate heights."
+    }, {
+      "type": "improved",
+      "message": "Added Fubar's new rock collision meshes."
+    }, {
+      "type": "improved",
+      "message": "Added player clipping to the mid rocks in the corner near sewer, so that they feel smooth-ish like the old ones."
+    }, {
+      "type": "improved",
+      "message": "Modified spawn floors to use correct cubemaps."
+    }, {
+      "type": "improved",
+      "message": "Minor collision fixes to windows near the second points."
+    }, {
+      "type": "improved",
+      "message": "Minor texture alignment fixes around 2nd and choke."
+    }, {
+      "type": "improved",
+      "message": "Clipping on lobby computer and printer."
+    }, {
+      "type": "improved",
+      "message": "Redid the clipping on the large prop above IT, but it remains imperfect."
+    }, {
+      "type": "improved",
+      "message": "Player collision around the enemy spawn door."
+    }, {
+      "type": "improved",
+      "message": "Health and ammo pack heights are now consistently 8u - they were previously different for each side in some places."
+    }, {
+	  "type": "custom",
+      "message": "Increased cubemap resolution of the windows on 2nd."
+    }]
+  }, {
+    "suffix": "f7",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=27246",
+    "date": "29/11/2020",
+    "changes": [{
+      "type": "fix",
+      "message": "Out of bounds pipes on 2nd slightly poking through a wall."
+    }, {
+      "type": "fix",
+      "message": "Texture alignment on sewer 2nd."
+    }, {
+      "type": "improved",
+      "message": "Increased lightmap resolution on a few skinny vertical faces to resolve lighting errors."
+    }, {
+      "type": "improved",
+      "message": "Health and ammo overlay texture consistency."
+    }, {
+      "type": "improved",
+      "message": "Properly mirrored health and ammo pack layout on 2nd."
+    }]
+  }, {
+    "suffix": "f6",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=26643",
+    "date": "2/10/2020",
+    "changes": [{
+      "type": "fix",
+      "message": "See-through gaps around windows on 2nd."
+    }, {
+      "type": "fix",
+      "message": "Rock poking through ground on 2nd."
+    }, {
+      "type": "fix",
+      "message": "Out-of-bounds displacement seams on mid by sewer."
+    }, {
+      "type": "improved",
+      "message": "Made the lights in lobby the same for both sides."
+    }, {
+      "type": "improved",
+      "message": "Added barrel props below the ramps to the top of last in order to improve projectile behaviour."
+    }, {
+      "type": "improved",
+      "message": "Prop layout by the left spawn doors."
+    }, {
+      "type": "improved",
+      "message": "Rotated barrel by red rollout to hide texture seam."
+    }, {
+      "type": "improved",
+      "message": "Extended mid fence by sewer to reach wall."
+    }, {
+      "type": "improved",
+      "message": "Further clipping improvements to the raised ledge area in lobby."
+    }, {
+      "type": "improved",
+      "message": "Minor change to position of wood pallet outside forwards (no longer intersects with team coloured concrete)."
+    }, {
+      "type": "improved",
+      "message": "Minor improvement to shape of blockbullet on rock below rollout."
+    }, {
+      "type": "improved",
+      "message": "Rock blockbullet."
+    }, {
+      "type": "improved",
+      "message": "Shape and clipping of step thing behind last point."
+    }, {
+      "type": "improved",
+      "message": "Reduced size of clipping on diagonal pipe near choke."
+    }, {
+      "type": "improved",
+      "message": "Made light above lower lobby non-solid."
+    }, {
+      "type": "improved",
+      "message": "Added props to barrel corner near mid-IT entrance."
+    }, {
+      "type": "revert",
+	  "message": "Brought back the out-of-bounds tower with a radar dish on blue 2nd."
+    }, {
+      "type": "removed",
+      "message": "Clipping on the side with the railing of the raised lobby area."
+    }, {
+      "type": "custom",
+      "message": "Added railing to the rooftop above the far sewer door."
+    }]
+  }, {
+	"suffix": "f5",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=24424",
+    "date": "4/6/2020",
+    "changes": [{
+      "type": "fix",
+      "message": "Some texture alignment issues at last."
+    }, {
+      "type": "fix",
+      "message": "Some missing decals at last and lobby."
+    }, {
+      "type": "fix",
+      "message": "Decal bug under ammo packs."
+    }, {
+      "type": "fix",
+      "message": "Solidity of one of the doors at last."
+    }, {
+      "type": "improved",
+      "message": "Gave the ramps at last detailing."
+    }, {
+      "type": "improved",
+      "message": "Panic room clipping."
+    }, {
+      "type": "improved",
+      "message": "Sewer spytech clipping and blockbullets."
+    }, {
+      "type": "improved",
+      "message": "IT spytech blockbullets."
+    }, {
+      "type": "improved",
+      "message": "Made further improvements to playerclip above sewer."
+    }, {
+      "type": "improved",
+      "message": "Blockbullet at corner near choke."
+    }, {
+      "type": "improved",
+      "message": "Minor lobby blockbullet adjustments."
+    }, {
+      "type": "improved",
+      "message": "Collision on cylindrical prop above mid entrance to IT."
+    }, {
+      "type": "improved",
+      "message": "Added blockbullets to the last window next to the fence on the far left wall."
+    }, {
+      "type": "improved",
+      "message": "Simplified mid crate projectile collision."
+    }, {
+      "type": "improved",
+      "message": "Adjusted choke ammo pack to be above ground instead of above concrete."
+    }, {
+      "type": "improved",
+      "message": "Added minor player clipping to the mid barrels & fences for slightly smoother player movement."
+    }, {
+      "type": "custom",
+	  "message": "Raised the skybox by 512 units."
+    }, {
+      "type": "custom",
+      "message": "Painted more invisible faces with nodraw."
+    }, {
+      "type": "custom",
+      "message": "Replaced the radar dish on blue side with a blue tower to match the red tower found on red side."
+    }, {
+      "type": "custom",
+      "message": "Spawn room chairs are more tucked in."
+    }, {
+      "type": "custom",
+      "message": "Made metal things in lower it ceiling func_illusionary."
+    }]	
+  }, {
+	"suffix": "f4",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=24288",
+    "date": "28/5/2020",
+    "changes": [{
+      "type": "improved",
+      "message": "Loads of clipping improvements."
+    }, {
+      "type": "improved",
+      "message": "Replaced playerclipping ramps on last with proper ramps (detailing is in progress)."
+    }, {
+      "type": "improved",
+      "message": "Raised displacement edges adjacent to concrete on mid and second."
+    }]
+  }, {
+	"suffix": "f3",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=22629",
+    "date": "15/2/2020",
+    "changes": [{
+      "type": "improved",
+      "message": "Projectile clipping on mid crates."
+    }, {
+      "type": "improved",
+      "message": "Additional minor clipping improvements."
+    }, {
+      "type": "added",
+      "message": "Sticky collision to pipes in sewer and PC."
+    }, {
+      "type": "added",
+      "message": "Sticky collision to lamps in top lobby and nest."
+    }, {
+      "type": "added",
+      "message": "Clipping ramps to the rock underneath rollout."
+    }]
+  }, {
+	"suffix": "f2",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=22616",
+    "date": "13/2/2020",
+    "changes": [{
+      "type": "improved",
+      "message": "Many more player and projectile clipping improvements."
+    }, {
+      "type": "custom",
+      "message": "All doorways besides the second forward spawns have been made tall enough for a jumping player to go through."
+    }]
+  }, {
+	"suffix": "f1",
+    "download": "https://tf2maps.net/downloads/refresh-cp_process.9042/download?version=22609",
+    "date": "13/2/2020",
+    "changes": [{
+      "type": "improved",
+      "message": "The lowest doorways have been raised to above the height of a jumping player."
+    }, {
+      "type": "improved",
+      "message": "Stairs have been given proper projectile collision."
+    }, {
+      "type": "improved",
+      "message": "Minor prop asymmetry issues have been resolved."
+    }, {
+      "type": "improved",
+      "message": "The clipping on the walls of last has been removed to match the size of the playable space to the size of the room."
+    }, {
+      "type": "improved",
+      "message": "Props and corners have been given smooth player collision."
+    }, {
+      "type": "improved",
+      "message": "Surfaces not visible to players have been removed to reduce the map filesize and potentially increase framerate."
+    }, {
+      "type": "improved",
+      "message": "Lamps no longer collide with players."
+    }, {
+      "type": "improved",
+      "message": "The circular structures above the mid entrances to PC have better player collision."
+    }, {
+      "type": "improved",
+      "message": "Areas around the mid crates have much better player and projectile collision."
+    }, {
+      "type": "improved",
+      "message": "Player collision with overhanging roofs and small concrete steps."
+    }]	
   }]
 }
