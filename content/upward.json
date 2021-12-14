@@ -78,6 +78,9 @@
 	}, {
 	  "type": "custom",
       "message": "Attached a lightswitch wire to the ceiling on Third."
+	}, {
+	  "type": "custom",
+      "message": "Replaced all patch overlays under health and ammo with func_illusionary ones so they are always visible."
 	}]
 	}, {
     "suffix": "f2",
