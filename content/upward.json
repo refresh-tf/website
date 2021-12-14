@@ -82,7 +82,7 @@
 	}, {
     "suffix": "f2",
     "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32391",
-    "date": "29/10/2021",
+    "date": "26/10/2021",
     "changes": [{
       "type": "fix",
 	  "message": "Lighting around last should reflect how it is in default upward now."
