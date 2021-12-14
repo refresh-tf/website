@@ -1,0 +1,161 @@
+{
+  "prefix": "pl",
+  "name": "upward",
+  "thumbnail": "pl_upward.jpg",
+  "description": "Upward is generally the first map most players think of when someone mentions the payload gamemode. \nBeing a major staple of both competitive and casual this map is beloved by all but its not without its flaws. Being released in 2010, upward has aged poorly with its clipping issues, unconventional mapping techniques and abundance of holes. Refresh has corrected all of this while still maintaining the same map we all love. \nThe original map pl_upward was made by Valve",
+
+  "tf2mLink": "https://tf2maps.net/downloads/refresh-upward.11836/",
+  "tftvLink": "https://www.teamfortress.tv/60332/refresh-pl-upward",
+  "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=2607476988",
+  "albumLink": "https://github.com/tom288/Refresh/blob/master/Upward/Upward_F1_Changelog.md",
+  "githubLink": null,
+
+  "versions": [{
+    "suffix": "f5",
+    "download": "",
+    "date": "13/12/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Misaligned fire extinguisher on last."
+    }, {
+      "type": "fix",
+      "message": "Support beams on last upper no longer bounce stickies."
+    }, {
+      "type": "fix",
+      "message": "Overlay ammo patch in dropdown/window second."
+    }, {
+	  "type": "improved",
+      "message": "Replaced clipbrushes with blockbullets in: backstairs last, balcony/window second, house second-third, dropdown/banana last, spiral last, b house second."
+    }, {
+	  "type": "custom",
+      "message": "Made a little dent in the wall for the resup cabinet on first spawn blu"
+    }]
+	}, {
+    "suffix": "f4",
+    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32952",
+    "date": "10/12/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "Being able to cap/deny cart from under rollercoaster on 3rd."
+    }, {
+      "type": "improved",
+      "message": "Clipping around first point under playground and blue side of the cliff-bridge."
+    }, {
+      "type": "improved",
+      "message": "Clipping in spiral."
+    }, {
+      "type": "improved",
+      "message": "Clipping around metal vertical beams and curbs under point on last."
+    }, {
+	  "type": "improved",
+      "message": "Clipping under heavy balcony on third."
+	}, {
+	  "type": "improved",
+      "message": "Splash around first-tunnel entrance wall."
+	}, {
+	  "type": "custom",
+      "message": "Sign behaviour around the map to avoid solidity/visibility issues."
+	}]
+	}, {
+    "suffix": "f3",
+    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32391",
+    "date": "29/10/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "Gap between the wood and dirt on First."
+    }, {
+      "type": "fix",
+      "message": "Floating windows and boards above Second."
+    }, {
+      "type": "removed",
+      "message": "Remaining bush on flank side of First."
+    }, {
+      "type": "removed",
+      "message": "New hiding spot along Blue base."
+    }, {
+	  "type": "removed",
+      "message": "New hiding spot above First."
+	}, {
+	  "type": "custom",
+      "message": "Attached a lightswitch wire to the ceiling on Third."
+	}]
+	}, {
+    "suffix": "f2",
+    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32391",
+    "date": "29/10/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "Lighting around last should reflect how it is in default upward now."
+    }, {
+      "type": "fix",
+      "message": "Readded a bunch of missing decals."
+    }, {
+      "type": "improved",
+      "message": "Raised ceiling bar on red last to make movement smoother."
+    }, {
+      "type": "improved",
+      "message": "Various clipping and block bullet changes behind and around props."
+    }, {
+	  "type": "improved",
+      "message": "Lighting on rock models."
+	}, {
+	  "type": "removed",
+      "message": "Pop-in on specific props."
+	}, {
+	  "type": "custom",
+      "message": "Adjusted Bloom and hdr exposure settings."
+	}]
+	}, {
+	"suffix": "f2",
+    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32350",
+    "date": "26/10/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "Lighting around last should reflect how it is in default upward now."
+    }, {
+      "type": "fix",
+      "message": "Readded a bunch of missing decals."
+    }, {
+      "type": "improved",
+      "message": "Raised ceiling bar on red last to make movement smoother."
+    }, {
+      "type": "improved",
+      "message": "Various clipping and block bullet changes behind and around props."
+    }, {
+	  "type": "improved",
+      "message": "Lighting on rock models."
+	}, {
+	  "type": "removed",
+      "message": "Pop-in on specific props."
+	}, {
+	  "type": "custom",
+      "message": "Adjusted Bloom and hdr exposure settings."
+	}]
+	}, {
+	"suffix": "f1",
+    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=31903",
+    "date": "21/09/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "Removed a lot of exploits (including: resup binding on enemy spawn doors, shooting into blue spawn from third, getting stuck on signs and being able to build in the dropdown)."
+    }, {
+      "type": "improved",
+      "message": "Corrected clipping."
+    }, {
+      "type": "improved",
+      "message": "Better splash handling."
+    }, {
+      "type": "improved",
+      "message": "Closing off of a LOT of holes."
+    }, {
+	  "type": "improved",
+      "message": "Reworked decorative props and brushwork to be more in line with the competitive format."
+	}, {
+	  "type": "removed",
+      "message": "The box gap on last."
+	}, {
+	  "type": "custom",
+      "message": "Compiled with BSPReveal."
+	}]
+  }]
+}
