@@ -81,32 +81,6 @@
 	}]
 	}, {
     "suffix": "f2",
-    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32391",
-    "date": "26/10/2021",
-    "changes": [{
-      "type": "fix",
-	  "message": "Lighting around last should reflect how it is in default upward now."
-    }, {
-      "type": "fix",
-      "message": "Readded a bunch of missing decals."
-    }, {
-      "type": "improved",
-      "message": "Raised ceiling bar on red last to make movement smoother."
-    }, {
-      "type": "improved",
-      "message": "Various clipping and block bullet changes behind and around props."
-    }, {
-	  "type": "improved",
-      "message": "Lighting on rock models."
-	}, {
-	  "type": "removed",
-      "message": "Pop-in on specific props."
-	}, {
-	  "type": "custom",
-      "message": "Adjusted Bloom and hdr exposure settings."
-	}]
-	}, {
-	"suffix": "f2",
     "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32350",
     "date": "26/10/2021",
     "changes": [{
