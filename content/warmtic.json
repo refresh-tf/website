@@ -52,7 +52,7 @@
   }, {
     "suffix": "f6",
     "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=30710",
-    "date": "7/14/2021",
+    "date": "14/7/2021",
 	"changes": [{
       "type": "fix",
       "message": "Fixed a barrel's fade time."
