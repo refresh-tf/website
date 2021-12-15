@@ -1,0 +1,310 @@
+{
+  "prefix": "koth",
+  "name": "warmtic",
+  "thumbnail": "koth_warmtic.jpg",
+  "description": "Warmtic has been around a while in Highlander but we noticed it was getting quite low reviews from players in ETF2L's last poll. Most changes you'll see here aim to only improve gameplay, not change. Most hiding/perch spots have been left in. \nThe original map koth_arctic was made by Hannes \"Hanz\" Tirez. \nThe original map koth_warmtic was made by \"Popcorp\". \n The control point skin was made by \"Alistor\"."
+
+  "tf2mLink": "https://tf2maps.net/downloads/warmtic.10897/",
+  "tftvLink": "https://www.teamfortress.tv/58445/refresh-koth-warmtic",
+  "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=2443241140",
+  "albumLink": null,
+  "githubLink": null,
+
+  "versions": [{
+    "suffix": "f9",
+    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=32039",
+    "date": "3/10/2021",
+	"changes": [{
+      "type": "improved",
+      "message": "Thinned the pillars outside near the dropdown."
+    }, {
+      "type": "improved",
+      "message": "Changed the invisible displacements to blockbullets."
+    }, {
+      "type": "improved",
+      "message": "Changed some of the playerclips to blockbullets."
+    }, {
+      "type": "improved",
+      "message": "Brightened up some light around the pillars near the dropdown."
+    }]
+  }, {
+    "suffix": "f8",
+    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=31904",
+    "date": "21/9/2021",
+    "changes": [{
+      "type": "improved",
+	  "message": "Changed the clipping on the pillars near the point to help with splash."
+    }, {
+      "type": "custom",
+      "message": "Compiled using Fubar's BSPreveal."
+    }]
+  }, {
+    "suffix": "f7",
+    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=30910",
+    "date": "25/7/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "An issue with the point activation voice lines."
+	},{
+      "type": "improved",
+      "message": "Changed the ordering of the spawn points."
+    }]
+  }, {
+    "suffix": "f6",
+    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=30710",
+    "date": "7/14/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed a barrel's fade time."
+    }, {
+      "type": "fix",
+      "message": "Fixed a misaligned texture."
+    }, {
+      "type": "fix",
+      "message": "Fixed a tiny hole in the fence by the tankers."
+    }, {
+      "type": "fix",
+      "message": "Fixed the clipping around the fence on BLU side."
+    }, {
+      "type": "improved",
+      "message": "Added a blockbullet for the openings of the elbow doors."
+	}, {
+      "type": "improved",
+      "message": "Added glass in front of the computer panels above the crates"
+    }, {
+      "type": "improved",
+      "message": "Changed some clipping to blockbullets in the elbows."
+    }, {
+      "type": "improved",
+      "message": "Changed some clipping to blockbullets on the floor entrance to yard."
+    }, {
+      "type": "improved",
+      "message": "Made a few props non-solid."
+    }, {
+      "type": "custom",
+      "message": "Changed the fence type under the big ramp."
+	}]
+  },{
+    "suffix": "f5",
+    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=29218",
+    "date": "4/4/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "A hole in the fence on BLU side by the window."
+    }, {
+      "type": "improved",
+      "message": "Brightened red side behind the crate doorway."
+    }, {
+      "type": "improved",
+      "message": "Minor visual tweaks."
+	}, {
+      "type": "removed",
+      "message": "Many of the light poles in the spawn areas."
+    }, {
+      "type": "custom",
+      "message": "Changed the control point model."
+    }]
+  },{
+    "suffix": "f4",
+    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=29105",
+    "date": "29/3/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed a lot of clipping."
+    }, {
+      "type": "fix",
+      "message": "Restarted the project to realign focus."
+    }, {
+      "type": "fix",
+      "message": "Removed almost every gameplay change."
+	}, {
+      "type": "fix",
+      "message": "Tidied up some previous changes."
+    }, {
+      "type": "fix",
+      "message": "Restarted the project to realign focus."
+    }, {
+      "type": "improved",
+      "message": "Closed a gap between the concrete area and the raised middle point."
+	}, {
+      "type": "improved",
+      "message": "Flattened out some of the ground by dropdown."
+	}, {
+      "type": "improved",
+      "message": "General visual tweaks and improvements."
+    }, {
+      "type": "improved",
+      "message": "Moved the crate next to the left stairs to not catch projectiles."
+    }, {
+      "type": "improved",
+      "message": "Moved the lamp and barrel near the left spawn route."
+	}, {
+      "type": "improved",
+      "message": "The clipping on some of the unusuable doors."
+    }, {
+      "type": "improved",
+      "message": "Updated the clipping on a set of boxes that looked climbable to be climable."
+    }, {
+      "type": "added",
+      "message": "More consistent patches under health and ammo."
+	}, {
+      "type": "removed",
+      "message": "A crack shot next to the crates and little dropdown on mid."
+	}, {
+      "type": "custom",
+      "message": "Made the point hologram invisible."
+	}]
+  },{
+    "suffix": "f3",
+    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=28441",
+    "date": "17/2/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "A hole in the displacements on the left side of the house."
+    }, {
+      "type": "fix",
+      "message": "An asymmetry at the edges of the tunnel entrance."
+    }, {
+      "type": "improved",
+      "message": "Clipped around the box in banana."
+	}, {
+      "type": "improved",
+      "message": "Clipped the far left pole when entering yard."
+    }, {
+      "type": "improved",
+      "message": "Clipped the pole by the left route from spawn."
+    }, {
+      "type": "improved",
+      "message": "Lowered the top crates on mid to cover up a crack shot."
+	}, {
+      "type": "improved",
+      "message": "Smoothed the blockbullets on the catwalk fence."
+    }, {
+      "type": "improved",
+      "message": "The ground texture in the 3D Skybox."
+    }, {
+      "type": "improved",
+      "message": "Tweaked some prop fade times."
+	}, {
+      "type": "added",
+      "message": "Blockbullets to the corners of the room at the bottom of the stairs."
+	}, {
+      "type": "removed",
+      "message": "The lamps by the catwalk."
+    }]
+  },{
+    "suffix": "f2a",
+    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=28238",
+    "date": "7/2/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Packed the map properly."
+    }]
+  },{
+    "suffix": "f2",
+    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=28237",
+    "date": "7/2/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Detailsprites."
+    }, {
+      "type": "fix",
+      "message": "Some oddities on the roofs to the side of the point."
+    }, {
+      "type": "fix",
+      "message": "Miscolored mirroring on RED side."
+	}, {
+      "type": "improved",
+      "message": "Closed off an area under the main ramp to battlements."
+    }, {
+      "type": "improved",
+      "message": "The clipping around the unusable door in the house."
+    }, {
+      "type": "removed",
+      "message": "Some of the \"warm\" lighting from the windows."
+	}, {
+      "type": "removed",
+      "message": "Some of the posts on the lamps in the most gameplay heavy areas."
+    }, {
+      "type": "removed",
+      "message": "The collision from several lights."
+	}]
+  },{
+    "suffix": "f1",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f1.bsp",
+    "date": "3/2/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Filled hole in truck in the courtyard."
+    }, {
+      "type": "fix",
+      "message": "Filled hole in wall next to truck in the courtyard."
+    }, {
+      "type": "fix",
+      "message": "Sewed displacement in the courtyard."
+	}, {
+      "type": "fix",
+      "message": "Texture bugs on mid."
+    }, {
+      "type": "improved",
+      "message": "All stairs have been given blockbullets"
+	}, {
+      "type": "improved",
+      "message": "Cleaned up balcony."
+	}, {
+      "type": "improved",
+      "message": "Cleaned up dropdown, its still just as dangerous but you won't get stuck in crouch."
+    }, {
+      "type": "improved",
+      "message": "Cleaned up shack."
+    }, {
+      "type": "improved",
+      "message": "Clipped ceiling in side rooms on mid."
+	}, {
+      "type": "improved",
+      "message": "Gaps on side of the point have been filled with concrete."
+	}, {
+      "type": "improved",
+      "message": "Given props that need it prop fade."
+    }, {
+      "type": "improved",
+      "message": "Improved when props fade out."
+    }, {
+      "type": "improved",
+      "message": "Ladder clipped with block bullets (wont have same issue has rc4 with getting caught) near shack."
+	}, {
+      "type": "improved",
+      "message": "Lower has been clipped, lights have had their clipping removed on mid."
+	}, {
+      "type": "improved",
+      "message": "Most props/brushes that created movement issues have either been deleted, clipped or had their collisions disabled."
+	}, {
+      "type": "improved",
+      "message": "Slightly better FPS."
+	}, {
+      "type": "improved",
+      "message": "Stairway to balcony has been cleaned up."
+    }, {
+      "type": "improved",
+      "message": "Wooden platform connecting shipping crate to balcony has been smoothed and clipped on mid."
+    }, {
+      "type": "removed",
+      "message": "Broken window in house."
+	}, {
+      "type": "removed",
+      "message": "Broken window on mid."
+    }, {
+      "type": "removed",
+      "message": "Little pole like object that sticks out on the ramp to the point has been removed and the ramp has been extended to the shipping crate on mid."
+    }, {
+      "type": "removed",
+      "message": "Rubble in house."
+	}, {
+      "type": "removed",
+      "message": "Unnecessary lighting left over from koth_arctic."
+	}, {
+      "type": "custom",
+      "message": "HDR has been lowered slightly."
+	}]
+  }]
+}
