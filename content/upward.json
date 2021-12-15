@@ -2,13 +2,16 @@
   "prefix": "pl",
   "name": "upward",
   "thumbnail": "pl_upward.jpg",
-  "description": "Upward is generally the first map most players think of when someone mentions the payload gamemode. \nBeing a major staple of both competitive and casual this map is beloved by all but its not without its flaws. Being released in 2010, upward has aged poorly with its clipping issues, unconventional mapping techniques and abundance of holes. Refresh has corrected all of this while still maintaining the same map we all love. \nThe original map pl_upward was made by Valve",
+  "description": "Upward is generally the first map most players think of when someone mentions the payload gamemode. \nBeing a major staple of both competitive and casual this map is beloved by all but its not without its flaws. Being released in 2010, upward has aged poorly with its clipping issues, unconventional mapping techniques and abundance of holes. Refresh has corrected all of this while still maintaining the same map we all love.",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-upward.11836/",
   "tftvLink": "https://www.teamfortress.tv/60332/refresh-pl-upward",
   "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=2607476988",
   "albumLink": "https://github.com/tom288/Refresh/blob/master/Upward/Upward_F1_Changelog.md",
   "githubLink": null,
+
+  "originalAuthorsComment": "The original map pl_upward was made by Valve.",
+  "refreshAuthorsComment": null,
 
   "versions": [{
     "suffix": "f5",
