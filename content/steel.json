@@ -1,7 +1,7 @@
 {
   "prefix": "cp",
   "name": "steel",
-  "thumbnail": "cp_steel.jpg",
+  "thumbnail": "cp_steel.png",
   "description": "Steel is a classic highlander map beloved by most, but is not without its flaws. \nBeing a map from 2008 Steel really starts to show its age from unclipped stairs through to cluttered props and chokey corridors. In this project we have aimed to fix issues with map geometry as well as minor aesthetic and performance improvements while also adjusting some of the layout for a more modern TF2. \nThe original map cp_steel was made by Jamie \"Fishbus\" Manson, Dan \"Irish Taxi Driver\" Merboth and FLOOR_MASTER",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_steel.10850/",
@@ -13,8 +13,8 @@
   "versions": [{
     "suffix": "f7",
     "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=32887",
-    "date": "5/12/2020",
-"changes": [{
+    "date": "5/12/2021",
+	"changes": [{
       "type": "fix",
       "message": "Collision on all Red Spawn shutters, The clipping on the staircase in Death Corridor and some miscellaneous textures that were incorrectly alligned throughout the map."
     }, {
@@ -30,16 +30,207 @@
     "date": "9/10/2021",
     "changes": [{
       "type": "fix",
-	  "message": "The change message."
+	  "message": "Being able to shoot through the red spawn doors."
+    }, {
+      "type": "fix",
+      "message": "Texture misalignment near the trolly in white room."
+    }, {
+      "type": "fix",
+      "message": "Increased Damage of Kill Triggers (500 -> 1000) to prevent exploit of overhealed FoS Heavy on E."
     }, {
       "type": "improved",
-      "message": "The change message."
+      "message": "Merged all kill triggers into one in the bottom of the pit on E."
+    }, {
+      "type": "improved",
+      "message": "Made all chickenwire textures the same size and rotation to maintain consistency."
+    }, {
+      "type": "improved",
+      "message": "Adjusted the ladder leading to the top of the shack on B."
+    }, {
+      "type": "improved",
+      "message": "Changed the clipping on the planks in the house on highground to a blockbullet on B."
+    }, {
+      "type": "improved",
+	  "message": "Removed solidity from the lamp in the house on highground on B."
+    }, {
+      "type": "improved",
+      "message": "Smoothed out the ground around the small ammopack near the truck on B."
+    }, {
+      "type": "improved",
+      "message": "Flipped the lantern in Red dropdown on B."
     }, {
       "type": "revert",
-      "message": "The change message."
+      "message": "Added the arches back near the resupply cabinets in blue spawn."
     }, {
       "type": "custom",
-      "message": "The change message."
+      "message": "Replaced all patch overlays under health and ammo with func_illusionary ones so they are always visible."
+    }, {
+      "type": "custom",
+      "message": "Adjusted the glass in front of the rock wall (will be updating this detail further in a future version) in white room."
+    }, {
+      "type": "custom",
+      "message": "Compiled using Fubar's BSPreveal."
+    }]
+  }, {
+    "suffix": "f5a",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=31624",
+    "date": "6/9/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Small update to fix an oversite related to pit related deaths causing players to die as soon as they respawn."
+    }]
+  }, {
+    "suffix": "f5",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=31576",
+    "date": "3/9/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Clipping the A - Whiteroom/Lobby connector."
+    }, {
+      "type": "improved",
+      "message": "Replaced the chickenwire on E with metalgrate texture to fit better thematically."
+    }, {
+      "type": "improved",
+      "message": "Reworked Blu's spawns so that now players spawn an equal distance from each other and with a better chance of having a good spawn."
+	}]
+  },{
+    "suffix": "f4",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=30591",
+    "date": "8/7/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Pyro being able to shoot through the door on A as well as most projectiles and hitscan being able to shoot through the sides."
+    }, {
+      "type": "fix",
+      "message": "Clipping on some overhead props in BEC and C."
+    }, {
+      "type": "improved",
+      "message": "Removed solidity from all railings."
+	}, {
+      "type": "improved",
+      "message": "Adjusted some texture work on B and D to limit the amount of chicken wire used throughout the map."
+    }, {
+      "type": "improved",
+      "message": "Made the staircase on C and the full hp house on A on grid."
+    }, {
+      "type": "improved",
+      "message": "Finally added cubemaps."
+	}]
+  },{
+    "suffix": "f3",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=29681",
+    "date": "16/5/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed a lot of clipping."
+    }, {
+      "type": "revert",
+      "message": "Restarted the project to realign focus."
+    }, {
+      "type": "revert",
+      "message": "Removed almost every gameplay change."
+	}, {
+      "type": "improved",
+      "message": "Tidied up some previous changes."
+    }]
+  },{
+    "suffix": "f2a",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=28161",
+    "date": "3/2/2021",
+	"changes": [{
+      "type": "improved",
+      "message": "Added textures to the tops of out of bound buildings."
+    }, {
+      "type": "improved",
+      "message": "Adjusted metal beams to help movement."
+    }, {
+      "type": "custom",
+      "message": "Replaced the chickenwire floor near redspawn with wood."
+	}, {
+      "type": "custom",
+      "message": "Removed solidity on the lamp in D+E connector (replaced this hiding spot with a ledge)."
+    }]
+  },{
+    "suffix": "f2",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=28132",
+    "date": "1/2/2021",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed some props sticking through walls on D."
+    }, {
+      "type": "fix",
+      "message": "Fixed some weird floating props in Whiteroom."
+    }, {
+      "type": "fix",
+      "message": "Fixed some Z-Fighting on one of the doorframes in red spawn."
+	}, {
+      "type": "fix",
+      "message": "Fixed the black brushes in the main exit in blue spawn."
+    }, {
+      "type": "fix",
+      "message": "Fixed the weird black brushes outside the play area on C."
+    }, {
+      "type": "improved",
+      "message": "Adjusted the pipe outside of the play area to visually fit the theme better on C."
+	}, {
+      "type": "improved",
+      "message": "Changed the woodplank to a ramp and extended the stairs on the porch to make movement more fluid around the area on B."
+    }, {
+      "type": "improved",
+      "message": "Corrected clipping outside Blue spawn's windows on A."
+	}, {
+      "type": "improved",
+      "message": "Corrected some incorrect textures in blue spawn."
+    }, {
+      "type": "improved",
+      "message": "Corrected some incorrect textures on B."
+    }, {
+      "type": "revert",
+      "message": "The extended highground on B."
+	}, {
+      "type": "revert",
+      "message": "The sentry porch on B."
+    }, {
+      "type": "removed",
+      "message": "Collsion on decorative supports in Wishbone."
+	}, {
+      "type": "removed",
+      "message": "Collision on decorative supports on A."
+    }, {
+      "type": "removed",
+      "message": "Collision on decorative supports on B."
+    }, {
+      "type": "removed",
+      "message": "Collision on decorative supports on C."
+	}, {
+      "type": "removed",
+      "message": "The bridge and fence on the hill on A."
+    }, {
+      "type": "removed",
+      "message": "The last few remaining metal beams on D."
+	}, {
+      "type": "custom",
+      "message": "Made both sniper perch windows taller to prevent sentries being able to \"headglitch\" on E."
+    }, {
+      "type": "custom",
+      "message": "Compiled with HDR and LDR lighting."
+    }]
+  },{
+    "suffix": "f1",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=28040",
+    "date": "28/1/2021",
+	"changes": [{
+      "type": "improved",
+      "message": "Corrected clipping."
+    }, {
+      "type": "improved",
+      "message": "Better splash handling."
+    }, {
+      "type": "improved",
+      "message": "More player friendly movement."
+	}, {
+      "type": "improved",
+      "message": "Adjusted props to help with both visibility and gameplay."
     }]
   }]
 }
