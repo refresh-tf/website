@@ -2,13 +2,16 @@
   "prefix": "pl",
   "name": "borneo",
   "thumbnail": "pl_borneo.png",
-  "description": "This version of pl_borneo has hundreds of small changes which significantly improve competitive suitability.\nThe original map pl_borneo was made by Sean \"Heyo\" Cutino and Matt \"vhalin\" Leahy",
+  "description": "This version of pl_borneo has hundreds of small changes which significantly improve competitive suitability.",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-pl_borneo.11835/",
   "tftvLink": "https://www.teamfortress.tv/60324/refresh-pl-borneo",
   "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=2534113560",
   "albumLink": "https://github.com/tom288/Refresh/blob/master/Borneo/Borneo_F1_Changelog.md",
   "githubLink": null,
+
+  "originalAuthorsComment": "The original map pl_borneo was made by Sean \"Heyo\" Cutino and Matt \"vhalin\" Leahy.",
+  "refreshAuthorsComment": null,
 
   "versions": [{
     "suffix": "f1",
