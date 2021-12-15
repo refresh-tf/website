@@ -3,17 +3,17 @@
   <summary>
     <div class="version">
       <h4>
-        {{ map.versions[index].suffix }}
+        {{ version.suffix }}
       </h4>
       <span class="version-date">
-        {{map.versions[index].date}}
+        {{ version.date }}
       </span>
     </div>
   </summary>
 
   <div class="changelog">
     <ul>
-      <li v-for="change in map.versions[index].changes">
+      <li v-for="change in version.changes">
         <div :class="'tag ' + tagColor(change.type)">
           <span>{{tagType(change.type)}}</span>
         </div>
@@ -21,7 +21,7 @@
       </li>
     </ul>
     <a class="button"
-       :href="map.versions[index].download" target="_blank">
+       :href="version.download" target="_blank">
       <i class="mdi mdi-download"></i>
       {{ filename() }}
     </a>
@@ -44,11 +44,7 @@ export default {
   props: {
     map: null,
     index: null,
-  },
-  computed: {
-    version(){
-      return this.map.versions[this.index];
-    }
+    version: null
   },
   methods: {
     tagType(type){
@@ -80,6 +76,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+details.map-version>summary {
+    cursor: pointer;
+}
+
 .map-version {
     margin-bottom: 10px;
 

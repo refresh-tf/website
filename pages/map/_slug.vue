@@ -39,16 +39,30 @@
       </div>
       <div class="column">
         <img ref="thumbnail" :src="imgUrl"/>
+        <div class="credits">
+          <p v-if="map.originalAuthorsComment">
+            {{ map.originalAuthorsComment }}
+          </p>
+          <p v-if="map.refreshAuthorsComment">
+            {{ map.refreshAuthorsComment }}
+          </p>
+        </div>
       </div>
     </div>
 
     <div class="separator"></div>
 
     <h2>Update History</h2>
-    <map-version v-for="(version, index) in map.versions"
-                 :map="map"
-                 :index="index" :key="index">
+    <map-version
+      v-for="(version, index) in map.versions" :key="version.suffix"
+      :map="map" :index="index" :version="version">
     </map-version>
+
+    <div class="separator"></div>
+    <image-comparison
+      v-for="(comp, index) in map.comparisons" :key="index"
+      :comp="comp">
+    </image-comparison>
   </div>
 </div>
 </template>
@@ -64,10 +78,12 @@ const type_remaps = {
 
 import { meta } from '~/js/utils';
 import mapVersion from '../../components/map-version.vue';
+import imageComparison from '../../components/image-comparison.vue';
 
 export default {
   components: {
-    mapVersion: mapVersion
+    mapVersion: mapVersion,
+    imageComparison: imageComparison,
   },
   head() {
     let baseUrl = 'https://refresh-tf.github.io';
@@ -114,9 +130,15 @@ export default {
                 width: 100%;
                 height: auto;
             }
+            >img {
+                box-sizing: border-box;
+                border: solid white 7px;
+                border-radius : 7px;
+            }
         }
         .links {
             display: inline-block;
+            margin-top: 30px;
 
             .sublinks {
                 a {
@@ -160,6 +182,14 @@ export default {
                         margin-right: 0;
                     }
                 }
+            }
+        }
+        .credits {
+            background: #333;
+            padding: 10px 20px;
+            margin-top: 10px;
+            p {
+                color: #ccc;
             }
         }
     }

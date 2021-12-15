@@ -6,7 +6,7 @@
     </div>
 
     <div class="header_navigation">
-      <NuxtLink to="/">Home</NuxtLink>
+      <!--NuxtLink to="/">Home</NuxtLink-->
 
       <span class="header-item dropdown">
         <NuxtLink to="/">Maps</NuxtLink>
@@ -18,6 +18,15 @@
       </span>
 
       <NuxtLink to="/about">About</NuxtLink>
+
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2607508080"
+         title="Find the Refresh map collection on the Steam workshop">
+        <img :src="require('~/assets/icons/steam.png')" />
+      </a>
+      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2607508080"
+         title="Find the Refresh project on github">
+        <img :src="require('~/assets/icons/github.png')" />
+      </a>
     </div>
   </div>
 </header>
@@ -82,6 +91,11 @@ header {
         a {
             text-transform: capitalize;
             text-decoration: none;
+            img {
+                height: 40px;
+                width: auto;
+                margin: 10px 0;
+            }
         }
     }
 
