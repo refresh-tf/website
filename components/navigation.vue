@@ -23,7 +23,7 @@
          title="Find the Refresh map collection on the Steam workshop">
         <img :src="require('~/assets/icons/steam.png')" />
       </a>
-      <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2607508080"
+      <a href="https://github.com/tom288/Refresh"
          title="Find the Refresh project on github">
         <img :src="require('~/assets/icons/github.png')" />
       </a>
