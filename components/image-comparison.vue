@@ -8,10 +8,15 @@
       <div class="handle"></div>
     </div>
   </div>
-  <div class="collision-toggle" v-on:click="toggleCollision">
+
+  <div class="collision-toggle"
+       v-on:click="toggleCollision" v-if="hasCollisions">
     Display collisions
-    <div class="toggleswitch"><div class="switch" :class="{'on': collision}"></div></div>
+    <div class="toggleswitch">
+      <div class="switch" :class="{'on': collision}"></div>
+    </div>
   </div>
+
   <span>Before</span>
   <span>After</span>
 </div>
@@ -28,27 +33,32 @@ export default {
       before: null,
       after: null,
       percent: 50,
+      hasCollisions: false,
       collision: false
     }
   },
   created(){
-    this.beforeNormal = require('~/assets/images/' + this.comp['before-normal']);
-    this.afterNormal = require('~/assets/images/' + this.comp['after-normal']);
-    this.beforeCollision = require('~/assets/images/' + this.comp['before-collision']);
-    this.afterCollision = require('~/assets/images/' + this.comp['after-collision']);
-    this.before = this.beforeNormal;
-    this.after = this.afterNormal;
+    this.comparison = {}
+    for (const [key, value] of Object.entries(this.comp)) {
+      this.comparison[key] = require('~/assets/images/' + value)
+    }
+    this.before = this.comparison['before-normal'];
+    this.after = this.comparison['after-normal'];
+    if (this.comparison['before-collision'] &&
+        this.comparison['after-collision']){
+      this.hasCollisions = true;
+    }
   },
   methods: {
     toggleCollision(event){
       event.preventDefault();
       this.collision = !this.collision;
       if (this.collision){
-        this.before = this.beforeCollision;
-        this.after = this.afterCollision;
+        this.before = this.comparison['before-collision'];
+        this.after = this.comparison['after-collision'];;
       } else {
-        this.before = this.beforeNormal;
-        this.after = this.afterNormal;
+        this.before = this.comparison['before-normal'];
+        this.after = this.comparison['after-normal'];;
       }
 
     },
@@ -109,9 +119,9 @@ export default {
         right: 50%;
         bottom: 0;
 
-        background-position: left top; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         .handle {
             position: relative;

@@ -39,7 +39,8 @@
       </div>
       <div class="column">
         <img ref="thumbnail" :src="imgUrl"/>
-        <div class="credits">
+        <div class="credits" v-if="map.originalAuthorsComment ||
+                                   map.refreshAuthorsComment">
           <p v-if="map.originalAuthorsComment">
             {{ map.originalAuthorsComment }}
           </p>
@@ -50,19 +51,22 @@
       </div>
     </div>
 
-    <div class="separator"></div>
+    <div v-if=" map.versions && map.versions.length > 0">
+      <div class="separator"></div>
+      <h2>Update History</h2>
+      <map-version
+        v-for="(version, index) in map.versions" :key="version.suffix"
+        :map="map" :index="index" :version="version">
+      </map-version>
+    </div>
 
-    <h2>Update History</h2>
-    <map-version
-      v-for="(version, index) in map.versions" :key="version.suffix"
-      :map="map" :index="index" :version="version">
-    </map-version>
-
-    <div class="separator"></div>
-    <image-comparison
-      v-for="(comp, index) in map.comparisons" :key="index"
-      :comp="comp">
-    </image-comparison>
+    <div v-if=" map.comparisons && map.comparisons.length > 0">
+      <div class="separator"></div>
+      <image-comparison
+        v-for="(comp, index) in map.comparisons" :key="index"
+        :comp="comp">
+      </image-comparison>
+    </div>
   </div>
 </div>
 </template>
