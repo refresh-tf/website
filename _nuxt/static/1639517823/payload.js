@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", (function(a,b,c,d,e){return {data:[{maps:[{name:a,thumbnail:"cp_process.jpg"},{name:b,thumbnail:"cp_steel.jpg"},{name:c,thumbnail:"pl_borneo.png"},{name:d,thumbnail:"cp_metalworks.jpeg"},{name:e,thumbnail:"pl_upward.jpg"}]}],fetch:{"0":{maps:[a,b,c,d,e]}},mutations:[["RESET_LAYOUT_BG",void 0]]}}("process","steel","borneo","metalworks","upward")));
