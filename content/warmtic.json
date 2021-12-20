@@ -14,69 +14,69 @@
   "refreshAuthorsComment": null,
 
   "comparisons": [{
-    "name": "banana1",
-    "version": "f10",
-    "title": null
-  }, {
-    "name": "garage",
-    "version": "f10",
-    "title": null
-  }, {
-    "name": "house",
-    "version": "f10",
-    "title": null
-  }, {
-    "name": "leftroom",
-    "version": "f10",
-    "title": null
-  }, {
-    "name": "longstaircase",
-    "version": "f10",
-    "title": null
-  }, {
-    "name": "main",
-    "version": "f10",
-    "title": null
-  }, {
     "name": "mid",
     "version": "f10",
-    "title": null
-  }, {
-    "name": "ramp",
-    "version": "f10",
-    "title": null
-  }, {
-    "name": "shack",
-    "version": "f10",
-    "title": null
-  }, {
-    "name": "spawn",
-    "version": "f10",
-    "title": null
-  }, {
-    "name": "spawnyard1",
-    "version": "f10",
-    "title": null
-  }, {
-    "name": "spawnyard2",
-    "version": "f10",
-    "title": null
+    "title": "Mid"
   }, {
     "name": "under",
     "version": "f10",
-    "title": null
+    "title": "Under"
+  }, {
+    "name": "banana1",
+    "version": "f10",
+    "title": "Banana"
   }, {
     "name": "window",
     "version": "f10",
-    "title": null
+    "title": "Window"
+  }, {
+    "name": "ramp",
+    "version": "f10",
+    "title": "Ramp-Dropdown"
   }, {
     "name": "yard1",
     "version": "f10",
-    "title": null
+    "title": "Yard"
   }, {
     "name": "yard2",
     "version": "f10",
-    "title": null
+    "title": "Yard"
+  }, {
+    "name": "house",
+    "version": "f10",
+    "title": "House"
+  }, {
+    "name": "shack",
+    "version": "f10",
+    "title": "Shack"
+  }, {
+    "name": "longstaircase",
+    "version": "f10",
+    "title": "Window-Staircase"
+  }, {
+    "name": "leftroom",
+    "version": "f10",
+    "title": "Leftroom"
+  }, {
+    "name": "main",
+    "version": "f10",
+    "title": "Main"
+  }, {
+    "name": "garage",
+    "version": "f10",
+    "title": "Garage"
+  }, {
+    "name": "spawnyard1",
+    "version": "f10",
+    "title": "Spawnyard"
+  }, {
+    "name": "spawnyard2",
+    "version": "f10",
+    "title": "Spawnyard"
+  }, {
+    "name": "spawn",
+    "version": "f10",
+    "title": "Spawn"
   }],
 
   "versions": [{
