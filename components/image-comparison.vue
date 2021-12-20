@@ -26,6 +26,7 @@
 export default {
   name: 'image-comparison',
   props: {
+    mapname: null,
     comp: null,
   },
   data(){
@@ -39,9 +40,17 @@ export default {
   },
   created(){
     this.comparison = {}
-    for (const [key, value] of Object.entries(this.comp)) {
-      this.comparison[key] = require('~/assets/images/' + value)
-    }
+    const imgpath = '/comparison/' + this.mapname + '/';
+    let beforeNormal = imgpath + this.comp.name + '_collision_off.jpg';
+    let beforeCollide = imgpath + this.comp.name + '_collision_on.jpg';
+    let afterNormal = imgpath + this.comp.name + '_' + this.comp.version + '_collision_off.jpg';
+    let afterCollide = imgpath + this.comp.name + '_' + this.comp.version + '_collision_on.jpg';
+
+    this.comparison['before-normal'] = require('~/assets' + beforeNormal);
+    this.comparison['before-collision'] = require('~/assets' + beforeCollide);
+    this.comparison['after-normal'] = require('~/assets' + afterNormal);
+    this.comparison['after-collision'] = require('~/assets' + afterCollide);
+
     this.before = this.comparison['before-normal'];
     this.after = this.comparison['after-normal'];
     if (this.comparison['before-collision'] &&

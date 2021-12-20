@@ -64,7 +64,7 @@
       <div class="separator"></div>
       <image-comparison
         v-for="(comp, index) in map.comparisons" :key="index"
-        :comp="comp">
+        :comp="comp" :mapname="map.name">
       </image-comparison>
     </div>
   </div>

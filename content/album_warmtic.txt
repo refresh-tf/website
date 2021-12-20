@@ -1,0 +1,100 @@
+-----------------------------------------------------------------------------------------------------------
+[02:40]
+Mimas Torres:
+you need to add 0 0 64 from original to new
+
+mid
+
+house - setpos 47.846062 1606.896851 35.206421;setang 23.025139 -139.110001 0.000000 ✓
+
+outside banana - setpos -1142.952393 771.480530 385.309998;setang 26.625366 56.876221 0.000000 ✓
+
+dropdown towards back - setpos 594.150940 492.265594 172.528992;setang 18.428198 103.172356 0.000000 ✓
+
+staircase to window - setpos 1090.073853 1968.996094 -118.384613;setang -9.009834 -132.010223 0.000000 ✓
+
+spawn right - setpos -1012.195129 2763.828857 341.023712;setang 36.609173 39.116226 0.000000 ✓
+spawn left - setpos 877.221558 3524.074707 442.601379;setang 29.321646 -137.092041 0.000000 ✓
+spawnroom - setpos 137.928207 4264.815430 -184.238525;setang -2.122246 -132.391891 0.000000 ✓
+spawn garage - setpos -801.362000 2925.554443 -188.956146;setang -2.353330 -89.854263 0.000000 ✓
+spawn main - setpos -510.182648 2338.791260 -239.083450;setang -31.462137 38.252537 0.000000 ✓
+
+window - setpos 753.136902 845.822327 234.358719;setang -12.332385 -91.636963 0.000000 ✓
+
+yard - setpos 845.688904 1846.049438 375.370087;setang 47.780628 131.352829 0.000000 ✓
+
+left room outside spawn - setpos 922.933777 2647.185791 -128.558487;setang -20.533535 -138.240021 0.000000 ✓
+
+banana - setpos -1157.948120 685.438354 -78.753250;setang -18.038754 -55.350426 0.000000 ✓
+
+under - setpos 449.801849 412.326996 -233.926453;setang 0.850448 -138.663864 0.000000
+
+shack - setpos -800.489990 995.023315 -38.075916;setang 1.915099 -1.289558 0.000000 ✓
+
+
+-----------------------------------------------------------------------------------------------------------
+
+koth_warmtic_b6/f10 screenshots:
+
+warmticb6_mid_before_collision_on
+warmticb6_mid_before_collision_off
+
+setpos 47.846062 1606.896851 35.206421;setang 23.025139 -139.110001 0.000000
+warmticb6_house_before_collision_on
+warmticb6_house_before_collision_off
+
+setpos -1157.948120 685.438354 -78.753250;setang -18.038754 -55.350426 0.000000
+warmticb6_banana1_before_collision_on
+warmticb6_banana1_before_collision_off
+
+setpos 845.688904 1846.049438 375.370087;setang 47.780628 131.352829 0.000000
+warmticb6_yard1_before_collision_on
+warmticb6_yard1_before_collision_off
+
+setpos -1142.952393 771.480530 385.309998;setang 26.625366 56.876221 0.000000
+warmticb6_yard2_before_collision_on
+warmticb6_yard2_before_collision_off
+
+setpos -800.489990 995.023315 -38.075916;setang 1.915099 -1.289558 0.000000
+warmticb6_shack_before_collision_on
+warmticb6_shack_before_collision_off
+
+setpos 594.150940 492.265594 172.528992;setang 18.428198 103.172356 0.000000
+warmticb6_ramp_before_collision_on
+warmticb6_ramp_before_collision_off
+
+setpos 449.801849 412.326996 -233.926453;setang 0.850448 -138.663864 0.000000
+warmticb6_under_before_collision_on
+warmticb6_under_before_collision_off
+
+setpos 753.136902 845.822327 234.358719;setang -12.332385 -91.636963 0.000000
+warmticb6_window_before_collision_on
+warmticb6_window_before_collision_off
+
+setpos 1090.073853 1968.996094 -118.384613;setang -9.009834 -132.010223 0.000000
+warmticb6_longstaircase_before_collision_on
+warmticb6_longstaircase_before_collision_off
+
+setpos 869.862305 3556.553711 374.603394;setang 26.867575 -137.306488 0.000000
+warmticb6_leftroom_before_collision_on
+warmticb6_leftroom_before_collision_off
+
+setpos -510.182648 2338.791260 -239.083450;setang -31.462137 38.252537 0.000000
+warmticb6_main_before_collision_on
+warmticb6_main_before_collision_off
+
+setpos -801.362000 2925.554443 -188.956146;setang -2.353330 -89.854263 0.000000
+warmticb6_garage_before_collision_on
+warmticb6_garage_before_collision_off
+
+setpos 137.928207 4264.815430 -184.238525;setang -2.122246 -132.391891 0.000000
+warmticb6_spawn_before_collision_on
+warmticb6_spawn_before_collision_off
+
+setpos -1012.195129 2763.828857 341.023712;setang 36.609173 39.116226 0.000000
+warmticb6_spawnyard1_before_collision_on
+warmticb6_spawnyard1_before_collision_off
+
+setpos 877.221558 3524.074707 378.601379;setang 29.321646 -137.092041 0.000000
+warmticb6_spawnyard2_before_collision_on
+warmticb6_spawnyard2_before_collision_off

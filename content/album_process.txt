@@ -1,0 +1,75 @@
+-----------------------------------------------------------------------------------------------------------
+
+lobby_inside - setpos -2599.978271 -336.459198 621.976379;setang -10.593152 -47.250706 0.000000 ✓ ✓
+lobby_outside - setpos -2165.232666 -1830.386108 548.277161;setang -0.017562 90.918068 0.000000 ✓ ✓
+
+pc_outside2nd - setpos -1540.686035 -1750.582520 536.471924;setang 0.458707 89.812012 0.000000 ✓ ✓
+pc_inside2nd - setpos -1308.575684 -529.266357 567.262207;setang -15.460429 -129.647552 0.000000 ✓ ✓
+pc_insidemid - setpos -1511.496704 -482.463135 560.566956;setang -18.190134 45.740528 0.000000 ✓ ✓
+
+sewers_insidemid - setpos -336.655457 -1092.300293 660.203613;setang -7.503201 -50.884769 0.000000 ✓ ✓
+sewers_inside2nd - setpos -333.449036 -2157.841309 834.761047;setang 19.620840 42.612396 0.000000 ✓ ✓
+
+2nd_choke - setpos -839.275818 -2519.881104 1420.653564;setang 47.060226 132.929825 0.000000 ✓ ✓
+2nd_lower1 - setpos -2612.068848 -2508.596436 1211.041748;setang 26.392963 18.647194 0.000000 ✓ ✓
+
+last_leftfence - setpos -4214.867188 -643.492920 741.625793;setang 19.345537 18.318447 0.000000 ✓ ✓
+
+spawn - setpos -5017.377930 -1279.190186 690.905945;setang 15.549187 -0.713915 0.000000 ✓ ✓
+
+-----------------------------------------------------------------------------------------------------------
+
+cp_process_final/f9a screenshots:
+
+setpos -5017.377930 -1279.190186 690.905945;setang 15.549187 -0.713915 0.000000
+processfinal_spawn_before_collision_off - ✓
+processfinal_spawn_before_collision_on - ✓
+
+processfinal_last1_before_collision_off - ✓
+processfinal_last1_before_collision_on - ✓
+
+processfinal_second1_before_collision_off - ✓
+processfinal_second1_before_collision_on - ✓
+
+setpos -839.275818 -2519.881104 1420.653564;setang 47.060226 132.929825 0.000000
+processfinal_second2_before_collision_off - ✓
+processfinal_second2_before_collision_on - ✓
+
+setpos -2612.068848 -2508.596436 1211.041748;setang 26.392963 18.647194 0.000000
+processfinal_second3_before_collision_off - ✓
+processfinal_second3_before_collision_on - ✓
+
+processfinal_mid_before_collision_off - ✓
+processfinal_mid_before_collision_on - ✓
+
+setpos -4214.867188 -643.492920 741.625793;setang 19.345537 18.318447 0.000000
+processfinal_last2_before_collision_off ✓
+processfinal_last2_before_collision_on ✓
+
+setpos -2599.978271 -336.459198 621.976379;setang -10.593152 -47.250706 0.000000
+processfinal_lobby1_before_collision_off ✓
+processfinal_lobby1_before_collision_on ✓
+
+setpos -2165.232666 -1830.386108 548.277161;setang -0.017562 90.918068 0.000000
+processfinal_lobby2_before_collision_off ✓
+processfinal_lobby2_before_collision_on ✓
+
+setpos -1540.686035 -1750.582520 536.471924;setang 0.458707 89.812012 0.000000
+processfinal_pc1_before_collision_off ✓
+processfinal_pc1_before_collision_on ✓
+
+setpos -1308.575684 -529.266357 567.262207;setang -15.460429 -129.647552 0.000000
+processfinal_pc2_before_collision_off ✓
+processfinal_pc2_before_collision_on ✓
+
+setpos -1511.496704 -482.463135 560.566956;setang -18.190134 45.740528 0.000000
+processfinal_pc3_before_collision_off ✓
+processfinal_pc3_before_collision_on ✓
+
+setpos -336.655457 -1092.300293 660.203613;setang -7.503201 -50.884769 0.000000
+processfinal_sewers1_before_collision_off ✓
+processfinal_sewers1_before_collision_on ✓
+
+setpos -333.449036 -2157.841309 834.761047;setang 19.620840 42.612396 0.000000
+processfinal_sewers2_before_collision_off ✓
+processfinal_sewers2_before_collision_on ✓

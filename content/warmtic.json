@@ -10,6 +10,72 @@
   "albumLink": null,
   "githubLink": null,
 
+  "comparisons": [{
+    "name": "banana1",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "garage",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "house",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "leftroom",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "longstaircase",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "main",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "mid",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "ramp",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "shack",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "spawn",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "spawnyard1",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "spawnyard2",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "under",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "window",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "yard1",
+    "version": "f10",
+    "title": null
+  }, {
+    "name": "yard2",
+    "version": "f10",
+    "title": null
+  }],
+
   "versions": [{
     "suffix": "f9",
     "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=32039",

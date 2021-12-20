@@ -14,17 +14,62 @@
   "refreshAuthorsComment": "Took over by refresh and friends.",
 
   "comparisons": [{
-    "before-normal": "comparison/process/1.jpg",
-    "before-collision": "comparison/process/1.jpg",
-    "after-normal": "comparison/process/2.jpg",
-    "after-collision": "comparison/process/3.jpg"
+    "name": "last1",
+    "version": "f9a",
+    "title": null
   }, {
-    "before-normal": "comparison/process/1.jpg",
-    "before-collision": "comparison/process/1.jpg",
-    "after-normal": "comparison/process/2.jpg",
-    "after-collision": "comparison/process/3.jpg"
+    "name": "last2",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "lobby1",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "lobby2",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "mid",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "pc1",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "pc2",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "pc3",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "second1",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "second2",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "second3",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "sewers1",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "sewers2",
+    "version": "f9a",
+    "title": null
+  }, {
+    "name": "spawn",
+    "version": "f9a",
+    "title": null
   }],
-
 
   "versions": [{
     "suffix": "f9a",
