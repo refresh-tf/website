@@ -16,59 +16,59 @@
   "comparisons": [{
     "name": "last1",
     "version": "f9a",
-    "title": null
-  }, {
-    "name": "last2",
-    "version": "f9a",
-    "title": null
-  }, {
-    "name": "lobby1",
-    "version": "f9a",
-    "title": null
-  }, {
-    "name": "lobby2",
-    "version": "f9a",
-    "title": null
-  }, {
-    "name": "mid",
-    "version": "f9a",
-    "title": null
-  }, {
-    "name": "pc1",
-    "version": "f9a",
-    "title": null
-  }, {
-    "name": "pc2",
-    "version": "f9a",
-    "title": null
-  }, {
-    "name": "pc3",
-    "version": "f9a",
-    "title": null
+    "title": "Last",
   }, {
     "name": "second1",
     "version": "f9a",
-    "title": null
+    "title": "Second",
   }, {
-    "name": "second2",
+    "name": "mid",
     "version": "f9a",
-    "title": null
-  }, {
-    "name": "second3",
-    "version": "f9a",
-    "title": null
-  }, {
-    "name": "sewers1",
-    "version": "f9a",
-    "title": null
-  }, {
-    "name": "sewers2",
-    "version": "f9a",
-    "title": null
+    "title": "Mid",
   }, {
     "name": "spawn",
     "version": "f9a",
-    "title": null
+    "title": "Spawn",
+  }, {
+    "name": "last2",
+    "version": "f9a",
+    "title": "Last",
+  }, {
+    "name": "lobby1",
+    "version": "f9a",
+    "title": "Lobby",
+  }, {
+    "name": "lobby2",
+    "version": "f9a",
+    "title": "Lobby Entrance",
+  }, {
+    "name": "second2",
+    "version": "f9a",
+    "title": "Second",
+  }, {
+    "name": "second3",
+    "version": "f9a",
+    "title": "Second",
+  }, {
+    "name": "pc1",
+    "version": "f9a",
+    "title": "PC Entrance",
+  }, {
+    "name": "pc2",
+    "version": "f9a",
+    "title": "PC",
+  }, {
+    "name": "pc3",
+    "version": "f9a",
+    "title": "PC",
+  }, {
+    "name": "sewers1",
+    "version": "f9a",
+    "title": "Sewers",
+  }, {
+    "name": "sewers2",
+    "version": "f9a",
+    "title": "Sewers",
   }],
 
   "versions": [{
