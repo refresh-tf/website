@@ -2,13 +2,16 @@
   "prefix": "cp",
   "name": "steel",
   "thumbnail": "cp_steel.png",
-  "description": "Steel is a classic highlander map beloved by most, but is not without its flaws. \nBeing a map from 2008 Steel really starts to show its age from unclipped stairs through to cluttered props and chokey corridors. In this project we have aimed to fix issues with map geometry as well as minor aesthetic and performance improvements while also adjusting some of the layout for a more modern TF2. \nThe original map cp_steel was made by Jamie \"Fishbus\" Manson, Dan \"Irish Taxi Driver\" Merboth and FLOOR_MASTER",
+  "description": "Steel is a classic highlander map beloved by most, but is not without its flaws. \nBeing a map from 2008 Steel really starts to show its age from unclipped stairs through to cluttered props and chokey corridors. In this project we have aimed to fix issues with map geometry as well as minor aesthetic and performance improvements while also adjusting some of the layout for a more modern TF2.",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_steel.10850/",
   "tftvLink": "https://www.teamfortress.tv/58369/refresh-cp-steel",
   "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=2376443257",
   "albumLink": null,
   "githubLink": null,
+
+  "originalAuthorsComment": "The original map cp_steel was made by Jamie \"Fishbus\" Manson, Dan \"Irish Taxi Driver\" Merboth and FLOOR_MASTER.",
+  "refreshAuthorsComment": null,
 
   "versions": [{
     "suffix": "f7",

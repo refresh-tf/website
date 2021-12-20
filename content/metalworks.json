@@ -2,13 +2,16 @@
   "prefix": "cp",
   "name": "metalworks",
   "thumbnail": "cp_metalworks.jpeg",
-  "description": "In this edit of Metalworks we have aspired to keep things as close to vanilla as possible with hundreds of small edits to clipping and prop placement. Our main target was to correct a lot of the loose decoration around the map commonly used as obstacles or cover by adding block bullet brushes to the afformention stacks or replacing them with brush made structures. Finally the geometry of the last point has been improved to match the visuals, in original Metalworks players may struggle with combat around the paint as props are used to build up rickity ramps, in Refresh we have adjusted this to be a brush ramp allowing fights to be much more clean. \nThe original map cp_metalworks was made by Ian \"ScorpioUprising\" Cuslidge",
+  "description": "In this edit of Metalworks we have aspired to keep things as close to vanilla as possible with hundreds of small edits to clipping and prop placement. Our main target was to correct a lot of the loose decoration around the map commonly used as obstacles or cover by adding block bullet brushes to the afformention stacks or replacing them with brush made structures. Finally the geometry of the last point has been improved to match the visuals, in original Metalworks players may struggle with combat around the paint as props are used to build up rickity ramps, in Refresh we have adjusted this to be a brush ramp allowing fights to be much more clean.",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-metalworks.11992/",
   "tftvLink": "https://www.teamfortress.tv/60587/refresh-cp-metalworks",
   "workshopLink": "https://www.teamfortress.tv/60587/refresh-cp-metalworks",
   "albumLink": "https://github.com/tom288/Refresh/blob/master/Metalworks/Metalworks_F1_Changelog.md",
   "githubLink": null,
+
+  "originalAuthorsComment": "The original map cp_metalworks was made by Ian \"ScorpioUprising\" Cuslidge.",
+  "refreshAuthorsComment": null,
 
   "versions": [{
     "suffix": "f1",

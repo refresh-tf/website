@@ -2,7 +2,7 @@
   "prefix": "pl",
   "name": "upward",
   "thumbnail": "pl_upward.jpg",
-  "description": "Upward is generally the first map most players think of when someone mentions the payload gamemode. \nBeing a major staple of both competitive and casual this map is beloved by all but its not without its flaws. Being released in 2010, upward has aged poorly with its clipping issues, unconventional mapping techniques and abundance of holes. Refresh has corrected all of this while still maintaining the same map we all love. \nThe original map pl_upward was made by Valve",
+  "description": "Upward is generally the first map most players think of when someone mentions the payload gamemode. \nBeing a major staple of both competitive and casual this map is beloved by all but its not without its flaws. Being released in 2010, upward has aged poorly with its clipping issues, unconventional mapping techniques and abundance of holes. Refresh has corrected all of this while still maintaining the same map we all love.",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-upward.11836/",
   "tftvLink": "https://www.teamfortress.tv/60332/refresh-pl-upward",
@@ -10,9 +10,12 @@
   "albumLink": "https://github.com/tom288/Refresh/blob/master/Upward/Upward_F1_Changelog.md",
   "githubLink": null,
 
+  "originalAuthorsComment": "The original map pl_upward was made by Valve.",
+  "refreshAuthorsComment": null,
+
   "versions": [{
     "suffix": "f5",
-    "download": "",
+    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=33039",
     "date": "13/12/2021",
 	"changes": [{
       "type": "fix",
@@ -28,7 +31,7 @@
       "message": "Replaced clipbrushes with blockbullets in: backstairs last, balcony/window second, house second-third, dropdown/banana last, spiral last, b house second."
     }, {
 	  "type": "custom",
-      "message": "Made a little dent in the wall for the resup cabinet on first spawn blu"
+      "message": "Changed cabinet in spawn to no longer have shadows and prevent doors clipping out"
     }]
 	}, {
     "suffix": "f4",
