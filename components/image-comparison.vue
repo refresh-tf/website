@@ -1,24 +1,26 @@
 <template>
 <div class="image-comparison">
-  <div class="img-container" v-on:mousedown="mouseDown">
+  <div class="title-container" v-if="comp.title">{{comp.title}}</div>
+
+  <div class="img-container" v-on:mousedown="mouseDown"
+       :class="{'active': active}">
     <img class="img-after" :src="after">
     <div class="image-slider"
          :style="{right: percent + '%',
                  backgroundImage: 'url(' + before + ')'}">
       <div class="handle"></div>
     </div>
-  </div>
 
-  <div class="collision-toggle"
-       v-on:click="toggleCollision" v-if="hasCollisions">
-    Display collisions
-    <div class="toggleswitch">
-      <div class="switch" :class="{'on': collision}"></div>
+    <div class="collision-toggle" v-on:click="toggleCollision">
+      Display collisions
+      <div class="toggleswitch">
+        <div class="switch" :class="{'on': collision}"></div>
+      </div>
     </div>
+    <span>Before</span>
+    <span>After</span>
   </div>
 
-  <span>Before</span>
-  <span>After</span>
 </div>
 </template>
 
@@ -34,7 +36,6 @@ export default {
       before: null,
       after: null,
       percent: 50,
-      hasCollisions: false,
       collision: false
     }
   },
@@ -53,10 +54,6 @@ export default {
 
     this.before = this.comparison['before-normal'];
     this.after = this.comparison['after-normal'];
-    if (this.comparison['before-collision'] &&
-        this.comparison['after-collision']){
-      this.hasCollisions = true;
-    }
   },
   methods: {
     toggleCollision(event){
@@ -73,15 +70,18 @@ export default {
     },
     mouseDown(event){
       if (event.which != 1){ return }
+      this.active = true;
       this.mouseMove(event);
       document.addEventListener('mousemove', this.mouseMove);
       document.addEventListener('mouseup', this.mouseUp);
       event.preventDefault();
     },
     mouseUp(event){
+      this.active = false;
       this.mouseMove(event);
       document.removeEventListener('mousemove', this.mouseMove);
       document.removeEventListener('mouseup', this.mouseUp);
+      this.$forceUpdate();
     },
     mouseMove(event){
       let localPosX = event.x - this.$el.getBoundingClientRect().x;
@@ -106,7 +106,6 @@ export default {
         line-height: 0;
         cursor: col-resize;
     }
-
     .img-after {
         width: 100%;
         height: auto;
@@ -160,15 +159,15 @@ export default {
             }
         }
     }
-    >span, .collision-toggle {
+    .img-container>span, .collision-toggle {
         position: absolute;
-        background: rgba(255, 255, 255, 1);
+        background: rgba(255, 255, 255, 0.9);
         color: black;
         font-weight: 800;
         line-height: 40px;
         padding: 0 15px;
     }
-    >span {
+    .img-container>span {
         bottom: 0;
         pointer-events: none;
         &:nth-of-type(1){
@@ -179,6 +178,16 @@ export default {
             right: 0;
             border-radius: 10px 0px 0px 0px;
         }
+    }
+
+    .title-container {
+        position: relative;
+        display: block;
+        background: white;
+        color: black;
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
     }
 
     .collision-toggle {
@@ -230,18 +239,25 @@ export default {
             }
         }
     }
-    >span, .collision-toggle {
-        transition: opacity 0.3s;
-        opacity: 0;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+    .img-container {
+        >span, .collision-toggle {
+            transition: opacity 0.3s;
+            opacity: 0;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        &.active {
+            >span, .collision-toggle {
+                opacity: 0 !important;
+            }
+        }
     }
     &:hover {
-        >span, .collision-toggle {
+        .img-container>span, .collision-toggle {
             opacity: 1;
         }
     }

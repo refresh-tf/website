@@ -6,7 +6,7 @@
     <div class="summary">
 
       <div class="column">
-        <p style="white-space: pre-line">{{ map.description }}</p>
+        <p class="ugc">{{ map.description }}</p>
         <div class="links">
           <a class="button large" v-if="map.versions.length > 0"
              :href="map.versions[0].download" target="_blank">
@@ -41,12 +41,10 @@
         <img ref="thumbnail" :src="imgUrl"/>
         <div class="credits" v-if="map.originalAuthorsComment ||
                                    map.refreshAuthorsComment">
-          <p v-if="map.originalAuthorsComment">
-            {{ map.originalAuthorsComment }}
-          </p>
-          <p v-if="map.refreshAuthorsComment">
-            {{ map.refreshAuthorsComment }}
-          </p>
+          <p v-if="map.originalAuthorsComment" class="ugc"
+             >{{ map.originalAuthorsComment }}</p>
+          <p v-if="map.refreshAuthorsComment" class="ugc"
+             >{{ map.refreshAuthorsComment }}</p>
         </div>
       </div>
     </div>
@@ -128,6 +126,9 @@ export default {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 60px;
 
+        p.ugc {
+            white-space: pre-line;
+        }
         .column {
             width: 100%;
             img {
