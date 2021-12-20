@@ -16,59 +16,59 @@
   "comparisons": [{
     "name": "last1",
     "version": "f9a",
-    "title": "Last",
+    "title": "Last"
   }, {
     "name": "second1",
     "version": "f9a",
-    "title": "Second",
+    "title": "Second"
   }, {
     "name": "mid",
     "version": "f9a",
-    "title": "Mid",
+    "title": "Mid"
   }, {
     "name": "spawn",
     "version": "f9a",
-    "title": "Spawn",
+    "title": "Spawn"
   }, {
     "name": "last2",
     "version": "f9a",
-    "title": "Last",
+    "title": "Last"
   }, {
     "name": "lobby1",
     "version": "f9a",
-    "title": "Lobby",
+    "title": "Lobby"
   }, {
     "name": "lobby2",
     "version": "f9a",
-    "title": "Lobby Entrance",
+    "title": "Lobby Entrance"
   }, {
     "name": "second2",
     "version": "f9a",
-    "title": "Second",
+    "title": "Second"
   }, {
     "name": "second3",
     "version": "f9a",
-    "title": "Second",
+    "title": "Second"
   }, {
     "name": "pc1",
     "version": "f9a",
-    "title": "PC Entrance",
+    "title": "PC Entrance"
   }, {
     "name": "pc2",
     "version": "f9a",
-    "title": "PC",
+    "title": "PC"
   }, {
     "name": "pc3",
     "version": "f9a",
-    "title": "PC",
+    "title": "PC"
   }, {
     "name": "sewers1",
     "version": "f9a",
-    "title": "Sewers",
+    "title": "Sewers"
   }, {
     "name": "sewers2",
     "version": "f9a",
-    "title": "Sewers",
+    "title": "Sewers"
   }],
 
   "versions": [{
