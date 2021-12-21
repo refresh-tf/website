@@ -1,0 +1,196 @@
+-----------------------------------------------------------------------------------------------------------
+
+1st blue spawn - setpos -1173.120361 -769.958740 247.225800;setang 15.581841 -142.330780 0.000000
+
+1st - setpos -54.330536 -2047.833496 817.901367;setang 28.408834 176.056396 0.000000
+
+1st
+
+1st hill - setpos 2122.847656 -1497.288818 482.005035;setang 21.086458 -160.902054 0.000000
+
+tunnel entrance - setpos 1214.017090 -1594.556030 254.234741;setang 11.460128 45.337723 0.000000
+
+tunnel highway - setpos 2943.999756 -611.030212 166.346664;setang 7.979689 -179.951248 0.000000
+
+side-tunnel - setpos 1032.225830 -640.137085 281.964661;setang -5.089515 51.150425 0.000000
+
+tunnel-near2nd - setpos 2151.811279 110.805084 256.224487;setang 16.653755 -133.978989 0.000000
+
+tunnel - setpos 1911.595093 -1082.901367 30.216236;setang -11.861203 88.340530 0.000000
+
+2nd hill - setpos 2494.350342 -1641.097290 685.285278;setang 12.750004 111.857834 0.000000
+
+dispenserspot - setpos 2421.465820 785.798096 687.331787;setang 15.957398 -138.370605 0.000000
+
+2nd-playground - setpos 2415.976807 986.186523 607.892151;setang 15.363716 153.793518 0.000000
+
+2nd-point - setpos 951.766235 1748.711182 507.397766;setang 4.666089 -54.850822 0.000000
+
+2nd house - setpos 293.591614 528.590332 406.336975;setang -8.999727 52.547447 0.000000
+
+sewers - setpos 739.612000 1087.430420 317.169159;setang 17.244802 -140.629929 0.000000
+
+3rd - setpos -1278.150635 1807.847778 731.814026;setang 15.712174 -56.512695 0.000000
+
+shithouse - setpos -1290.371338 39.391220 697.706116;setang 39.698013 127.594872 0.000000
+
+3rd-hallways/banan - setpos -1215.259766 236.623398 630.312805;setang 5.958915 1.543004 0.000000
+
+2nd spawn - setpos 973.405457 -682.400024 9.962829;setang -14.237171 39.282192 0.000000
+
+spiral - setpos -171.555573 -24.041929 666.370056;setang 12.512476 -136.706024 0.000000
+
+red last spawn - setpos 739.570190 746.654236 709.744751;setang 12.492922 -133.815918 0.000000
+
+red/blu spawn - setpos 353.616364 1626.731567 691.841125;setang 17.482401 -46.376514 0.000000
+
+dropdown-engie - setpos -221.616959 165.546829 822.759338;setang 20.330385 -89.972794 0.000000
+
+last boxes - setpos 1193.062378 -348.936981 777.918274;setang 13.439841 -149.765244 0.000000
+
+last upper - setpos 177.897797 -1479.004395 760.483643;setang -0.814989 49.651653 0.000000
+
+last pc/upper - setpos -156.099396 -1313.527222 767.807190;setang -3.189023 51.191460 0.000000
+
+last
+
+last staircase dispenser block - setpos 1010.400513 110.197754 886.097778;setang 24.370470 121.170204 0.000000
+
+last harry potter - setpos 697.903442 -962.151794 548.412842;setang 4.533238 -143.314056 0.000000
+
+last lower to upper - setpos -479.001221 -1333.353882 680.671814;setang 30.312771 28.149353 0.000000
+
+last under - setpos 518.105286 -242.236328 430.164063;setang -0.576145 -89.382515 0.000000
+
+last choke - setpos -991.977051 -165.086151 893.748901;setang 25.914896 -47.809227 0.000000
+
+
+-----------------------------------------------------------------------------------------------------------
+
+pl_upward/f5 screenshots:
+
+setpos -1173.120361 -769.958740 247.225800;setang 15.581841 -142.330780 0.000000
+spawn1_collision_off
+spawn1_collision_on
+
+setpos -54.330536 -2047.833496 817.901367;setang 28.408834 176.056396 0.000000
+first1_collision_off
+first1_collision_on
+
+first2_collision_off
+first2_collision_on
+
+setpos 2122.847656 -1497.288818 482.005035;setang 21.086458 -160.902054 0.000000
+first3_collision_off
+first3_collision_on
+
+setpos 2122.847656 -1497.288818 482.005035;setang 21.086458 -160.902054 0.000000
+tunnel1_collision_off
+tunnel1_collision_on
+
+setpos 2943.999756 -611.030212 166.346664;setang 7.979689 -179.951248 0.000000
+highway1_collision_off
+highway1_collision_on
+
+setpos 1032.225830 -640.137085 281.964661;setang -5.089515 51.150425 0.000000
+sidetunnel1_collision_off
+sidetunnel1_collision_on
+
+setpos 2122.847656 -1497.288818 482.005035;setang 21.086458 -160.902054 0.000000
+tunnel3_collision_off
+tunnel3_collision_on
+
+setpos 1911.595093 -1082.901367 30.216236;setang -11.861203 88.340530 0.000000
+tunnel2_collision_off
+tunnel2_collision_on
+
+setpos 2494.350342 -1641.097290 685.285278;setang 12.750004 111.857834 0.000000
+secondhill1_collision_off
+secondhill1_collision_on
+
+setpos 2421.465820 785.798096 687.331787;setang 15.957398 -138.370605 0.000000
+secondhill2_collision_off
+secondhill2_collision_on
+
+setpos 2415.976807 986.186523 607.892151;setang 15.363716 153.793518 0.000000
+second1_collision_off
+second1_collision_on
+
+setpos 951.766235 1748.711182 507.397766;setang 4.666089 -54.850822 0.000000
+second2_collision_off
+second2_collision_on
+
+setpos 293.591614 528.590332 406.336975;setang -8.999727 52.547447 0.000000
+house_collision_off
+house_collision_on
+
+setpos 739.612000 1087.430420 317.169159;setang 17.244802 -140.629929 0.000000
+sewers_collision_off
+sewers_collision_on
+
+setpos -1278.150635 1807.847778 731.814026;setang 15.712174 -56.512695 0.000000
+third1_collision_off
+third1_collision_on
+
+setpos -1290.371338 39.391220 697.706116;setang 39.698013 127.594872 0.000000
+shithouse_collision_off
+shithouse_collision_on
+
+setpos -1215.259766 236.623398 630.312805;setang 5.958915 1.543004 0.000000
+third2_collision_off
+third2_collision_on
+
+setpos 973.405457 -682.400024 9.962829;setang -14.237171 39.282192 0.000000
+spawn2_collision_off
+spawn2_collision_on
+
+setpos -171.555573 -24.041929 666.370056;setang 12.512476 -136.706024 0.000000
+spiral_collision_off
+spiral_collision_on
+
+setpos 739.570190 746.654236 709.744751;setang 12.492922 -133.815918 0.000000
+spawn4_collision_off
+spawn4_collision_on
+
+setpos 353.616364 1626.731567 691.841125;setang 17.482401 -46.376514 0.000000
+spawn3_collision_off
+spawn3_collision_on
+
+setpos -221.616959 165.546829 822.759338;setang 20.330385 -89.972794 0.000000
+dropdown_collision_off
+dropdown_collision_on
+
+setpos 1193.062378 -348.936981 777.918274;setang 13.439841 -149.765244 0.000000
+lastboxes_collision_off
+lastboxes_collision_on
+
+setpos 177.897797 -1479.004395 760.483643;setang -0.814989 49.651653 0.000000
+lastupper1_collision_off
+lastupper1_collision_on
+
+setpos -156.099396 -1313.527222 767.807190;setang -3.189023 51.191460 0.000000
+lastupper2_collision_off
+lastupper2_collision_on
+
+last_collision_off
+last_collision_on
+
+setpos 1010.400513 110.197754 886.097778;setang 24.370470 121.170204 0.000000
+lastblock_collision_off
+lastblock_collision_on
+
+setpos 697.903442 -962.151794 548.412842;setang 4.533238 -143.314056 0.000000
+lastharrypotter_collision_off
+lastharrypotter_collision_on
+
+setpos -479.001221 -1333.353882 680.671814;setang 30.312771 28.149353 0.000000
+laststaircase_collision_off
+laststaircase_collision_on
+
+setpos 518.105286 -242.236328 430.164063;setang -0.576145 -89.382515 0.000000
+lastunder_collision_off
+lastunder_collision_on
+
+setpos -991.977051 -165.086151 893.748901;setang 25.914896 -47.809227 0.000000
+lastchoke_collision_off
+lastchoke_collision_on
