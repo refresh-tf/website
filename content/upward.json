@@ -14,129 +14,125 @@
   "refreshAuthorsComment": null,
 
   "comparisons": [{
-    "name": "dropdown",
-    "version": "f5",
-    "title": null
-  }, {
     "name": "first1",
     "version": "f5",
-    "title": null
+    "title": "First"
   }, {
     "name": "first2",
     "version": "f5",
-    "title": null
+    "title": "First"
   }, {
     "name": "first3",
     "version": "f5",
-    "title": null
-  }, {
-    "name": "highway1",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "house",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "lastblock",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "lastboxes",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "lastchoke",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "last",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "lastharrypotter",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "laststaircase",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "lastunder",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "lastupper1",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "second1",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "second2",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "secondhill1",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "secondhill2",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "sewers",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "shithouse",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "sidetunnel1",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "spawn1",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "spawn2",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "spawn3",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "spawn4",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "spiral",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "third1",
-    "version": "f5",
-    "title": null
-  }, {
-    "name": "third2",
-    "version": "f5",
-    "title": null
+    "title": "First"
   }, {
     "name": "tunnel1",
     "version": "f5",
-    "title": null
+    "title": "Tunnel"
   }, {
     "name": "tunnel2",
     "version": "f5",
-    "title": null
+    "title": "Tunnel"
   }, {
     "name": "tunnel3",
     "version": "f5",
-    "title": null
+    "title": "Tunnel"
+  }, {
+    "name": "sidetunnel1",
+    "version": "f5",
+    "title": "Side-Tunnel"
+  }, {
+    "name": "highway1",
+    "version": "f5",
+    "title": "Tunnel-Highway"
+  }, {
+    "name": "secondhill1",
+    "version": "f5",
+    "title": "Second-Hill"
+  }, {
+    "name": "secondhill2",
+    "version": "f5",
+    "title": "Second-Hill"
+  }, {
+    "name": "second1",
+    "version": "f5",
+    "title": "Second"
+  }, {
+    "name": "second2",
+    "version": "f5",
+    "title": "Second"
+  }, {
+    "name": "house",
+    "version": "f5",
+    "title": "House-Boiler"
+  }, {
+    "name": "sewers",
+    "version": "f5",
+    "title": "Sewers"
+  }, {
+    "name": "third1",
+    "version": "f5",
+    "title": "Third"
+  }, {
+    "name": "third2",
+    "version": "f5",
+    "title": "Third"
+  }, {
+    "name": "shithouse",
+    "version": "f5",
+    "title": "Shithouse"
+  }, {
+    "name": "spiral",
+    "version": "f5",
+    "title": "Spiral"
+  }, {
+    "name": "lastchoke",
+    "version": "f5",
+    "title": "Last-Choke"
+  }, {
+    "name": "laststaircase",
+    "version": "f5",
+    "title": "Last-FrontStairs"
+  }, {
+    "name": "lastupper1",
+    "version": "f5",
+    "title": "Last-Upper"
+  }, {
+    "name": "lastboxes",
+    "version": "f5",
+    "title": "Last-Boxes"
+  }, {
+    "name": "last",
+    "version": "f5",
+    "title": "Last"
+  }, {
+    "name": "lastharrypotter",
+    "version": "f5",
+    "title": "Last-HarryPotter"
+  }, {
+    "name": "lastunder",
+    "version": "f5",
+    "title": "Last-Under"
+  }, {
+    "name": "lastblock",
+    "version": "f5",
+    "title": "Last"
+  }, {
+    "name": "spawn1",
+    "version": "f5",
+    "title": "Blue-First-Spawn"
+  }, {
+    "name": "spawn2",
+    "version": "f5",
+    "title": "Blue-Second-Spawn"
+  }, {
+    "name": "spawn3",
+    "version": "f5",
+    "title": "Red/Blue-Spawn"
+  }, {
+    "name": "spawn4",
+    "version": "f5",
+    "title": "Red-Last-Spawn"
   }],
 
   "versions": [{
