@@ -16,131 +16,131 @@
   "comparisons": [{
     "name": "first1",
     "version": "f1",
-    "title": null
+    "title": "First"
   }, {
     "name": "first2",
     "version": "f1",
-    "title": null
+    "title": "First-House"
   }, {
     "name": "first3",
     "version": "f1",
-    "title": null
+    "title": "First"
   }, {
     "name": "firsthouse1",
     "version": "f1",
-    "title": null
-  }, {
-    "name": "jenkins1",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "last1",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "last2",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "last3",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "last4",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "lasttoxic1",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "lasttoxic2",
-    "version": "f1",
-    "title": null
+    "title": "First-Barn"
   }, {
     "name": "second1",
     "version": "f1",
-    "title": null
+    "title": "Second"
+  }, {
+    "name": "jenkins1",
+    "version": "f1",
+    "title": "Jenkins"
   }, {
     "name": "second2",
     "version": "f1",
-    "title": null
+    "title": "Second-Under"
   }, {
     "name": "second3",
     "version": "f1",
-    "title": null
+    "title": "Second-Balcony"
   }, {
     "name": "secondhouse1",
     "version": "f1",
-    "title": null
-  }, {
-    "name": "spawn1",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "spawn2",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "spawn3",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "spawn4",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "spawn5",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "spawn6",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "third1",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "third2",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "third3",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "thirdgarage1",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "thirdgarage2",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "thirdyard1",
-    "version": "f1",
-    "title": null
-  }, {
-    "name": "thirdyard2",
-    "version": "f1",
-    "title": null
+    "title": "Second-Garage"
   }, {
     "name": "tunnel1",
     "version": "f1",
-    "title": null
+    "title": "Tunnel"
   }, {
     "name": "yard1",
     "version": "f1",
-    "title": null
+    "title": "Third-Yard-Barn"
   }, {
     "name": "yard2",
     "version": "f1",
-    "title": null
+    "title": "Third-Yard"
   }, {
     "name": "yard3",
     "version": "f1",
-    "title": null
+    "title": "Third-Yard"
+  }, {
+    "name": "third1",
+    "version": "f1",
+    "title": "Third"
+  }, {
+    "name": "third2",
+    "version": "f1",
+    "title": "Third-Top"
+  }, {
+    "name": "third3",
+    "version": "f1",
+    "title": "Third"
+  }, {
+    "name": "thirdgarage1",
+    "version": "f1",
+    "title": "Third-Garage"
+  }, {
+    "name": "thirdgarage2",
+    "version": "f1",
+    "title": "Third-Yard"
+  }, {
+    "name": "thirdyard1",
+    "version": "f1",
+    "title": "Third-Yard"
+  }, {
+    "name": "thirdyard2",
+    "version": "f1",
+    "title": "Third-Yard"
+  }, {
+    "name": "lasttoxic1",
+    "version": "f1",
+    "title": "Last-Toxic"
+  }, {
+    "name": "lasttoxic2",
+    "version": "f1",
+    "title": "Last-Toxic"
+  }, {
+    "name": "last1",
+    "version": "f1",
+    "title": "Last"
+  }, {
+    "name": "last2",
+    "version": "f1",
+    "title": "Last"
+  }, {
+    "name": "last3",
+    "version": "f1",
+    "title": "Last"
+  }, {
+    "name": "last4",
+    "version": "f1",
+    "title": "Last"
+  }, {
+    "name": "spawn1",
+    "version": "f1",
+    "title": "Blue-First-Spawn"
+  }, {
+    "name": "spawn2",
+    "version": "f1",
+    "title": "Blue-First-Spawn"
+  }, {
+    "name": "spawn3",
+    "version": "f1",
+    "title": "Blue-Second-Spawn"
+  }, {
+    "name": "spawn4",
+    "version": "f1",
+    "title": "Blue-Third-Spawn"
+  }, {
+    "name": "spawn5",
+    "version": "f1",
+    "title": "Red-First-Spawn"
+  }, {
+    "name": "spawn6",
+    "version": "f1",
+    "title": "Red-Last-Spawn"
   }],
 
   "versions": [{
