@@ -13,166 +13,166 @@
   "originalAuthorsComment": "The original map cp_steel was made by Jamie \"Fishbus\" Manson, Dan \"Irish Taxi Driver\" Merboth and FLOOR_MASTER.",
   "refreshAuthorsComment": null,
 
-  "comparisons": [{
+   "comparisons": [{
     "name": "A1",
     "version": "f8",
-    "title": ""
+    "title": "A-Point"
   }, {
     "name": "A2",
     "version": "f8",
-    "title": ""
+    "title": "A-Point"
   }, {
     "name": "A3",
     "version": "f8",
-    "title": ""
+    "title": "A-Point"
   }, {
     "name": "A4",
     "version": "f8",
-    "title": ""
+    "title": "A-Point"
   }, {
     "name": "A5",
     "version": "f8",
-    "title": ""
+    "title": "A-Point"
   }, {
     "name": "B1",
     "version": "f8",
-    "title": ""
+    "title": "B-Point"
   }, {
     "name": "B2",
     "version": "f8",
-    "title": ""
+    "title": "B-Point"
   }, {
     "name": "B3",
     "version": "f8",
-    "title": ""
+    "title": "B-Point"
   }, {
     "name": "B5",
     "version": "f8",
-    "title": ""
+    "title": "B-Point"
   }, {
     "name": "B6",
     "version": "f8",
-    "title": ""
+    "title": "B-Point"
   }, {
     "name": "B7",
     "version": "f8",
-    "title": ""
+    "title": "B-Point"
   }, {
     "name": "BC1",
     "version": "f8",
-    "title": ""
+    "title": "BC-Connector"
   }, {
     "name": "BC2",
     "version": "f8",
-    "title": ""
+    "title": "BC-Connector"
   }, {
     "name": "BC3",
     "version": "f8",
-    "title": ""
-  }, {
-    "name": "bluespawn1",
-    "version": "f8",
-    "title": ""
+    "title": "BC-Connector"
   }, {
     "name": "C1",
     "version": "f8",
-    "title": ""
+    "title": "C-Point"
   }, {
     "name": "C2",
     "version": "f8",
-    "title": ""
+    "title": "C-Point"
   }, {
     "name": "C3",
     "version": "f8",
-    "title": ""
+    "title": "C-Point"
   }, {
     "name": "C4",
     "version": "f8",
-    "title": ""
+    "title": "C-Point"
   }, {
     "name": "D1",
     "version": "f8",
-    "title": ""
+    "title": "D-Point"
   }, {
     "name": "D2",
     "version": "f8",
-    "title": ""
+    "title": "D-Point"
   }, {
     "name": "D3",
     "version": "f8",
-    "title": ""
+    "title": "D-Point"
   }, {
     "name": "D4",
     "version": "f8",
-    "title": ""
-  }, {
-    "name": "deathcorridor1",
-    "version": "f8",
-    "title": ""
-  }, {
-    "name": "deathcorridor2",
-    "version": "f8",
-    "title": ""
-  }, {
-    "name": "deathcorridor3",
-    "version": "f8",
-    "title": ""
+    "title": "D-Point"
   }, {
     "name": "E1",
     "version": "f8",
-    "title": ""
+    "title": "E-Point"
   }, {
     "name": "E2",
     "version": "f8",
-    "title": ""
+    "title": "E-Point"
   }, {
     "name": "E3",
     "version": "f8",
-    "title": ""
+    "title": "E-Point"
   }, {
     "name": "E4",
     "version": "f8",
-    "title": ""
+    "title": "E-Point"
   }, {
-    "name": "redspawn1",
+    "name": "deathcorridor1",
     "version": "f8",
-    "title": ""
+    "title": "Death-Corridor"
   }, {
-    "name": "redspawn2",
+    "name": "deathcorridor2",
     "version": "f8",
-    "title": ""
+    "title": "Death-Corridor"
   }, {
-    "name": "redspawn3",
+    "name": "deathcorridor3",
     "version": "f8",
-    "title": ""
-  }, {
-    "name": "redspawn4",
-    "version": "f8",
-    "title": ""
-  }, {
-    "name": "redspawn5",
-    "version": "f8",
-    "title": ""
-  }, {
-    "name": "redspawn6",
-    "version": "f8",
-    "title": ""
-  }, {
-    "name": "redspawn7",
-    "version": "f8",
-    "title": ""
+    "title": "Death-Corridor"
   }, {
     "name": "whiteroom1",
     "version": "f8",
-    "title": ""
+    "title": "Whiteroom"
   }, {
     "name": "whiteroom2",
     "version": "f8",
-    "title": ""
+    "title": "Whiteroom"
   }, {
     "name": "whiteroom3",
     "version": "f8",
-    "title": ""
+    "title": "Whiteroom"
+  }, {
+    "name": "bluespawn1",
+    "version": "f8",
+    "title": "Blue-Spawn"
+  }, {
+    "name": "redspawn1",
+    "version": "f8",
+    "title": "Red-Spawn"
+  }, {
+    "name": "redspawn2",
+    "version": "f8",
+    "title": "Red-Spawn"
+  }, {
+    "name": "redspawn3",
+    "version": "f8",
+    "title": "Red-Spawn"
+  }, {
+    "name": "redspawn4",
+    "version": "f8",
+    "title": "Red-Spawn"
+  }, {
+    "name": "redspawn5",
+    "version": "f8",
+    "title": "Red-Spawn"
+  }, {
+    "name": "redspawn6",
+    "version": "f8",
+    "title": "Red-Spawn"
+  }, {
+    "name": "redspawn7",
+    "version": "f8",
+    "title": "Red-Spawn"
   }],
 
   "versions": [{
