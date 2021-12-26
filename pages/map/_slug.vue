@@ -30,8 +30,8 @@
                v-if="map.githubLink" title="Photo album">
               <img :src="require('~/assets/icons/github.png')">
             </a>
-            <a :href="map.albumLink" target="_blank"
-               v-if="map.albumLink" title="Photo album">
+            <a v-on:click="goalbum" title="Photo album"
+               v-if=" map.comparisons && map.comparisons.length > 0">
               <img :src="require('~/assets/icons/image.png')">
             </a>
           </div>
@@ -58,7 +58,7 @@
       </map-version>
     </div>
 
-    <div v-if=" map.comparisons && map.comparisons.length > 0">
+    <div v-if=" map.comparisons && map.comparisons.length > 0" ref="album">
       <div class="separator"></div>
       <image-comparison
         v-for="(comp, index) in map.comparisons" :key="index"
@@ -103,6 +103,10 @@ export default {
   methods: {
     mapname(){
       return this.map.name.charAt(0).toUpperCase() + this.map.name.slice(1);
+    },
+    goalbum(){
+      const y = this.$refs.album.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({top: y, behavior: 'smooth'})
     }
   },
   async asyncData({$content, store, params}) {

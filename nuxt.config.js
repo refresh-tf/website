@@ -27,6 +27,11 @@ module.exports = {
   css: ['~/assets/styles/style.scss'],
   loading: { color: '#3B8070' },
   modules: ["@nuxt/content"],
+  watchers: {
+    webpack: {
+      ignored: /node_modules/
+    }
+  },
   router: {
     base: baseurl,
     async extendRoutes(routes, resolve) {

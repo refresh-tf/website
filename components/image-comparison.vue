@@ -33,6 +33,7 @@ export default {
   },
   data(){
     return {
+      active: false,
       before: null,
       after: null,
       percent: 50,
