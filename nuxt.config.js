@@ -1,4 +1,4 @@
-baseurl = '/website/'
+baseurl = '/'
 module.exports = {
   head: {
     content: {},
