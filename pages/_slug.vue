@@ -79,8 +79,8 @@ const type_remaps = {
 }
 
 import { meta } from '~/js/utils';
-import mapVersion from '../../components/map-version.vue';
-import imageComparison from '../../components/image-comparison.vue';
+import mapVersion from '../components/map-version.vue';
+import imageComparison from '../components/image-comparison.vue';
 
 export default {
   components: {

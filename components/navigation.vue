@@ -12,7 +12,7 @@
         <NuxtLink to="/">Maps</NuxtLink>
         <ul class="dropdown-menu">
           <li v-for="map in maps" :key="map">
-            <NuxtLink :to="'/map/' + map" >{{map}}</NuxtLink>
+            <NuxtLink :to="'/' + map" >{{map}}</NuxtLink>
           </li>
         </ul>
       </span>

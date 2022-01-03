@@ -39,8 +39,8 @@ module.exports = {
       const { maps } = await $content('meta').fetch();
       maps.forEach(map => {
         routes.push({
-          path: '/map/' + map + '/',
-          component: resolve(__dirname, 'pages/map/_slug.vue'),
+          path: '/' + map + '/',
+          component: resolve(__dirname, 'pages/_slug.vue'),
           meta: map
         });
       });

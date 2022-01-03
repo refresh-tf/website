@@ -3,7 +3,7 @@
   <h1>Welcome to Refresh!</h1>
   <div class="page_container">
     <div class="maps_grid">
-      <NuxtLink :to="'map/' + map.name" v-for="map in maps" :key="map.name">
+      <NuxtLink :to="'/' + map.name" v-for="map in maps" :key="map.name">
         <div class="grid_map">
           <div class="grid_container">
             <img :src="require('~/assets/images/' + map.thumbnail)">
