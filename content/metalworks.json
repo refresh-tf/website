@@ -13,6 +13,73 @@
   "originalAuthorsComment": "The original map cp_metalworks was made by Ian \"ScorpioUprising\" Cuslidge.",
   "refreshAuthorsComment": null,
 
+    "comparisons": [{
+      "name": "ally",
+      "version": "f2",
+      "title": "Ally"
+    }, {
+      "name": "house1",
+      "version": "f2",
+      "title": "House"
+    }, {
+      "name": "house2",
+      "version": "f2",
+      "title": "House"
+    }, {
+      "name": "last1",
+      "version": "f2",
+      "title": "Last"
+    }, {
+      "name": "last2",
+      "version": "f2",
+      "title": "Last"
+    }, {
+      "name": "last3",
+      "version": "f2",
+      "title": "Last"
+    }, {
+      "name": "last4",
+      "version": "f2",
+      "title": "Last"
+    }, {
+      "name": "lobby1",
+      "version": "f2",
+      "title": "Lobby"
+    }, {
+      "name": "lobby2",
+      "version": "f2",
+      "title": "Lobby"
+    }, {
+      "name": "mid1",
+      "version": "f2",
+      "title": "Mid"
+    }, {
+      "name": "second1",
+      "version": "f2",
+      "title": "Second"
+    }, {
+      "name": "second2",
+      "version": "f2",
+      "title": "Second"
+    }, {
+      "name": "second3",
+      "version": "f2",
+      "title": "Second"
+    }, {
+      "name": "spawn1",
+      "version": "f2",
+      "title": "Spawn"
+    }, {
+      "name": "spawn2",
+      "version": "f2",
+      "title": "Spawn"
+    }, {
+      "name": "spawn3",
+      "version": "f2",
+      "title": "Spawn"
+    }],
+
+
   "versions": [{
     "suffix": "f2",
     "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/download?version=33591",

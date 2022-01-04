@@ -1,0 +1,83 @@
+-----------------------------------------------------------------------------------------------------------
+last
+2nd
+mid
+spawn - setpos 2146.227295 -6404.026855 -163.507629;setang -6.515178 57.181187 0.000000
+near-spawn - setpos 1731.989014 -5598.274902 -201.506744;setang -1.644338 48.030510 0.000000
+last left-garage - setpos 1480.355957 -3737.149414 -104.241554;setang 20.927729 -137.451828 0.000000
+last righ-telbow - setpos 3106.643066 -3825.817627 -199.081329;setang 3.697579 -139.707397 0.000000
+lobby-toxic - setpos 1144.609131 -2756.630127 -224.897018;setang -18.400412 -42.667603 0.000000
+lobby-vents - setpos 2787.968994 -2608.566162 -236.864471;setang -24.572802 -119.124992 0.000000
+under 2nd - setpos 2125.244629 -1799.477661 -426.154419;setang 3.584936 -144.577728 0.000000
+house-hallway - setpos 1120.666870 -1432.138794 -147.910187;setang 5.485677 -0.508100 0.000000
+house - setpos 917.817932 -887.953674 68.129013;setang 30.073675 -55.390446 0.000000
+ally - setpos 2857.047607 -727.616028 -344.215424;setang -22.558788 -111.854332 0.000000
+under-dropdown - setpos 1865.298828 -884.303772 -484.100891;setang -12.575541 -89.995415 0.000000
+1st-forward spawn - setpos 3303.943115 -2199.438721 -227.449692;setang -11.860902 -135.447998 0.000000
+2nd-forward spawn - setpos 1312.257935 -609.755188 -348.449127;setang -16.374239 -160.949188 0.000000
+-----------------------------------------------------------------------------------------------------------
+
+cp_metalworks/f2 screenshots:
+last
+last1_f2_collision_off
+last1_f2_collision_on
+
+2nd
+second1_f2_collision_off
+second1_f2_collision_on
+
+mid
+mid1_f2_collision_off
+mid1_f2_collision_on
+
+setpos 2146.227295 -6404.026855 -163.507629;setang -6.515178 57.181187 0.000000
+spawn1_f2_collision_off
+spawn1_f2_collision_on
+
+setpos 1480.355957 -3737.149414 -104.241554;setang 20.927729 -137.451828 0.000000
+last2_f2_collision_off
+last2_f2_collision_on
+
+setpos 1480.355957 -3737.149414 -104.241554;setang 20.927729 -137.451828 0.000000
+last3_f2_collision_off
+last3_f2_collision_on
+
+setpos 3106.643066 -3825.817627 -199.081329;setang 3.697579 -139.707397 0.000000
+last4_f2_collision_off
+last4_f2_collision_on
+
+setpos 1144.609131 -2756.630127 -224.897018;setang -18.400412 -42.667603 0.000000
+lobby1_f2_collision_off
+lobby1_f2_collision_on
+
+setpos 2787.968994 -2608.566162 -236.864471;setang -24.572802 -119.124992 0.000000
+lobby2_f2_collision_off
+lobby2_f2_collision_on
+
+setpos 2125.244629 -1799.477661 -426.154419;setang 3.584936 -144.577728 0.000000
+second2_f2_collision_off
+second2_f2_collision_on
+
+setpos 1120.666870 -1432.138794 -147.910187;setang 5.485677 -0.508100 0.000000
+house1_f2_collision_off
+house1_f2_collision_on
+
+setpos 917.817932 -887.953674 68.129013;setang 30.073675 -55.390446 0.000000
+house2_f2_collision_off
+house2_f2_collision_on
+
+setpos 2857.047607 -727.616028 -344.215424;setang -22.558788 -111.854332 0.000000
+ally_f2_collision_off
+ally_f2_collision_on
+
+setpos 1865.298828 -884.303772 -484.100891;setang -12.575541 -89.995415 0.000000
+second3_f2_collision_off
+second3_f2_collision_on
+
+setpos 3303.943115 -2199.438721 -227.449692;setang -11.860902 -135.447998 0.000000
+spawn2_f2_collision_off
+spawn2_f2_collision_on
+
+setpos 1312.257935 -609.755188 -348.449127;setang -16.374239 -160.949188 0.000000
+spawn3_f2_collision_off
+spawn3_f2_collision_on
