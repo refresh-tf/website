@@ -1,0 +1,151 @@
+-----------------------------------------------------------------------------------------------------------
+final1
+redspawn - setpos -3286.817139 445.200623 478.837952;setang 17.007307 -179.824356 0.730591
+leftdor-last - setpos -3192.701416 790.696045 442.468231;setang 4.257241 0.442161 0.730591
+rightdoor-last - setpos -3188.119629 109.140556 433.800903;setang 4.257202 0.439453 0.730591
+secret - setpos -3000.404785 1045.474854 273.116821;setang 16.056868 -44.116035 0.730591
+last - setpos -2320.516846 94.908630 558.652344;setang 14.630938 150.870605 0.730591
+water/under - setpos -2655.779785 770.859131 35.043221;setang 1.682015 -109.420738 0.730591
+bottom-river - setpos -1852.145874 -131.353394 583.913452;setang 20.926609 -150.960953 0.730591
+river-stairs - setpos -1150.742432 -289.331696 652.431030;setang 26.625872 107.669426 0.730591
+top-river - setpos -780.088562 -255.891235 610.774475;setang 10.587422 60.858124 0.730591
+lobby-balc/shutter - setpos -1430.066406 30.337074 413.243591;setang -4.733176 138.192108 0.730591
+lobby - setpos -959.679626 897.504028 372.581177;setang 12.611920 -149.969757 0.730591
+lobby-main - setpos -1565.829834 485.574615 218.729492;setang 9.874349 136.054962 0.730591
+lower-lower - setpos -1661.094238 130.198334 203.323044;setang 12.603735 -8.679720 0.730591
+outside-river - setpos -676.697693 989.467773 752.999268;setang 21.521681 -61.107574 0.730591
+2nd - setpos -488.502777 751.686096 741.387939;setang 29.124418 73.146301 0.730591
+2nd-rocks - setpos 844.964111 2132.642090 427.606079;setang 14.388203 -137.882599 0.730591
+bigdoors - setpos -853.723877 354.191833 218.930984;setang -11.267115 -53.412666 0.730591
+choke - setpos 786.896301 999.356201 294.590118;setang -19.938894 -131.817749 0.730591
+forwardspawn - setpos -1156.215820 1679.138672 201.835236;setang -2.832340 -54.117592 0.730591
+mid - setpos 1306.499512 30.591589 714.769165;setang 26.867649 -150.495316 0.730591
+banana1 - setpos -331.720825 392.360413 194.367386;setang -13.405505 18.086061 0.730591
+banana2 - setpos -78.350716 464.413239 228.815918;setang 2.753505 -110.814392 0.730591
+under+elbow - setpos 1505.236084 -207.732986 183.579742;setang 2.275350 140.170944 0.730591
+midspawn - setpos 53.545769 168.588684 170.843872;setang 20.690475 47.980820 0.730591
+
+f5
+redspawn - setpos -3965.165139 743.9836230000001 477.837952;setang 17.007307 -179.824356 0.730591
+leftdor-last - setpos -3871.049416 1089.479045 441.468231;setang 4.257241 0.442161 0.730591
+rightdoor-last - setpos -3866.4676289999998 407.923556 432.800903;setang 4.257202 0.439453 0.730591
+secret - setpos -3678.752785 1344.257854 272.116821;setang 16.056868 -44.116035 0.730591
+last - setpos -2998.864846 393.69163000000003 557.652344;setang 14.630938 150.870605 0.730591
+water/under - setpos -3334.127785 1069.642131 34.043221;setang 1.682015 -109.420738 0.730591
+bottom-river - setpos -2530.493874 167.429606 582.913452;setang 20.926609 -150.960953 0.730591
+river-stairs - setpos -1829.409790 10.454617 650.903198;setang 26.625366 107.666016 0.730591
+top-river - setpos -1458.4365619999999 42.89176500000002 609.774475;setang 10.587422 60.858124 0.730591
+lobby-balc/shutter - setpos -2108.414406 329.12007400000005 412.243591;setang -4.733176 138.192108 0.730591
+lobby - setpos -1638.027626 1196.287028 371.581177;setang 12.61192 -149.969757 0.730591
+lobby-main - setpos -2244.177834 784.357615 217.729492;setang 9.874349 136.054962 0.730591
+lower-lower - setpos -2339.4422379999996 428.981334 202.323044;setang 12.603735 -8.67972 0.730591
+outside-river - setpos -1355.045693 1288.250773 751.999268;setang 21.521681 -61.107574 0.730591
+2nd - setpos -1166.8507769999999 1050.469096 740.387939;setang 29.124418 73.146301 0.730591
+2nd-rocks - setpos 166.61611100000005 2431.4250899999997 426.606079;setang 14.388203 -137.882599 0.730591
+bigdoors - setpos -1532.0718769999999 652.974833 217.930984;setang -11.267115 -53.412666 0.730591
+choke - setpos 108.54830100000004 1298.139201 293.590118;setang -19.938894 -131.817749 0.730591
+forwardspawn - setpos -1834.5638199999999 1977.921672 200.835236;setang -2.83234 -54.117592 0.730591
+mid - setpos 628.1515120000001 329.374589 713.769165;setang 26.867649 -150.495316 0.730591
+banana1 - setpos -1010.068825 691.143413 193.367386;setang -13.405505 18.086061 0.730591
+banana2 - setpos -756.698716 763.196239 227.815918;setang 2.753505 -110.814392 0.730591
+under+elbow - setpos 826.8880839999999 91.050014 182.579742;setang 2.27535 140.170944 0.730591
+midspawn - setpos -624.802231 467.371684 169.843872;setang 20.690475 47.98082 0.730591
+-----------------------------------------------------------------------------------------------------------
+
+cp_gullywash_final1/f5 screenshots:
+
+redspawn
+spawn1_f5_collision_off
+spawn1_f5_collision_on
+
+leftdor-last
+last2_f5_collision_off
+last2_f5_collision_on
+
+rightdoor-last
+last3_f5_collision_off
+last3_f5_collision_on
+
+secret
+secret_f5_collision_off
+secret_f5_collision_on
+
+last
+last1_f5_collision_off
+last1_f5_collision_on
+
+water/under
+water_f5_collision_off
+water_f5_collision_on
+
+bottom-river
+river1_f5_collision_off
+river1_f5_collision_on
+
+river-stairs
+river2_f5_collision_off
+river2_f5_collision_on
+
+top-river
+river3_f5_collision_off
+river3_f5_collision_on
+
+lobby-balc/shutter
+lobby2_f5_collision_off
+lobby2_f5_collision_on
+
+lobby
+lobby1_f5_collision_off
+lobby1_f5_collision_on
+
+lobby-main
+lobby3_f5_collision_off
+lobby3_f5_collision_on
+
+lower-lower
+lobby4_f5_collision_off
+lobby4_f5_collision_on
+
+outside-river
+second2_f5_collision_off
+second2_f5_collision_on
+
+2nd
+second1_f5_collision_off
+second1_f5_collision_on
+
+2nd-rocks
+second3_f5_collision_off
+second3_f5_collision_on
+
+bigdoors
+bigdoor_f5_collision_off
+bigdoor_f5_collision_on
+
+choke
+choke_f5_collision_off
+choke_f5_collision_on
+
+forwardspawn
+spawn2_f5_collision_off
+spawn2_f5_collision_on
+
+mid
+mid1_f5_collision_off
+mid1_f5_collision_on
+
+banana1
+banana1_f5_collision_off
+banana1_f5_collision_on
+
+banana2
+banana2_f5_collision_off
+banana2_f5_collision_on
+
+under+elbow
+undermid_f5_collision_off
+undermid_f5_collision_on
+
+midspawn
+spawn3_f5_collision_off
+spawn3_f5_collision_on
