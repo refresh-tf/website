@@ -43,8 +43,12 @@
                                    map.refreshAuthorsComment">
           <p v-if="map.originalAuthorsComment" class="ugc"
              >{{ map.originalAuthorsComment }}</p>
-          <p v-if="map.refreshAuthorsComment" class="ugc"
-             >{{ map.refreshAuthorsComment }}</p>
+          <p>Refreshed By:
+          <profile v-if="map.refreshAuthorsComment"
+                   v-for="sid in map.refreshAuthorsComment"
+                   :steamid="sid">{{ map.refreshAuthorsComment }}
+          </profile>
+          </p>
         </div>
       </div>
     </div>
@@ -81,11 +85,13 @@ const type_remaps = {
 import { meta } from '~/js/utils';
 import mapVersion from '../components/map-version.vue';
 import imageComparison from '../components/image-comparison.vue';
+import profile from '../components/profile.vue';
 
 export default {
   components: {
     mapVersion: mapVersion,
     imageComparison: imageComparison,
+    profile: profile
   },
   head() {
     let baseUrl = 'https://refresh.tf';
@@ -133,9 +139,13 @@ export default {
         p.ugc {
             white-space: pre-line;
         }
+        .profile {
+            margin-top: 4px;
+            margin-bottom: 10px;
+        }
         .column {
             width: 100%;
-            img {
+            >img, .sublinks img {
                 width: 100%;
                 height: auto;
             }

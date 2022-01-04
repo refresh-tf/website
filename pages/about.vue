@@ -8,23 +8,18 @@
 
   <div class="page_title">The Team</div>
   <div class="page_container contributors" ref="creditsTeam">
-    <a v-for="contributor in creditsTeam" target="_blank"
-       :href="'http://steamcommunity.com/profiles/' + contributor">
-      <img alt="" :src="'https://www.steamsignature.com/status/default/' + contributor + '.png'"/>
-    </a>
+    <profile :steamid="sid" v-for="sid in creditsTeam" :key="sid"></profile>
   </div>
   <div class="page_title">Website Contributors</div>
   <div class="page_container contributors" ref="creditsSite">
-    <a v-for="contributor in creditsSite"
-       :href="'http://steamcommunity.com/profiles/' + contributor">
-      <img alt="" :src="'https://www.steamsignature.com/status/default/' + contributor + '.png'"/>
-    </a>
+    <profile :steamid="sid" v-for="sid in creditsSite" :key="sid"></profile>
   </div>
 </div>
 </template>
 
 <script>
 import { meta } from '~/js/utils';
+import profile from '~/components/profile';
 
 function shuffleArr (array){
   for (var i = array.length - 1; i > 0; i--) {
@@ -41,6 +36,9 @@ export default {
     let description = 'About the Refresh project'
     return meta(title, description, url, imageUrl);
   },
+  components: {
+    profile: profile
+  },
   data(){
     return {
       creditsTeam: [],
@@ -49,8 +47,12 @@ export default {
   },
   async asyncData({ $content, store, params }) {
     const meta = await $content('meta').fetch();
-    const creditsTeam = meta["credits-team"];
-    const creditsSite = meta["credits-site"];
+    const creditsTeam = [];
+    const creditsSite = [];
+    for (const [key, value] of Object.entries(meta["credits"])){
+      if (value.role == 'team'){ creditsTeam.push(key) }
+      if (value.role == 'site'){ creditsSite.push(key) }
+    }
     store.commit('RESET_LAYOUT_BG');
     return { creditsTeam, creditsSite }
   },
@@ -67,7 +69,10 @@ export default {
 .contributors {
     text-align: center;
     >* {
-        margin: 5px 2.5px;
+        display: inline-flex;
+        min-width: calc(33% - 18px);
+        max-width: calc(33% - 18px);
+        margin: 3px;
     }
 }
 .aside {
