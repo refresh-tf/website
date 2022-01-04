@@ -2,7 +2,7 @@
   "prefix": "cp",
   "name": "gullywash",
   "thumbnail": "cp_gullywash.jpg",
-  "description": "The major changes in this version were focused on the playability of the map itself whilst maintaining the gameplay aspect intact. Much of our work has been the same as our first project -- Improving collision by fixing stairs, doorways, slopes, lights, railings, and ceilings to be consistent. Additionally, we made sure to align the map to the hammer grid and fix its horrendous asymmetry issues that will allow us to work on the map with more ease in future versions."
+  "description": "The major changes in this version were focused on the playability of the map itself whilst maintaining the gameplay aspect intact. Much of our work has been the same as our first project -- Improving collision by fixing stairs, doorways, slopes, lights, railings, and ceilings to be consistent. Additionally, we made sure to align the map to the hammer grid and fix its horrendous asymmetry issues that will allow us to work on the map with more ease in future versions.",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/",
   "tftvLink": "https://www.teamfortress.tv/57897/refresh-cp-gullywash",
@@ -54,7 +54,7 @@
 	  "type": "added",
       "message": "Some prop blockbullets near launchpad."
     }]
-	}, {
+  }, {
     "suffix": "f4b",
     "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=32655",
     "date": "19/11/2021",
@@ -62,7 +62,7 @@
       "type": "fix",
 	  "message": "Pipe properly solid now."
     }]
-	}, {
+  }, {
     "suffix": "f4a",
     "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=31981",
     "date": "27/9/2021",
@@ -70,7 +70,7 @@
       "type": "fix",
 	  "message": "Cubemaps."
     }]
-	}, {
+  }, {
     "suffix": "f4",
     "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=31925",
     "date": "24/9/2021",
@@ -105,7 +105,7 @@
 	  "type": "custom",
       "message": "Compiled with BSPReveal."
 	}]
-	}, {
+  }, {
 	"suffix": "f3",
     "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=28185",
     "date": "4/2/2021",
@@ -152,7 +152,7 @@
 	  "type": "custom",
       "message": "Doubled the amount of lighting bounces in an effort to make the map brighter."
 	}]
-	}, {
+  }, {
 	"suffix": "f2",
     "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=27771",
     "date": "10/1/2021",
@@ -163,7 +163,7 @@
       "type": "improved",
       "message": "Improved clipping."
 	}]
-	}, {
+  }, {
 	"suffix": "f1a",
     "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=27257",
     "date": "30/11/2020",
@@ -171,7 +171,7 @@
       "type": "fix",
 	  "message": "Fixed cubemaps"
     }]
-	}, {
+  }, {
 	"suffix": "f1",
     "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=27248",
     "date": "29/11/2020",
