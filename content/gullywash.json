@@ -1,0 +1,231 @@
+{
+  "prefix": "cp",
+  "name": "gullywash",
+  "thumbnail": "cp_gullywash.jpg",
+  "description": "The major changes in this version were focused on the playability of the map itself whilst maintaining the gameplay aspect intact. Much of our work has been the same as our first project -- Improving collision by fixing stairs, doorways, slopes, lights, railings, and ceilings to be consistent. Additionally, we made sure to align the map to the hammer grid and fix its horrendous asymmetry issues that will allow us to work on the map with more ease in future versions."
+
+  "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/",
+  "tftvLink": "https://www.teamfortress.tv/57897/refresh-cp-gullywash",
+  "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=2610037819",
+  "albumLink": "https://github.com/tom288/Refresh/blob/master/Upward/Upward_F1_Changelog.md",
+  "githubLink": null,
+
+  "originalAuthorsComment": "The original map cp_gullywash was made by Jan \"Arnold\" Laroy",
+  "refreshAuthorsComment": null,
+
+  "versions": [{
+    "suffix": "f5",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=33715",
+    "date": "4/1/2022",
+	"changes": [{
+      "type": "fix",
+      "message": "Mid forward spawns having collision."
+    }, {
+      "type": "fix",
+      "message": "Texture misalignments across the map."
+    }, {
+      "type": "fix",
+      "message": "Height being two units too low in secret."
+    }, {
+	  "type": "fix",
+      "message": "Wall thickness outside forward spawn."
+    }, {
+	  "type": "improved",
+      "message": "Beam & pipe solidity changes."
+    }, {
+	  "type": "improved",
+      "message": "Removed the blocklights from the 2nd spawn doors that might have caused visibility issues."
+    }, {
+	  "type": "improved",
+      "message": "Removed collision from a few props in 1st spawn."
+    }, {
+	  "type": "improved",
+      "message": "Second forward to have the func_door be more representative of the actual prop."
+    }, {
+	  "type": "improved",
+      "message": "Adjusted clipping in bigdoor."
+    }, {
+	  "type": "added",
+      "message": "Clipping ledges above main."
+    }, {
+	  "type": "added",
+      "message": "Cabinet blockbullets."
+    }, {
+	  "type": "added",
+      "message": "Some prop blockbullets near launchpad."
+    }]
+	}, {
+    "suffix": "f4b",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=32655",
+    "date": "19/11/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "Pipe properly solid now."
+    }]
+	}, {
+    "suffix": "f4a",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=31981",
+    "date": "27/9/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "Cubemaps."
+    }]
+	}, {
+    "suffix": "f4",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=31925",
+    "date": "24/9/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "The pillars outside 2nd shutter and forward spawn being too thick."
+    }, {
+      "type": "fix",
+      "message": "Not being able to jump onto the lockers."
+    }, {
+      "type": "fix",
+      "message": "Forward spawnpoints on mid."
+    }, {
+      "type": "fix",
+      "message": "Spawnpoint order in last spawn."
+    }, {
+	  "type": "fix",
+      "message": "Several detailing inconsistencies with stock gullywash."
+	}, {
+	  "type": "improved",
+      "message": "Overly agressive prop fadeout distances that were due to decompiling."
+	}, {
+      "type": "improved",
+      "message": "Clips and blockbullets around the map."
+    }, {
+	  "type": "revert",
+      "message": "Hiding spot above the second point is back, with a non-solid prop indicating where."
+	}, {
+	  "type": "revert",
+      "message": "Sticky trap under the planks on second balcony is back, with a grate texture for the splash to pass through."
+	}, {
+	  "type": "custom",
+      "message": "Compiled with BSPReveal."
+	}]
+	}, {
+	"suffix": "f3",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=28185",
+    "date": "4/2/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "Resolidified the metal fences outside spawn and in lobby."
+    }, {
+      "type": "fix",
+      "message": "Highground next to choke being 4 unites too high by accident."
+    }, {
+      "type": "fix",
+      "message": "The mid bush using the wrong model."
+    }, {
+      "type": "fix",
+      "message": "Fence props blocking light."
+    }, {
+	  "type": "fix",
+      "message": "Several detailing inconsistencies with stock gullywash."
+	}, {
+	  "type": "fix",
+      "message": "Clipped a hiding spot on mid that was accidentally introduced in f1."
+	}, {
+	  "type": "fix",
+      "message": "A sniper angle where you could shoot through a stack of boxes on last."
+	}, {
+      "type": "fix",
+	  "message": "Clipped spot you could get stuck in if crouching on last."
+    }, {
+      "type": "improved",
+      "message": "Several instances of clipping across the map, specifically in corners to allow for smoother movement."
+    }, {
+      "type": "added",
+      "message": "Sightline blocker from balcony, as you could camp spawndoors as sniper easily and barely be visible."
+    }, {
+      "type": "added",
+      "message": "Line decal across metal beam same height as the texture [useful for demomen rolling out]. If you can't see it use 'r_renderoverlayfragment 1'."
+    }, {
+	  "type": "reverted",
+      "message": "Re-added hiding spot above the river window on 2nd as we didn't have a vote on it."
+	}, {
+	  "type": "removed",
+      "message": "Solidity of wood planks & lamps on last point. They were solid due to a mistake."
+	}, {
+	  "type": "custom",
+      "message": "Doubled the amount of lighting bounces in an effort to make the map brighter."
+	}]
+	}, {
+	"suffix": "f2",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=27771",
+    "date": "10/1/2021",
+    "changes": [{
+      "type": "fix",
+	  "message": "Fixed some lighting and detailing inconsistencies."
+    }, {
+      "type": "improved",
+      "message": "Improved clipping."
+	}]
+	}, {
+	"suffix": "f1a",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=27257",
+    "date": "30/11/2020",
+    "changes": [{
+      "type": "fix",
+	  "message": "Fixed cubemaps"
+    }]
+	}, {
+	"suffix": "f1",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=27248",
+    "date": "29/11/2020",
+    "changes": [{
+      "type": "fix",
+	  "message": "Being able to hold the spawn door open."
+    }, {
+      "type": "improved",
+      "message": "All lamps are nonsolid (except the ones on the fence on 2nd)."
+    }, {
+      "type": "improved",
+      "message": "All railings in playable areas are now nonsolid."
+    }, {
+      "type": "improved",
+      "message": "Last ceiling is now functionally flat."
+    }, {
+	  "type": "improved",
+      "message": "Clipping everywhere."
+	}, {
+	  "type": "improved",
+      "message": "Skybox height is now the same everywhere on the map."
+	}, {
+	  "type": "improved",
+      "message": "Prop door frames swapped for brush door frames."
+	}, {
+      "type": "improved",
+	  "message": "Two shutter props replaced with brushes."
+    }, {
+      "type": "improved",
+      "message": "Marked capture areas now accurately represent the control point trigger."
+    }, {
+      "type": "improved",
+      "message": "All props and hiding spots are now mirrored."
+    }, {
+      "type": "improved",
+      "message": "Gameplay to more accurately represent that of gully_final1."
+    }, {
+	  "type": "added",
+      "message": "Blockbullets on most walls/surfaces."
+	}, {
+	  "type": "added",
+      "message": "Additional areaportals."
+	}, {
+      "type": "removed",
+      "message": "Brushes of unplayable and invisible areas like behind the bigdoor shutter and inside the mid windows."
+    }, {
+	  "type": "removed",
+      "message": "The hiding spot above the 2nd forward spawn."
+	}, {
+	  "type": "custom",
+      "message": "Remade the map from scratch. Aligned everything to the hammer grid."
+	}, {
+	  "type": "custom",
+      "message": "Water room is now more circular than before."
+	}]
+  }]
+}
