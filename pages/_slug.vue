@@ -88,8 +88,8 @@ export default {
     imageComparison: imageComparison,
   },
   head() {
-    let baseUrl = 'https://refresh-tf.github.io';
-    let url = baseUrl + '/website/map/' + this.map.name.toLowerCase();
+    let baseUrl = 'https://refresh.tf';
+    let url = baseUrl + '/' + this.map.name.toLowerCase();
     let imageUrl =  baseUrl + this.imgUrl;
     let title = 'Refresh - ' + this.mapname();
     let description = this.map.description;

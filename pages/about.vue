@@ -34,9 +34,9 @@ function shuffleArr (array){
 }
 export default {
   head() {
-    let baseUrl = 'https://refresh-tf.github.io';
-    let url = baseUrl + '/website/about'
-    let imageUrl =  baseUrl + require('~/assets/refresh.png');
+    let baseUrl = 'https://refresh.tf';
+    let url = baseUrl + '/about'
+    let imageUrl =  baseUrl + require('~/assets/opengraph.jpeg');
     let title = 'About Refresh'
     let description = 'About the Refresh project'
     return meta(title, description, url, imageUrl);

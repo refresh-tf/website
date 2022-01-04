@@ -22,9 +22,9 @@
 import { meta } from '~/js/utils';
 export default {
   head() {
-    let baseUrl = 'https://refresh-tf.github.io';
-    let url = baseUrl + '/website/'
-    let imageUrl =  baseUrl + require('~/assets/refresh.png');
+    let baseUrl = 'https://refresh.tf';
+    let url = baseUrl + '/'
+    let imageUrl =  baseUrl + require('~/assets/opengraph.jpeg');
     let title = 'Refresh'
     let description = 'The Refresh project'
     return meta(title, description, url, imageUrl);
