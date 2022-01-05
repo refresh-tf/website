@@ -150,6 +150,7 @@ export default {
         .profile {
             margin-top: 4px;
             margin-bottom: 10px;
+            display: block;
         }
         .column {
             width: 100%;

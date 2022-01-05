@@ -34,6 +34,8 @@ export default {
     padding: 5px;
     text-align: left;
     border-radius: 5px;
+    display: inline-block;
+
     &:hover {
         background: #666;
     }
