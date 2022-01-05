@@ -27,14 +27,16 @@ export default {
 
 <style lang="scss">
 .profile {
-    background: white;
-    border: solid grey 2px;
-    color: #333;
+    background: #555;
+    color: white;
     display: flex;
     text-decoration: none;
-    padding: 4px;
+    padding: 5px;
     text-align: left;
-    border-radius: 7px;
+    border-radius: 5px;
+    &:hover {
+        background: #666;
+    }
 
     img, span {
         display: inline-block;

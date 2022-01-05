@@ -10,8 +10,12 @@
   "albumLink": null,
   "githubLink": null,
 
-  "originalAuthorsComment": "The original map cp_steel was made by Jamie \"Fishbus\" Manson, Dan \"Irish Taxi Driver\" Merboth and FLOOR_MASTER.",
-  "refreshAuthorsComment": ["76561198072335921"],
+  "originalAuthors": [{
+    "comment": "The original map cp_steel was made by Jamie \"Fishbus\" Manson, Dan \"Irish Taxi Driver\" Merboth and FLOOR_MASTER.",
+    "link": "https://wiki.teamfortress.com/wiki/Steel"
+  }],
+
+  "refreshAuthors": ["76561198072335921"],
 
    "comparisons": [{
     "name": "A1",

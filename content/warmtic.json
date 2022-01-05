@@ -10,8 +10,17 @@
   "albumLink": null,
   "githubLink": null,
 
-  "originalAuthorsComment": "The original map koth_arctic was made by Hannes \"Hanz\" Tirez. \nThe original map koth_warmtic was made by \"Popcorp\". \nThe control point skin was made by \"Alistor\".",
-  "refreshAuthorsComment": ["76561198031558094"],
+  "originalAuthors": [{
+    "comment": "The original map koth_arctic was made by Hannes \"Hanz\" Tirez.",
+    "link": "https://tf2maps.net/threads/arctic.19603/"
+  }, {
+    "comment": "The original map koth_warmtic was made by \"Popcorp\".",
+    "link": null
+  }, {
+    "comment": "The control point skin was made by \"Alistor\".",
+    "link": null
+  }],
+  "refreshAuthors": ["76561198031558094"],
 
   "comparisons": [{
     "name": "mid",

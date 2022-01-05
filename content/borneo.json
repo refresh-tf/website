@@ -10,8 +10,12 @@
   "albumLink": "https://github.com/tom288/Refresh/blob/master/Borneo/Borneo_F1_Changelog.md",
   "githubLink": null,
 
-  "originalAuthorsComment": "The original map pl_borneo was made by Sean \"Heyo\" Cutino and Matt \"vhalin\" Leahy.",
-  "refreshAuthorsComment": ["76561198017283362"],
+  "originalAuthors": [{
+    "comment": "The original map pl_borneo was made by Sean \"Heyo\" Cutino and Matt \"vhalin\" Leahy.",
+    "link": "https://wiki.teamfortress.com/wiki/Borneo"
+  }],
+
+  "refreshAuthors": ["76561198017283362"],
 
   "comparisons": [{
     "name": "first1",

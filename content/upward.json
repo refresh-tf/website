@@ -10,8 +10,12 @@
   "albumLink": "https://github.com/tom288/Refresh/blob/master/Upward/Upward_F1_Changelog.md",
   "githubLink": null,
 
-  "originalAuthorsComment": "The original map pl_upward was made by Valve.",
-  "refreshAuthorsComment": ["76561198017283362"],
+  "originalAuthors": [{
+    "comment": "The original map pl_upward was made by Valve.",
+    "link": "https://wiki.teamfortress.com/wiki/Upward"
+  }],
+
+  "refreshAuthors": ["76561198017283362"],
 
   "comparisons": [{
     "name": "first1",

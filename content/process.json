@@ -10,8 +10,12 @@
   "albumLink": "https://github.com/tom288/Refresh/blob/master/Process/ALBUM.md",
   "githubLink": null,
 
-  "originalAuthorsComment": "The original map, cp_process, was made by Ian \"ScorpioUprising\" Cuslidge.",
-  "refreshAuthorsComment": ["76561198061182117"],
+  "originalAuthors": [{
+    "comment": "The original map, cp_process, was made by Ian \"ScorpioUprising\" Cuslidge.",
+    "link": "https://wiki.teamfortress.com/wiki/Process"
+  }],
+
+  "refreshAuthors": ["76561198061182117"],
 
   "comparisons": [{
     "name": "last1",

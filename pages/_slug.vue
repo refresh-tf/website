@@ -14,23 +14,23 @@
             Download latest version
           </a>
           <div class="sublinks">
-            <a :href="map.workshopLink" target="_blank"
+            <a class="highlight" :href="map.workshopLink" target="_blank"
                v-if="map.workshopLink" title="workshop">
               <img :src="require('~/assets/icons/steam.png')">
             </a>
-            <a :href="map.tftvLink" target="_blank"
+            <a class="highlight" :href="map.tftvLink" target="_blank"
                v-if="map.tftvLink" title="teamfortress.tv">
               <img :src="require('~/assets/icons/teamfortress_tv.png')">
             </a>
-            <a :href="map.tf2mLink" target="_blank"
+            <a class="highlight" :href="map.tf2mLink" target="_blank"
                v-if="map.tf2mLink" title="TF2Maps">
               <img :src="require('~/assets/icons/tf2maps.png')">
             </a>
-            <a :href="map.githubLink" target="_blank"
+            <a class="highlight" :href="map.githubLink" target="_blank"
                v-if="map.githubLink" title="Photo album">
               <img :src="require('~/assets/icons/github.png')">
             </a>
-            <a v-on:click="goalbum" title="Photo album"
+            <a class="highlight" v-on:click="goalbum" title="Photo album"
                v-if=" map.comparisons && map.comparisons.length > 0">
               <img :src="require('~/assets/icons/image.png')">
             </a>
@@ -39,15 +39,23 @@
       </div>
       <div class="column">
         <img ref="thumbnail" :src="imgUrl"/>
-        <div class="credits" v-if="map.originalAuthorsComment ||
-                                   map.refreshAuthorsComment">
-          <p v-if="map.originalAuthorsComment" class="ugc"
-             >{{ map.originalAuthorsComment }}</p>
+
+        <div class="credits" v-if="map.originalAuthors.length > 0">
+          <div class="credit" v-for="author in map.originalAuthors">
+            <p class="ugc">{{ author.comment }}</p>
+            <a :href="author.link" target="_blank"
+               class="highlight" v-if="author.link">
+              <img :src="require('~/assets/icons/link-icon.png')">
+            </a>
+          </div>
+        </div>
+
+        <div class="credits" v-if="map.refreshAuthors.length > 0">
           <p>Refreshed By:
-          <profile v-if="map.refreshAuthorsComment"
-                   v-for="sid in map.refreshAuthorsComment"
-                   :steamid="sid">{{ map.refreshAuthorsComment }}
-          </profile>
+            <profile v-if="map.refreshAuthors"
+                     v-for="sid in map.refreshAuthors" :key="sid"
+                     :steamid="sid">{{ map.refreshAuthors }}
+            </profile>
           </p>
         </div>
       </div>
@@ -163,52 +171,89 @@ export default {
                 a {
                     height: 40px;
                     width: 40px;
-                    display: inline-block;
-                    cursor: pointer;
                     margin: 10px 3px 0px;
-                    position: relative;
                     padding: 5px;
-
-                    &:after, &:before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                    }
-                    &:after { top: 60%;}
-                    &:before { top: 25%;}
-                    &:hover {
-                        background: radial-gradient(ellipse at 50% 50%,
-                                                    rgba(255, 255, 255, 0.20) 30%,
-                                                    rgba(255, 255, 255, 0) 75%);
-                        &:after {
-                            background: radial-gradient(ellipse at 50% 50%,
-                                                        rgba(255, 255, 255, 0.4) 30%,
-                                                        rgba(255, 255, 255, 0) 75%);
-                        }
-                        &:before {
-                            background: radial-gradient(ellipse at 50% 50%,
-                                                        rgba(255, 255, 255, 0.4) 10%,
-                                                        rgba(255, 255, 255, 0) 55%);
-                        }
-                    }
-                    &:first-child {
-                        margin-left: 0;
-                    }
-                    &:last-child {
-                        margin-right: 0;
-                    }
                 }
+            }
+        }
+        a.highlight {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+
+            &:after, &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            &:after { top: 60%;}
+            &:before { top: 25%;}
+            &:hover {
+                background: radial-gradient(ellipse at 50% 50%,
+                                            rgba(255, 255, 255, 0.20) 30%,
+                                            rgba(255, 255, 255, 0) 75%);
+                &:after {
+                    background: radial-gradient(ellipse at 50% 50%,
+                                                rgba(255, 255, 255, 0.4) 30%,
+                                                rgba(255, 255, 255, 0) 75%);
+                }
+                &:before {
+                    background: radial-gradient(ellipse at 50% 50%,
+                                                rgba(255, 255, 255, 0.4) 10%,
+                                                rgba(255, 255, 255, 0) 55%);
+                }
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
             }
         }
         .credits {
             background: #333;
-            padding: 10px 20px;
+            padding: 3px 20px;
             margin-top: 10px;
+
+            .credit {
+                display: flex;
+                &:not(:last-child):after {
+                    content: '';
+                    display: block;
+                    margin: 0 0;
+                    height: 2px;
+                    width: 50%;
+                    background: #555;
+                    position: absolute;
+                    bottom: -9px;
+                    left: 0;
+                    right: 0;
+                }
+                p {
+                    flex-grow: 1;
+                }
+                a {
+                    height: 30px;
+                    margin: auto 0;
+                    vertical-align: middle;
+                    display: inline-block;
+                    text-align: center;
+
+                    height: 30px;
+                    width: 30px;
+                    margin-left: 6px;
+                    img {
+                        max-height: 30px;
+                        width: auto;
+                    }
+                }
+            }
             p {
                 color: #ccc;
+                position: relative;
             }
         }
     }
