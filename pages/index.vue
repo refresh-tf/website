@@ -76,32 +76,36 @@ export default {
             color: #fff;
 
             .text-container {
-                //background: green;
                 position: absolute;
                 top: 0;
-                right: 0;
-                width: 0;
                 bottom: 0;
-                transition-property: width;
-                transition-duration: 0.3s;
-                transition-timing-function: ease;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                margin: auto;
+                animation: leave 0.25s normal forwards ease-in;
             }
             &:hover {
                 .text-container {
-                    left: 0;
-                    right: auto;
-                    width: 100%;
+                    animation: enter 0.25s normal forwards ease-in;
                 }
             }
+            @-webkit-keyframes enter {
+                0% { left: -100%; }
+                100% { left: 0%; }
+            }
+            @-webkit-keyframes leave {
+                0% { left: 0; }
+                100% { left: 100%; }
+            }
             img {
-                // text
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                height: 160px;
-                width: auto;
+                height: auto;
                 max-width: 80%;
                 margin: auto;
             }
