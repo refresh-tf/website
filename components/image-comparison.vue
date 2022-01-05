@@ -2,8 +2,11 @@
 <div class="image-comparison">
   <div class="title-container" v-if="comp.title">{{comp.title}}</div>
 
-  <div class="img-container" v-on:mousedown="mouseDown"
+  <div class="img-container"
        :class="{'active': active}">
+
+    <div class="clickarea" v-on:mousedown="mouseDown"></div>
+
     <img class="img-after" :src="after">
     <div class="image-slider"
          :style="{right: percent + '%',
@@ -162,6 +165,7 @@ export default {
     }
     .img-container>span, .collision-toggle {
         position: absolute;
+        z-index: 3;
         background: rgba(255, 255, 255, 0.9);
         color: black;
         font-weight: 800;
@@ -170,6 +174,7 @@ export default {
     }
     .img-container>span {
         bottom: 0;
+
         pointer-events: none;
         &:nth-of-type(1){
             left: 0;
@@ -179,6 +184,14 @@ export default {
             right: 0;
             border-radius: 10px 0px 0px 0px;
         }
+    }
+    .img-container>.clickarea {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
     .title-container {

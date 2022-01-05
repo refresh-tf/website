@@ -2,18 +2,14 @@
 <div id="maps_page_info" class="container">
   <h1>Welcome to Refresh!</h1>
   <div class="page_container">
-    <div class="maps_grid">
-      <NuxtLink :to="'/' + map.name" v-for="map in maps" :key="map.name">
-        <div class="grid_map">
-          <div class="grid_container">
-            <img :src="require('~/assets/images/' + map.thumbnail)">
-            <div class="grid_hover">
-              <span>{{map.name}}</span>
-            </div>
-          </div>
+    <NuxtLink :to="'/' + map.name" v-for="map in maps" :key="map.name" class="grid_map">
+      <img :src="require('~/assets/banners/' + map.name + '/background.png')">
+      <div class="grid_hover">
+        <div class="text-container">
+          <img :src="require('~/assets/banners/' + map.name + '/text.png')">
         </div>
-      </NuxtLink>
-    </div>
+      </div>
+    </NuxtLink>
   </div>
 </div>
 </template>
@@ -44,51 +40,70 @@ export default {
 <style lang="scss">
 #maps_page_info {
 
-    .maps_grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 60px;
-        padding: 30px;
-        margin-top: 20px;
-        text-transform: capitalize;
+    .page_container {
+        padding: 60px;
     }
 
-    .grid_map {
+    a.grid_map {
         overflow: hidden;
+        display: block;
         border-radius: 10px;
         box-shadow: 0px 0px 5px #000a;
         position: relative;
-        transition: transform .2s ease;
-        height: 250px;
+        transition: transform .3s ease;
+        height: 175px;
+        margin-bottom: 30px;
 
-        .grid_container,
-        .grid_hover,
-        .grid_hover div{
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        >img {
+            // background
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .grid_hover {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-        }
-        img, .grid_hover {
-            height: 100%;
-            width: 100%;
-        }
-        img {
-            object-fit: cover;
-        }
-        .grid_hover {
             text-align: center;
             opacity: 0;
-            transition: opacity .2s ease;
+            transition: opacity .3s ease;
             background-color: #ff5653aa;
             color: #fff;
-            display:table;
-            span {
-                font-weight: bold;
-                font-size: 24px;
-                display:table-cell;
-                vertical-align:middle;
+
+            .text-container {
+                //background: green;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 0;
+                bottom: 0;
+                transition-property: width;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
+            }
+            &:hover {
+                .text-container {
+                    left: 0;
+                    right: auto;
+                    width: 100%;
+                }
+            }
+            img {
+                // text
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 160px;
+                width: auto;
+                max-width: 80%;
+                margin: auto;
             }
         }
         &:hover {
