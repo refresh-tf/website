@@ -5,60 +5,58 @@
     <h2>About</h2>
     <div class="summary">
 
-      <div class="column">
-        <p class="ugc">{{ map.description }}</p>
-        <div class="links">
-          <a class="button large" v-if="map.versions.length > 0"
-             :href="map.versions[0].download" target="_blank">
-            <i class="mdi mdi-download"></i>
-            Download latest version
+      <img class="thumbnail" ref="thumbnail" :src="imgUrl"/>
+
+      <div class="credits" v-if="map.originalAuthors.length > 0">
+        <div class="credit" v-for="author in map.originalAuthors">
+          <p class="ugc">{{ author.comment }}</p>
+          <a :href="author.link" target="_blank"
+             class="highlight" v-if="author.link">
+            <img :src="require('~/assets/icons/link-icon.png')">
           </a>
-          <div class="sublinks">
-            <a class="highlight" :href="map.workshopLink" target="_blank"
-               v-if="map.workshopLink" title="workshop">
-              <img :src="require('~/assets/icons/steam.png')">
-            </a>
-            <a class="highlight" :href="map.tftvLink" target="_blank"
-               v-if="map.tftvLink" title="teamfortress.tv">
-              <img :src="require('~/assets/icons/teamfortress_tv.png')">
-            </a>
-            <a class="highlight" :href="map.tf2mLink" target="_blank"
-               v-if="map.tf2mLink" title="TF2Maps">
-              <img :src="require('~/assets/icons/tf2maps.png')">
-            </a>
-            <a class="highlight" :href="map.githubLink" target="_blank"
-               v-if="map.githubLink" title="Photo album">
-              <img :src="require('~/assets/icons/github.png')">
-            </a>
-            <a class="highlight" v-on:click="goalbum" title="Photo album"
-               v-if=" map.comparisons && map.comparisons.length > 0">
-              <img :src="require('~/assets/icons/image.png')">
-            </a>
-          </div>
         </div>
       </div>
-      <div class="column">
-        <img ref="thumbnail" :src="imgUrl"/>
 
-        <div class="credits" v-if="map.originalAuthors.length > 0">
-          <div class="credit" v-for="author in map.originalAuthors">
-            <p class="ugc">{{ author.comment }}</p>
-            <a :href="author.link" target="_blank"
-               class="highlight" v-if="author.link">
-              <img :src="require('~/assets/icons/link-icon.png')">
-            </a>
-          </div>
-        </div>
+      <div class="credits" v-if="map.refreshAuthors.length > 0">
+        <p>Refreshed By:
+          <profile v-if="map.refreshAuthors"
+                   v-for="sid in map.refreshAuthors" :key="sid"
+                   :steamid="sid">{{ map.refreshAuthors }}
+          </profile>
+        </p>
+      </div>
 
-        <div class="credits" v-if="map.refreshAuthors.length > 0">
-          <p>Refreshed By:
-            <profile v-if="map.refreshAuthors"
-                     v-for="sid in map.refreshAuthors" :key="sid"
-                     :steamid="sid">{{ map.refreshAuthors }}
-            </profile>
-          </p>
+      <p class="ugc">{{ map.description }}</p>
+      <div class="links">
+        <a class="button large" v-if="map.versions.length > 0"
+           :href="map.versions[0].download" target="_blank">
+          <i class="mdi mdi-download"></i>
+          Download latest version
+        </a>
+        <div class="sublinks">
+          <a class="highlight" :href="map.workshopLink" target="_blank"
+             v-if="map.workshopLink" title="workshop">
+            <img :src="require('~/assets/icons/steam.png')">
+          </a>
+          <a class="highlight" :href="map.tftvLink" target="_blank"
+             v-if="map.tftvLink" title="teamfortress.tv">
+            <img :src="require('~/assets/icons/teamfortress_tv.png')">
+          </a>
+          <a class="highlight" :href="map.tf2mLink" target="_blank"
+             v-if="map.tf2mLink" title="TF2Maps">
+            <img :src="require('~/assets/icons/tf2maps.png')">
+          </a>
+          <a class="highlight" :href="map.githubLink" target="_blank"
+             v-if="map.githubLink" title="Photo album">
+            <img :src="require('~/assets/icons/github.png')">
+          </a>
+          <a class="highlight" v-on:click="goalbum" title="Photo album"
+             v-if=" map.comparisons && map.comparisons.length > 0">
+            <img :src="require('~/assets/icons/image.png')">
+          </a>
         </div>
       </div>
+
     </div>
 
     <div v-if=" map.versions && map.versions.length > 0">
@@ -140,123 +138,163 @@ export default {
     }
 
     .summary {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 60px;
+        position: relative;
 
-        p.ugc {
-            white-space: pre-line;
-        }
-        .profile {
-            margin-top: 4px;
-            margin-bottom: 10px;
-            display: block;
-        }
-        .column {
+        >img, .sublinks img {
             width: 100%;
-            >img, .sublinks img {
-                width: 100%;
-                height: auto;
-            }
-            >img {
-                box-sizing: border-box;
-                border: solid white 7px;
-                border-radius : 7px;
-            }
+            height: auto;
         }
-        .links {
-            display: inline-block;
-            margin-top: 30px;
-
-            .sublinks {
-                a {
-                    height: 40px;
-                    width: 40px;
-                    margin: 10px 3px 0px;
-                    padding: 5px;
-                }
-            }
+        >img {
+            box-sizing: border-box;
+            border: solid white 7px;
+            border-radius : 7px;
         }
-        a.highlight {
-            display: inline-block;
-            cursor: pointer;
-            position: relative;
+        &:after {
+            content: '';
+            display: block;
 
-            &:after, &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-            }
-            &:after { top: 60%;}
-            &:before { top: 25%;}
-            &:hover {
-                background: radial-gradient(ellipse at 50% 50%,
-                                            rgba(255, 255, 255, 0.20) 30%,
-                                            rgba(255, 255, 255, 0) 75%);
-                &:after {
-                    background: radial-gradient(ellipse at 50% 50%,
-                                                rgba(255, 255, 255, 0.4) 30%,
-                                                rgba(255, 255, 255, 0) 75%);
-                }
-                &:before {
-                    background: radial-gradient(ellipse at 50% 50%,
-                                                rgba(255, 255, 255, 0.4) 10%,
-                                                rgba(255, 255, 255, 0) 55%);
-                }
-            }
-            &:first-child {
-                margin-left: 0;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
+            //float: right;
+            clear:both;
         }
-        .credits {
-            background: #333;
-            padding: 3px 20px;
-            margin-top: 10px;
+    }
+    img.thumbnail, .credits {
+        margin-left: 2rem;
+        width: calc(50% - 2rem);
+        float: right;
+        box-sizing: border-box;
+        clear: both;
+    }
+    img.thumbnail {
+        height: auto;
+        border: solid white 7px;
+        border-radius : 7px;
+    }
+    p.ugc {
+        white-space: pre-line;
+    }
+    .profile {
+        margin-top: 4px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .links {
+        display: inline-block;
+        margin-top: 30px;
 
-            .credit {
-                display: flex;
-                &:not(:last-child):after {
-                    content: '';
-                    display: block;
-                    margin: 0 0;
-                    height: 2px;
-                    width: 50%;
-                    background: #555;
-                    position: absolute;
-                    bottom: -9px;
-                    left: 0;
-                    right: 0;
-                }
-                p {
-                    flex-grow: 1;
-                }
-                a {
-                    height: 30px;
-                    margin: auto 0;
-                    vertical-align: middle;
-                    display: inline-block;
-                    text-align: center;
-
-                    height: 30px;
-                    width: 30px;
-                    margin-left: 6px;
-                    img {
-                        max-height: 30px;
-                        width: auto;
-                    }
-                }
-            }
-            p {
-                color: #ccc;
-                position: relative;
+        .sublinks {
+            a {
+                height: 40px;
+                width: 40px;
+                margin: 10px 3px 0px;
+                padding: 5px;
             }
         }
     }
+    a.highlight {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+
+        &:after, &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        &:after { top: 60%;}
+        &:before { top: 25%;}
+        &:hover {
+            background: radial-gradient(ellipse at 50% 50%,
+                                        rgba(255, 255, 255, 0.20) 30%,
+                                        rgba(255, 255, 255, 0) 75%);
+            &:after {
+                background: radial-gradient(ellipse at 50% 50%,
+                                            rgba(255, 255, 255, 0.4) 30%,
+                                            rgba(255, 255, 255, 0) 75%);
+            }
+            &:before {
+                background: radial-gradient(ellipse at 50% 50%,
+                                            rgba(255, 255, 255, 0.4) 10%,
+                                            rgba(255, 255, 255, 0) 55%);
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .credits {
+        background: #333;
+        padding: 3px 20px;
+        margin-top: 10px;
+
+        .credit {
+            position: relative;
+            display: flex;
+            &:not(:last-child):after {
+                content: '';
+                display: block;
+                margin: 0 0;
+                height: 1px;
+                width: 100%;
+                background: #555;
+                position: absolute;
+                bottom: -0.25rem;
+                left: 0;
+                right: 0;
+            }
+            p {
+                flex-grow: 1;
+            }
+            a {
+                height: 30px;
+                margin: auto 0;
+                vertical-align: middle;
+                display: inline-block;
+                text-align: center;
+
+                height: 30px;
+                width: 30px;
+                margin-left: 6px;
+                img {
+                    max-height: 30px;
+                    width: auto;
+                }
+            }
+        }
+        p {
+            color: #ccc;
+            position: relative;
+        }
+    }
+
 }
+@media only screen and (max-width: 700px) {
+    #map_page_info {
+        .summary {
+            display:flex;
+            flex-flow: row wrap;
+            flex-direction: column;
+            img.thumbnail {
+                order: 1;
+            }
+            h2, >.ugc, .links {
+                order: 2;
+            }
+            .credits {
+                order: 4;
+            }
+        }
+        img.thumbnail, .credits {
+            width: 100%;
+            margin-left: 0;
+            float: none;
+        }
+    }
+}
+
 </style>

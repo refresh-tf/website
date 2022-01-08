@@ -101,9 +101,10 @@ export default {
     display: block;
     position: relative;
     overflow: hidden;
-    margin-bottom: 30px;
-    border: solid white 7px;
-    border-radius : 7px;
+    margin-bottom: 2rem;
+    border: solid white 0.5rem;
+    border-radius : 0.5rem;
+    background: white;
 
     .img-container {
         position: relative;
@@ -143,23 +144,23 @@ export default {
             &:after {
                 content: '';
                 position: absolute;
-                right: -2px;
+                right: -0.125rem;
                 top: 0;
                 bottom: 0;
-                width: 4px;
+                width: 0.25rem;
                 background: white;
             }
             &:before {
                 content: '';
                 position: absolute;
-                height: 60px;
-                width: 14px;
+                height: 4rem;
+                width: 1rem;
                 top: 0;
-                right: -7px;
+                right: -0.5rem;
                 bottom: 0;
                 margin: auto;
                 background: white;
-                border-radius: 7px;
+                border-radius: 0.5rem;
             }
         }
     }
@@ -169,8 +170,8 @@ export default {
         background: rgba(255, 255, 255, 0.9);
         color: black;
         font-weight: 800;
-        line-height: 40px;
-        padding: 0 15px;
+        line-height: 2.5rem;
+        padding: 0 1rem;
     }
     .img-container>span {
         bottom: 0;
@@ -178,11 +179,11 @@ export default {
         pointer-events: none;
         &:nth-of-type(1){
             left: 0;
-            border-radius: 0px 10px 0px 0px;
+            border-radius: 0px 0.5rem 0px 0px;
         }
         &:nth-of-type(2){
             right: 0;
-            border-radius: 10px 0px 0px 0px;
+            border-radius: 0.5rem 0px 0px 0px;
         }
     }
     .img-container>.clickarea {
@@ -199,7 +200,7 @@ export default {
         display: block;
         background: white;
         color: black;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 800;
         text-align: center;
     }
@@ -207,7 +208,7 @@ export default {
     .collision-toggle {
         top: 0;
         right: 0;
-        border-radius: 0px 0px 0px 10px;
+        border-radius: 0px 0px 0px 0.5rem;
         cursor: pointer;
 
         .toggleswitch {
@@ -215,18 +216,18 @@ export default {
             position: relative;
             display: inline-block;
             z-index: 1;
-            height: 24px;
-            width: 40px;
+            height: 1.5rem;
+            width: 2.5rem;
             border: solid 2px;
 	        border-color: black;
             margin: -5px 0 -5px 5px;
-            border-radius: 12px;
+            border-radius: 0.75rem;
             overflow: hidden;
 
             .switch {
 	            position: relative;
-                height: 20px;
-                width: 20px;
+                height: 1.25rem;
+                width: 1.25rem;
                 border: none;
                 display: block;
                 z-index: 1;
@@ -235,7 +236,7 @@ export default {
                 background: transparent;
 
                 transition: left 0.3s;
-                &.on { left: 16px; }
+                &.on { left: 1rem; }
 
                 &:after {
                     border-radius: 50%;
@@ -247,8 +248,8 @@ export default {
                     left: 2px;
 	                top: 2px;
                     margin: auto;
-                    height: 16px;
-	                width: 16px;
+                    height: calc(100% - 4px);
+	                width: calc(100% - 4px);
                 }
             }
         }
@@ -256,7 +257,7 @@ export default {
     .img-container {
         >span, .collision-toggle {
             transition: opacity 0.3s;
-            opacity: 0;
+            opacity: 1; // 0
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
