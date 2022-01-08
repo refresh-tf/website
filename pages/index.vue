@@ -141,15 +141,18 @@ export default {
             animation: none;
             visibility: visible !important;
             img {
-                top: unset;
-                bottom: -1rem;
-                transition: bottom  .25s, max-width .25s;
+                top: 6rem;
+                bottom: -0.5rem;
+                left: -100%;
+                right: -100%;
+                maring: auto;
+                transition: top .25s, max-width .25s;
             }
             &:hover {
                 animation: none;
                 img {
-                    max-width: 100%;
-                    bottom: 0.75rem;
+                    top: 0.5rem;
+                    max-width: 120%;
                 }
             }
         }

@@ -9,6 +9,7 @@
 
 body {
     overflow-y: scroll;
+
 }
 html {
     font-size: 16px;
@@ -25,6 +26,7 @@ html {
         text-align: center;
         padding: 3rem 0;
         font-size: 3rem;
+        line-height: 2.75rem;
         font-weight: bolder;
         text-shadow: 0.25rem 0.25rem 0rem black;
         color: #f2f2f2;
@@ -90,4 +92,22 @@ p {
     }
 }
 
+@media only screen and (max-width: 425px) {
+    html {
+        font-size: 14px;
+    }
+    .container .page_title,
+    .container h1 {
+        padding: 2rem 0;
+    }
+}
 
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 12px;
+    }
+    .container .page_title,
+    .container h1 {
+        padding: 1rem 0;
+    }
+}

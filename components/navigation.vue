@@ -287,8 +287,8 @@ header {
             a {
                 display: block;
                 float: none;
-                height: 3rem !important;
-                line-height: 3rem !important;
+                height: 2.5rem !important;
+                line-height: 2.5rem !important;
             }
         }
         &[open],
