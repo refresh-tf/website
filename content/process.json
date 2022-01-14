@@ -98,7 +98,7 @@
     "date": "14/9/2021",
     "changes": [{
       "type": "fix",
-      "message": "The change message"
+      "message": "Corrected rotation of rocks on mid again."
     }, {
 	  "type": "custom",
       "message": "Compiled with BSPReveal."
