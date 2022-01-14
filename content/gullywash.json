@@ -116,6 +116,14 @@
   }],
 
   "versions": [{
+    "suffix": "f5a",
+    "download": "https://dl.serveme.tf/maps/cp_gullywash_f5a.bsp",
+    "date": "14/01/2022",
+    "changes": [{
+      "type": "fix",
+	  "message": "Fixed shutter on second being stickable"
+    }]
+  }, {
     "suffix": "f5",
     "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=33715",
     "date": "4/1/2022",
