@@ -116,6 +116,14 @@
   }],
 
   "versions": [{
+    "suffix": "f6",
+    "download": "https://dl.serveme.tf/maps/cp_gullywash_f6.bsp",
+    "date": "20/01/2022",
+    "changes": [{
+      "type": "fix",
+	  "message": "Fixed cubemaps."
+    }]
+  }, {
     "suffix": "f5b",
     "download": "https://dl.serveme.tf/maps/cp_gullywash_f5b.bsp",
     "date": "17/01/2022",
