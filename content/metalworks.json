@@ -130,26 +130,26 @@
       "type": "improved",
       "message": "Replaced the clipbrushes around the last point with solid visible brushes."
     }, {
-      "type": "removed",
-      "message": "Solidity from the heads of all the tall lightposts around the map."
-    }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Filled decorative holes in most ceilings."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Filled in most minor gaps (such as windows and between vents) with block bullet brushes."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Filled in problematic gaps under ramps."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Made all decorative support beams nonsolid."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Made all overhead lights nonsolid."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Raised all packs to be 8 hammer units off the ground."
+    }, {
+      "type": "removed",
+      "message": "Solidity from the heads of all the tall lightposts around the map."
     }, {
       "type": "custom",
       "message": "Compiled the map using Fubar's BSPreveal."
