@@ -148,8 +148,8 @@
       "type": "improved",
       "message": "Raised all packs to be 8 hammer units off the ground."
     }, {
-      "type": "removed",
-      "message": "Solidity from the heads of all the tall lightposts around the map."
+      "type": "improved",
+      "message": "Removed solidity from the heads of all the tall lightposts around the map."
     }, {
       "type": "custom",
       "message": "Compiled the map using Fubar's BSPreveal."
