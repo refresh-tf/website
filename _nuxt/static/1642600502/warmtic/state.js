@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1642600502",layout:"default",error:a,state:{backgroundImg:"\u002F_nuxt\u002Fimg\u002Fkoth_warmtic.7a54b96.jpg"},serverRendered:true,routePath:"\u002Fwarmtic",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"7010e88f"}}}}(null));
