@@ -85,6 +85,20 @@
 
 
   "versions": [{
+    "suffix": "f3",
+    "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/version/34598/download",
+    "date": "13/03/2022",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed second forward spawn trigger."
+    }, {
+      "type": "fix",
+	  "message": "Fixed textures overwriting on other maps."
+    }, {
+      "type": "improved",
+	  "message": "Improved barrels on blue last to be blue."
+	}]
+    }, { 
     "suffix": "f2",
     "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/download?version=33591",
     "date": "27/12/2021",
