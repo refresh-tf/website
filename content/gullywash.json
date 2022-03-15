@@ -117,7 +117,7 @@
 
   "versions": [{
     "suffix": "f6",
-    "download": "https://dl.serveme.tf/maps/cp_gullywash_f6.bsp",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/34070/download",
     "date": "20/01/2022",
     "changes": [{
       "type": "fix",
@@ -133,7 +133,7 @@
     }]
   }, {
     "suffix": "f5a",
-    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=33878",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/33878/download",
     "date": "14/01/2022",
     "changes": [{
       "type": "fix",
@@ -141,7 +141,7 @@
     }]
   }, {
     "suffix": "f5",
-    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=33715",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/33715/download",
     "date": "4/1/2022",
 	"changes": [{
       "type": "fix",
@@ -182,7 +182,7 @@
     }]
   }, {
     "suffix": "f4b",
-    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=32655",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/32655/download",
     "date": "19/11/2021",
     "changes": [{
       "type": "fix",
@@ -190,7 +190,7 @@
     }]
   }, {
     "suffix": "f4a",
-    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=31981",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/31981/download",
     "date": "27/9/2021",
     "changes": [{
       "type": "fix",
@@ -198,7 +198,7 @@
     }]
   }, {
     "suffix": "f4",
-    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=31925",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/31925/download",
     "date": "24/9/2021",
     "changes": [{
       "type": "fix",
@@ -233,7 +233,7 @@
 	}]
   }, {
 	"suffix": "f3",
-    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=28185",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/28185/download",
     "date": "4/2/2021",
     "changes": [{
       "type": "fix",
@@ -280,7 +280,7 @@
 	}]
   }, {
 	"suffix": "f2",
-    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=27771",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/27771/download",
     "date": "10/1/2021",
     "changes": [{
       "type": "fix",
@@ -291,7 +291,7 @@
 	}]
   }, {
 	"suffix": "f1a",
-    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=27257",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/27257/download",
     "date": "30/11/2020",
     "changes": [{
       "type": "fix",
@@ -299,7 +299,7 @@
     }]
   }, {
 	"suffix": "f1",
-    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/download?version=27248",
+    "download": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/version/27248/download",
     "date": "29/11/2020",
     "changes": [{
       "type": "fix",
