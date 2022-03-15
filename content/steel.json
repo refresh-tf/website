@@ -15,7 +15,7 @@
     "link": "https://wiki.teamfortress.com/wiki/Steel"
   }],
 
-  "refreshAuthors": ["76561198072335921", "76561198017283362"],
+  "refreshAuthors": ["76561198072335921", "76561198017283362", "76561198119324108", "76561198031558094"],
 
    "comparisons": [{
     "name": "A1",
@@ -180,8 +180,19 @@
   }],
 
   "versions": [{
+    "suffix": "f9",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/34630/download",
+    "date": "15/03/2022",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed death pit kill trigger"
+    }, {
+      "type": "fix",
+      "message": "Miscellaneous small fixes"
+    }]
+  }, {
     "suffix": "f8",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=33533",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/33533/download",
     "date": "22/12/2021",
 	"changes": [{
       "type": "improved",
@@ -204,7 +215,7 @@
     }]
   }, { 
     "suffix": "f7",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=32887",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/32887/download",
     "date": "5/12/2021",
 	"changes": [{
       "type": "fix",
@@ -218,7 +229,7 @@
     }]
   }, {
     "suffix": "f6",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=32097",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/32097/download",
     "date": "9/10/2021",
     "changes": [{
       "type": "fix",
@@ -265,7 +276,7 @@
     }]
   }, {
     "suffix": "f5a",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=31624",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/31624/download",
     "date": "6/9/2021",
 	"changes": [{
       "type": "fix",
@@ -273,7 +284,7 @@
     }]
   }, {
     "suffix": "f5",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=31576",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/31576/download",
     "date": "3/9/2021",
 	"changes": [{
       "type": "fix",
@@ -287,7 +298,7 @@
 	}]
   },{
     "suffix": "f4",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=30591",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/30591/download",
     "date": "8/7/2021",
 	"changes": [{
       "type": "fix",
@@ -310,7 +321,7 @@
 	}]
   },{
     "suffix": "f3",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=29681",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/29681/download",
     "date": "16/5/2021",
 	"changes": [{
       "type": "fix",
@@ -327,7 +338,7 @@
     }]
   },{
     "suffix": "f2a",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=28161",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/28161/download",
     "date": "3/2/2021",
 	"changes": [{
       "type": "improved",
@@ -344,7 +355,7 @@
     }]
   },{
     "suffix": "f2",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=28132",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/28132/download",
     "date": "1/2/2021",
 	"changes": [{
       "type": "fix",
@@ -409,7 +420,7 @@
     }]
   },{
     "suffix": "f1",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/download?version=28040",
+    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/28040/download",
     "date": "28/1/2021",
 	"changes": [{
       "type": "improved",
