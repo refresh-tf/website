@@ -86,7 +86,7 @@
 
   "versions": [{
     "suffix": "f3",
-    "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/version/34598/download",
+    "download": "https://dl.serveme.tf/maps/cp_metalworks_f3.bsp",
     "date": "13/03/2022",
     "changes": [{
       "type": "fix",
@@ -100,7 +100,7 @@
 	}]
     }, { 
     "suffix": "f2",
-    "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/version/33591/download",
+    "download": "https://dl.serveme.tf/maps/cp_metalworks_f2.bsp",
     "date": "27/12/2021",
     "changes": [{
       "type": "fix",
@@ -123,7 +123,7 @@
 	}]
     }, {
     "suffix": "f1",
-    "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/version/32541/download",
+    "download": "https://dl.serveme.tf/maps/cp_metalworks_f1.bsp",
     "date": "9/11/2021",
     "changes": [{
       "type": "fix",
