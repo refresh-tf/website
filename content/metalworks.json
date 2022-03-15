@@ -100,7 +100,7 @@
 	}]
     }, { 
     "suffix": "f2",
-    "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/download?version=33591",
+    "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/version/33591/download",
     "date": "27/12/2021",
     "changes": [{
       "type": "fix",
@@ -123,7 +123,7 @@
 	}]
     }, {
     "suffix": "f1",
-    "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/download?version=32541",
+    "download": "https://tf2maps.net/downloads/refresh-metalworks.11992/version/32541/download",
     "date": "9/11/2021",
     "changes": [{
       "type": "fix",
