@@ -141,7 +141,7 @@
 
   "versions": [{
     "suffix": "f5",
-    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=33039",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f5.bsp",
     "date": "13/12/2021",
 	"changes": [{
       "type": "fix",
@@ -161,7 +161,7 @@
     }]
 	}, {
     "suffix": "f4",
-    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32952",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f4.bsp",
     "date": "10/12/2021",
     "changes": [{
       "type": "fix",
@@ -187,7 +187,7 @@
 	}]
 	}, {
     "suffix": "f3",
-    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32391",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f3.bsp",
     "date": "29/10/2021",
     "changes": [{
       "type": "fix",
@@ -213,7 +213,7 @@
 	}]
 	}, {
     "suffix": "f2",
-    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=32350",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f2.bsp",
     "date": "26/10/2021",
     "changes": [{
       "type": "fix",
@@ -239,7 +239,7 @@
 	}]
 	}, {
 	"suffix": "f1",
-    "download": "https://tf2maps.net/downloads/refresh-upward.11836/download?version=31903",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f1.bsp",
     "date": "21/09/2021",
     "changes": [{
       "type": "fix",
