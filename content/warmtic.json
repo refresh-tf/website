@@ -90,7 +90,7 @@
 
   "versions": [{
     "suffix": "f9",
-    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=32039",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f9.bsp",
     "date": "3/10/2021",
 	"changes": [{
       "type": "improved",
@@ -107,7 +107,7 @@
     }]
   }, {
     "suffix": "f8",
-    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=31904",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f8.bsp",
     "date": "21/9/2021",
     "changes": [{
       "type": "improved",
@@ -118,7 +118,7 @@
     }]
   }, {
     "suffix": "f7",
-    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=30910",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f7.bsp",
     "date": "25/7/2021",
 	"changes": [{
       "type": "fix",
@@ -129,7 +129,7 @@
     }]
   }, {
     "suffix": "f6",
-    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=30710",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f6.bsp",
     "date": "14/7/2021",
 	"changes": [{
       "type": "fix",
@@ -164,7 +164,7 @@
 	}]
   },{
     "suffix": "f5",
-    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=29218",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f5.bsp",
     "date": "4/4/2021",
 	"changes": [{
       "type": "fix",
@@ -184,7 +184,7 @@
     }]
   },{
     "suffix": "f4",
-    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=29105",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f4.bsp",
     "date": "29/3/2021",
 	"changes": [{
       "type": "fix",
@@ -234,7 +234,7 @@
 	}]
   },{
     "suffix": "f3",
-    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=28441",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f3.bsp",
     "date": "17/2/2021",
 	"changes": [{
       "type": "fix",
@@ -272,7 +272,7 @@
     }]
   },{
     "suffix": "f2a",
-    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=28238",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f2a.bsp",
     "date": "7/2/2021",
 	"changes": [{
       "type": "fix",
@@ -280,7 +280,7 @@
     }]
   },{
     "suffix": "f2",
-    "download": "https://tf2maps.net/downloads/warmtic.10897/download?version=28237",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f2.bsp",
     "date": "7/2/2021",
 	"changes": [{
       "type": "fix",
