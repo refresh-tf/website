@@ -89,6 +89,17 @@
   }],
 
   "versions": [{
+    "suffix": "f10",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f9.bsp",
+    "date": "17/03/2022",
+	"changes": [{
+      "type": "fix",
+      "message": "Various small texture changes."
+    }, {
+      "type": "added",
+      "message": "Added a bit of team colors to the sniper nests."
+    }]
+  }, {
     "suffix": "f9",
     "download": "https://dl.serveme.tf/maps/koth_warmtic_f9.bsp",
     "date": "3/10/2021",
