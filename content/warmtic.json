@@ -90,7 +90,7 @@
 
   "versions": [{
     "suffix": "f10",
-    "download": "https://dl.serveme.tf/maps/koth_warmtic_f9.bsp",
+    "download": "https://dl.serveme.tf/maps/koth_warmtic_f10.bsp",
     "date": "17/03/2022",
 	"changes": [{
       "type": "fix",
