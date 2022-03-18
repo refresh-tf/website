@@ -15,7 +15,7 @@
     "link": "https://wiki.teamfortress.com/wiki/Gullywash"
   }],
 
-  "refreshAuthors": ["76561198058513958", "76561198119324108", "76561198031558094"],
+  "refreshAuthors": ["76561198058513958", "76561198119324108", "76561198031558094", "76561198061182117"],
 
   "comparisons": [{
     "name": "last1",
@@ -116,6 +116,23 @@
   }],
 
   "versions": [{
+    "suffix": "f7",
+    "download": "https://dl.serveme.tf/maps/cp_gullywash_f7.bsp",
+    "date": "18/03/2022",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed last point not changing color after a capture."
+    }, {
+      "type": "fix",
+      "message": "Fixed alot of missing textures from final1 and texture misalignments."
+    }, {
+      "type": "fix",
+      "message": "Fixed some floating props."
+    }, {
+      "type": "improved",
+      "message": "Improved some blockbullets."
+    }]
+  }, {
     "suffix": "f6",
     "download": "https://dl.serveme.tf/maps/cp_gullywash_f6.bsp",
     "date": "20/01/2022",
