@@ -15,7 +15,7 @@
     "link": "https://wiki.teamfortress.com/wiki/Upward"
   }],
 
-  "refreshAuthors": ["76561198017283362", "76561198072335921", "76561198286039965", "76561198119324108"],
+  "refreshAuthors": ["76561198017283362", "76561198072335921", "76561198286039965", "76561198119324108", "76561198031558094"],
 
   "comparisons": [{
     "name": "first1",
@@ -140,6 +140,17 @@
   }],
 
   "versions": [{
+    "suffix": "f6",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f6.bsp",
+    "date": "18/03/2022",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed textures overwriting on other maps."
+    }, {
+      "type": "improved",
+      "message": "Small clipping and splash improvements across the map."
+    }]
+	}, {
     "suffix": "f5",
     "download": "https://dl.serveme.tf/maps/pl_upward_f5.bsp",
     "date": "13/12/2021",
