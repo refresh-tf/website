@@ -19,31 +19,31 @@
 
   "comparisons": [{
     "name": "last1",
-    "version": "f5",
+    "version": "f7",
     "title": "Last"
   }, {
     "name": "second1",
-    "version": "f5",
+    "version": "f7",
     "title": "Second"
   }, {
     "name": "mid1",
-    "version": "f5",
+    "version": "f7",
     "title": "Mid"
   }, {
     "name": "spawn1",
-    "version": "f5",
+    "version": "f7",
     "title": "Spawn"
   }, {
     "name": "last2",
-    "version": "f5",
+    "version": "f7",
     "title": "Last"
   }, {
     "name": "last3",
-    "version": "f5",
+    "version": "f7",
     "title": "Last"
   }, {
     "name": "secret",
-    "version": "f5",
+    "version": "f7",
     "title": "Secret"
   }, {
     "name": "water",
@@ -63,27 +63,27 @@
     "title": "River"
   }, {
     "name": "lobby1",
-    "version": "f5",
+    "version": "f7",
     "title": "Lobby"
   }, {
     "name": "lobby2",
-    "version": "f5",
+    "version": "f7",
     "title": "Lobby"
   }, {
     "name": "lobby3",
-    "version": "f5",
+    "version": "f7",
     "title": "Lobby-Main"
   }, {
     "name": "lobby4",
-    "version": "f5",
+    "version": "f7",
     "title": "Lobby-Lower"
   }, {
     "name": "second2",
-    "version": "f5",
+    "version": "f7",
     "title": "Second"
   }, {
     "name": "second3",
-    "version": "f5",
+    "version": "f7",
     "title": "Second"
   }, {
     "name": "spawn2",
@@ -91,11 +91,11 @@
     "title": "Spawn"
   }, {
     "name": "bigdoor",
-    "version": "f5",
+    "version": "f7",
     "title": "Big Door"
   }, {
     "name": "choke",
-    "version": "f5",
+    "version": "f7",
     "title": "Choke"
   }, {
     "name": "banana1",
@@ -103,11 +103,11 @@
     "title": "Banana"
   }, {
     "name": "banana2",
-    "version": "f5",
+    "version": "f7",
     "title": "Banana"
   }, {
     "name": "undermid",
-    "version": "f5",
+    "version": "f7",
     "title": "Under Mid"
   }, {
     "name": "spawn3",
