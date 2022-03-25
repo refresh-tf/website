@@ -15,7 +15,7 @@
     "link": "https://wiki.teamfortress.com/wiki/Metalworks"
   }],
 
-  "refreshAuthors": ["76561198072335921", "76561198017283362", "76561198119324108"],
+  "refreshAuthors": ["76561198072335921", "76561198017283362", "76561198119324108", "76561198031558094"],
 
     "comparisons": [{
       "name": "last1",
@@ -85,6 +85,20 @@
 
 
   "versions": [{
+    "suffix": "f4",
+    "download": "https://dl.serveme.tf/maps/cp_metalworks_f4.bsp",
+    "date": "26/03/2022",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed a few asymmetries."
+    }, {
+      "type": "fix",
+	  "message": "Fixed double ammo-pack near dropdown on blue side."
+    }, {
+      "type": "improved",
+	  "message": "Attempted to fix getting stuck in the ground in valley."
+	}]
+    }, { 
     "suffix": "f3",
     "download": "https://dl.serveme.tf/maps/cp_metalworks_f3.bsp",
     "date": "13/03/2022",
