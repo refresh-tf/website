@@ -15,27 +15,27 @@
     "link": "https://wiki.teamfortress.com/wiki/Borneo"
   }],
 
-  "refreshAuthors": ["76561198017283362", "76561198072335921"],
+  "refreshAuthors": ["76561198017283362", "76561198072335921", "76561198031558094"],
 
   "comparisons": [{
     "name": "first1",
-    "version": "f1",
+    "version": "f2",
     "title": "First"
   }, {
     "name": "first2",
-    "version": "f1",
+    "version": "f2",
     "title": "First-House"
   }, {
     "name": "first3",
-    "version": "f1",
+    "version": "f2",
     "title": "First"
   }, {
     "name": "firsthouse1",
-    "version": "f1",
+    "version": "f2",
     "title": "First-Barn"
   }, {
     "name": "second1",
-    "version": "f1",
+    "version": "f2",
     "title": "Second"
   }, {
     "name": "jenkins1",
@@ -43,15 +43,15 @@
     "title": "Jenkins"
   }, {
     "name": "second2",
-    "version": "f1",
+    "version": "f2",
     "title": "Second-Under"
   }, {
     "name": "second3",
-    "version": "f1",
+    "version": "f2",
     "title": "Second-Balcony"
   }, {
     "name": "secondhouse1",
-    "version": "f1",
+    "version": "f2",
     "title": "Second-Garage"
   }, {
     "name": "tunnel1",
@@ -67,11 +67,11 @@
     "title": "Third-Yard"
   }, {
     "name": "yard3",
-    "version": "f1",
+    "version": "f2",
     "title": "Third-Yard"
   }, {
     "name": "third1",
-    "version": "f1",
+    "version": "f2	",
     "title": "Third"
   }, {
     "name": "third2",
@@ -82,6 +82,10 @@
     "version": "f1",
     "title": "Third"
   }, {
+    "name": "thirdyard1",
+    "version": "f2",
+    "title": "Third-Yard"
+  }, {
     "name": "thirdgarage1",
     "version": "f1",
     "title": "Third-Garage"
@@ -90,68 +94,102 @@
     "version": "f1",
     "title": "Third-Yard"
   }, {
-    "name": "thirdyard1",
-    "version": "f1",
-    "title": "Third-Yard"
-  }, {
     "name": "thirdyard2",
     "version": "f1",
     "title": "Third-Yard"
   }, {
     "name": "lasttoxic1",
-    "version": "f1",
+    "version": "f2",
     "title": "Last-Toxic"
   }, {
     "name": "lasttoxic2",
-    "version": "f1",
+    "version": "f2",
     "title": "Last-Toxic"
   }, {
     "name": "last1",
-    "version": "f1",
+    "version": "f2",
     "title": "Last"
   }, {
     "name": "last2",
-    "version": "f1",
+    "version": "f2",
     "title": "Last"
   }, {
     "name": "last3",
-    "version": "f1",
+    "version": "f2",
     "title": "Last"
   }, {
     "name": "last4",
-    "version": "f1",
+    "version": "f2",
     "title": "Last"
   }, {
     "name": "spawn1",
-    "version": "f1",
+    "version": "f2",
     "title": "Blue-First-Spawn"
   }, {
     "name": "spawn2",
-    "version": "f1",
+    "version": "f2",
     "title": "Blue-First-Spawn"
   }, {
     "name": "spawn3",
-    "version": "f1",
+    "version": "f2",
     "title": "Blue-Second-Spawn"
   }, {
     "name": "spawn4",
-    "version": "f1",
+    "version": "f2",
     "title": "Blue-Third-Spawn"
   }, {
     "name": "spawn5",
-    "version": "f1",
+    "version": "f2",
     "title": "Red-First-Spawn"
   }, {
     "name": "spawn6",
-    "version": "f1",
+    "version": "f2",
     "title": "Red-Last-Spawn"
   }],
 
   "versions": [{
+    "suffix": "f2",
+    "download": "https://dl.serveme.tf/maps/pl_borneo_f2.bsp",
+    "date": "18/04/2022",
+    "changes": [{
+      "type": "fix",
+      "message": "Thickened BLU spawn gate doors."
+    }, {
+      "type": "fix",
+      "message": "Fixed a seam on last."
+    }, {
+      "type": "fix",
+	  "message": "Fixed a hiding spot in the tree before B."
+    }, {
+      "type": "fix",
+	  "message": "Fixed BLU forward spawn points."
+    }, {
+      "type": "fix",
+      "message": "Fixed a gap next to the fence on A."
+    }, {
+      "type": "improved",
+	  "message": "Improved the gap next to the stairs on B."
+    }, {
+      "type": "improved",
+      "message": "Improved small amount of clipping all over the map."
+    }, {
+      "type": "improved",
+      "message": "Removed collision on a few lights."
+    }, {
+      "type": "improved",
+      "message": "Added blockbullets along most of the walls that had playerclip."
+    }, {
+      "type": "improved",
+      "message": "Added a few blockbullets on steps and edges near C."
+    }]
+	}, {
     "suffix": "f1",
-    "download": "https://tf2maps.net/downloads/refresh-pl_borneo.11835/download?version=31889",
+    "download": "https://dl.serveme.tf/maps/pl_borneo_f1.bsp",
     "date": "20/09/2021",
     "changes": [{
+      "type": "fix",
+      "message": "Fixed the holes in the wooden fences along the bridge and cliff."
+    }, {
       "type": "improved",
       "message": "Optimization"
     }, {
@@ -161,61 +199,58 @@
       "type": "improved",
 	  "message": "The lip above the controlpoint-barn by making it non-solid."
     }, {
-      "type": "added",
-      "message": "Chickenwire beneath the staircase next to corn."
+      "type": "improved",
+      "message": "Added chickenwire beneath the staircase next to corn."
     }, {
-      "type": "added",
-	  "message": "Chickenwire to the picket-fences surrounding the map."
+      "type": "improved",
+	  "message": "Added chickenwire to the picket-fences surrounding the map."
     }, {
-      "type": "added",
-      "message": "Chickenwire to the track side of the barn."
+      "type": "improved",
+      "message": "Added chickenwire to the track side of the barn."
     }, {
-      "type": "added",
-      "message": "Chickenwire underneath the shed outside of blue spawn."
+      "type": "improved",
+      "message": "Added chickenwire underneath the shed outside of blue spawn."
     }, {
-      "type": "added",
-      "message": "Clipping the bridge before garage outside third."
+      "type": "improved",
+      "message": "Added clipping the bridge before garage outside third."
     }, {
-      "type": "added",
-      "message": "Clipping to the windows on last."
+      "type": "improved",
+      "message": "Added clipping to the windows on last."
     }, {
-      "type": "added",
-      "message": "Glass to all the servers props so they act like a flat wall on last."
+      "type": "improved",
+      "message": "Added glass to all the servers props so they act like a flat wall on last."
     }, {
-      "type": "removed",
-      "message": "Collision all railing and replace the collision mesh with clip brushes."
+      "type": "improved",
+      "message": "Removed collision all railing and replace the collision mesh with clip brushes."
     }, {
-      "type": "removed",
-      "message": "Collision on all pipes."
+      "type": "improved",
+      "message": "Removed collision on all pipes."
     }, {
-      "type": "removed",
-      "message": "Lamp solidity; some in last still collide with players."
+      "type": "improved",
+      "message": "Removed lamp solidity; some in last still collide with players."
     }, {
-      "type": "removed",
-      "message": "Solidity from the lights and added clipping to the underside of the catwalks."
+      "type": "improved",
+      "message": "Removed solidity from the lights and added clipping to the underside of the catwalks."
     }, {
-      "type": "removed",
-      "message": "The holes in the wooden fences along the bridge and cliff."
-    }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Clipped between the nodes along the fence on the left side on last."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Clipped the tunnel leading to third."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Closed off the box stack on the bottom floor."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Closed off under red spawn on last."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Closed off under the bridge on last."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Closed off under the platform on the left route on last."
     }, {
-      "type": "custom",
+      "type": "improved",
       "message": "Closed the gaps beneath stairs and blockbulleted them."
     }]
   }]
