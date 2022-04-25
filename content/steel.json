@@ -19,131 +19,131 @@
 
    "comparisons": [{
     "name": "A1",
-    "version": "f8",
+    "version": "f10",
     "title": "A-Point"
   }, {
     "name": "A2",
-    "version": "f8",
+    "version": "f10",
     "title": "A-Point"
   }, {
     "name": "A3",
-    "version": "f8",
+    "version": "f10",
     "title": "A-Point"
   }, {
     "name": "A4",
-    "version": "f8",
+    "version": "f10",
     "title": "A-Point"
   }, {
     "name": "A5",
-    "version": "f8",
+    "version": "f10",
     "title": "A-Point"
   }, {
     "name": "B1",
-    "version": "f8",
+    "version": "f10",
     "title": "B-Point"
   }, {
     "name": "B2",
-    "version": "f8",
+    "version": "f10",
     "title": "B-Point"
   }, {
     "name": "B3",
-    "version": "f8",
+    "version": "f10",
     "title": "B-Point"
   }, {
     "name": "B5",
-    "version": "f8",
+    "version": "f10",
     "title": "B-Point"
   }, {
     "name": "B6",
-    "version": "f8",
+    "version": "f10",
     "title": "B-Point"
   }, {
     "name": "B7",
-    "version": "f8",
+    "version": "f10",
     "title": "B-Point"
   }, {
     "name": "BC1",
-    "version": "f8",
+    "version": "f10",
     "title": "BC-Connector"
   }, {
     "name": "BC2",
-    "version": "f8",
+    "version": "f10",
     "title": "BC-Connector"
   }, {
     "name": "BC3",
-    "version": "f8",
+    "version": "f10",
     "title": "BC-Connector"
   }, {
     "name": "C1",
-    "version": "f8",
+    "version": "f10",
     "title": "C-Point"
   }, {
     "name": "C2",
-    "version": "f8",
+    "version": "f10",
     "title": "C-Point"
   }, {
     "name": "C3",
-    "version": "f8",
+    "version": "f10",
     "title": "C-Point"
   }, {
     "name": "C4",
-    "version": "f8",
+    "version": "f10",
     "title": "C-Point"
   }, {
     "name": "deathcorridor1",
-    "version": "f8",
+    "version": "f10",
     "title": "Death-Corridor"
   }, {
     "name": "deathcorridor2",
-    "version": "f8",
+    "version": "f10",
     "title": "Death-Corridor"
   }, {
     "name": "deathcorridor3",
-    "version": "f8",
+    "version": "f10",
     "title": "Death-Corridor"
   }, {
     "name": "D1",
-    "version": "f8",
+    "version": "f10",
     "title": "D-Point"
   }, {
     "name": "D2",
-    "version": "f8",
+    "version": "f10",
     "title": "D-Point"
   }, {
     "name": "D3",
-    "version": "f8",
+    "version": "f10",
     "title": "D-Point"
   }, {
     "name": "D4",
-    "version": "f8",
+    "version": "f10",
     "title": "D-Point"
   }, {
     "name": "E1",
-    "version": "f8",
+    "version": "f10",
     "title": "E-Point"
   }, {
     "name": "E2",
-    "version": "f8",
+    "version": "f10",
     "title": "E-Point"
   }, {
     "name": "E3",
-    "version": "f8",
+    "version": "f10",
     "title": "E-Point"
   }, {
     "name": "E4",
-    "version": "f8",
+    "version": "f10",
     "title": "E-Point"
   }, {
     "name": "whiteroom1",
-    "version": "f8",
+    "version": "f10",
     "title": "Whiteroom"
   }, {
     "name": "whiteroom2",
-    "version": "f8",
+    "version": "f10",
     "title": "Whiteroom"
   }, {
     "name": "whiteroom3",
-    "version": "f8",
+    "version": "f10",
     "title": "Whiteroom"
   }, {
     "name": "bluespawn1",
@@ -180,19 +180,42 @@
   }],
 
   "versions": [{
+    "suffix": "f10",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f10.bsp",
+    "date": "25/04/2022",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed busted fridge on RED E spawn."
+    }, {
+      "type": "improved",
+      "message": "Improved clipping near RED E spawn."
+    }, {
+      "type": "improved",
+      "message": "Improved clipping in BC connector."
+    }, {
+      "type": "improved",
+      "message": "Improved blockbullets on stairs across the map."
+    }, {
+      "type": "improved",
+      "message": "Improved blockbullets on windows across the map."
+    }, {
+      "type": "improved",
+      "message": "Removed collision on some lights across the map."
+    }]
+  }, {
     "suffix": "f9",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/34630/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f9.bsp",
     "date": "15/03/2022",
 	"changes": [{
       "type": "fix",
-      "message": "Fixed death pit kill trigger"
+      "message": "Fixed death pit kill trigger."
     }, {
       "type": "fix",
-      "message": "Miscellaneous small fixes"
+      "message": "Miscellaneous small fixes."
     }]
   }, {
     "suffix": "f8",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/33533/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f8.bsp",
     "date": "22/12/2021",
 	"changes": [{
       "type": "improved",
@@ -215,7 +238,7 @@
     }]
   }, { 
     "suffix": "f7",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/32887/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f7.bsp",
     "date": "5/12/2021",
 	"changes": [{
       "type": "fix",
@@ -229,7 +252,7 @@
     }]
   }, {
     "suffix": "f6",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/32097/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f6.bsp",
     "date": "9/10/2021",
     "changes": [{
       "type": "fix",
@@ -276,7 +299,7 @@
     }]
   }, {
     "suffix": "f5a",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/31624/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f5a.bsp",
     "date": "6/9/2021",
 	"changes": [{
       "type": "fix",
@@ -284,7 +307,7 @@
     }]
   }, {
     "suffix": "f5",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/31576/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f5.bsp",
     "date": "3/9/2021",
 	"changes": [{
       "type": "fix",
@@ -298,7 +321,7 @@
 	}]
   },{
     "suffix": "f4",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/30591/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f4.bsp",
     "date": "8/7/2021",
 	"changes": [{
       "type": "fix",
@@ -321,7 +344,7 @@
 	}]
   },{
     "suffix": "f3",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/29681/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f3.bsp",
     "date": "16/5/2021",
 	"changes": [{
       "type": "fix",
@@ -338,7 +361,7 @@
     }]
   },{
     "suffix": "f2a",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/28161/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f2a.bsp",
     "date": "3/2/2021",
 	"changes": [{
       "type": "improved",
@@ -355,7 +378,7 @@
     }]
   },{
     "suffix": "f2",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/28132/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f2.bsp",
     "date": "1/2/2021",
 	"changes": [{
       "type": "fix",
@@ -420,7 +443,7 @@
     }]
   },{
     "suffix": "f1",
-    "download": "https://tf2maps.net/downloads/refresh-cp_steel.10850/version/28040/download",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f1.bsp",
     "date": "28/1/2021",
 	"changes": [{
       "type": "improved",
