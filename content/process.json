@@ -43,23 +43,23 @@
     "title": "Lobby"
   }, {
     "name": "lobby2",
-    "version": "f9a",
+    "version": "f10",
     "title": "Lobby Entrance"
   }, {
     "name": "second2",
-    "version": "f9a",
+    "version": "f10",
     "title": "Second"
   }, {
     "name": "second3",
-    "version": "f9a",
+    "version": "f10",
     "title": "Second"
   }, {
     "name": "pc1",
-    "version": "f9a",
+    "version": "f10",
     "title": "PC Entrance"
   }, {
     "name": "pc2",
-    "version": "f9a",
+    "version": "f10",
     "title": "PC"
   }, {
     "name": "pc3",
@@ -76,6 +76,29 @@
   }],
 
   "versions": [{
+    "suffix": "f10",
+    "download": "https://dl.serveme.tf/maps/cp_process_f10.bsp",
+    "date": "27/04/2022",
+    "changes": [{
+      "type": "improved",
+      "message": "Added blockbullet ramps to the bottom of the lower entrances to IT and lobby from second, preventing players from losing all vertical momentum by jumping the moment they enter."
+    }, {
+      "type": "improved",
+      "message": "Added blockbullets to gaps around the barrels, sink and crates in IT."
+    }, {
+      "type": "improved",
+      "message": "Improved blockbullet between the barrel and crate outside the 2 sewer doors."
+    }, {
+      "type": "improved",
+      "message": "The thin indoor pipes leading to upper IT are now only solid to players and physics (pipes and stickies)."
+    }, {
+      "type": "improved",
+      "message": "Cleaned up clipping on and below the lobby rail, and on the boiler room ceiling."
+    }, {
+      "type": "improved",
+      "message": "Removed collision from the computer panels outside 1 and 5 on last."
+    }]
+  }, {
     "suffix": "f9a",
     "download": "https://dl.serveme.tf/maps/cp_process_f9a.bsp",
     "date": "16/10/2021",
