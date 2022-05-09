@@ -76,6 +76,17 @@
   }],
 
   "versions": [{
+    "suffix": "f11",
+    "download": "https://dl.serveme.tf/maps/cp_process_f11.bsp",
+    "date": "09/05/2022",
+    "changes": [{
+      "type": "improved",
+      "message": "Both teams now use the same spawn order and layout, copied from BLU."
+    }, {
+      "type": "improved",
+      "message": "Fixed a few metal textures on BLU side using the wrong team colours."
+    }]
+  }, {
     "suffix": "f10",
     "download": "https://dl.serveme.tf/maps/cp_process_f10.bsp",
     "date": "27/04/2022",
