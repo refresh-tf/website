@@ -1,3 +1,4 @@
+@import '/utils/mixins';
 :root {
     --red: #ff5653;
     --blue: #99c3ed;
@@ -11,6 +12,7 @@ body {
     overflow-y: scroll;
 
 }
+
 html {
     font-size: 16px;
 }
@@ -23,11 +25,11 @@ html {
     right: 0.5rem;
 
     .page_title, h1 {
+        @include woosh();
         text-align: center;
         padding: 3rem 0;
         font-size: 3rem;
         line-height: 2.75rem;
-        font-weight: bolder;
         text-shadow: 0.25rem 0.25rem 0rem black;
         color: #f2f2f2;
     }
@@ -40,6 +42,9 @@ html {
         box-shadow: 0rem 0rem 0.5rem #000a;
         p {
             text-align: left;
+        }
+        &:first-child {
+            margin-top: 3rem;
         }
     }
 

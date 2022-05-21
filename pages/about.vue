@@ -9,24 +9,25 @@
 
   <div class="page_title">The Team</div>
   <div class="page_container contributors" ref="creditsTeam">
-    <profile :steamid="sid" v-for="sid in creditsTeam" :key="sid"></profile>
+    <profile :steamid="sid" v-for="sid in shuffledCreditsTeam" :key="sid"></profile>
   </div>
   <div class="page_title">Website Contributors</div>
-  <div class="page_container contributors" ref="creditsSite">
-    <profile :steamid="sid" v-for="sid in creditsSite" :key="sid"></profile>
+  <div class="page_container contributors" ref="CreditsSite">
+    <profile :steamid="sid" v-for="sid in shuffledCreditsSite" :key="sid"></profile>
   </div>
 </div>
 </template>
 
 <script>
-import { meta } from '~/js/utils';
+import { meta } from '~/utils/utils';
 import profile from '~/components/profile';
 
 function shuffleArr (array){
-  for (var i = array.length - 1; i > 0; i--) {
-    var rand = Math.floor(Math.random() * (i + 1));
-    [array[i], array[rand]] = [array[rand], array[i]]
-  }
+  var shuffled = [].concat(array);
+  shuffled.sort(function(){
+    return 0.5 - Math.random();
+  });
+ return shuffled;
 }
 export default {
   head() {
@@ -43,7 +44,9 @@ export default {
   data(){
     return {
       creditsTeam: [],
-      creditsSite: []
+      creditsSite: [],
+      shuffledCreditsTeam: null,
+      shuffledCreditsSite: null,
     }
   },
   async asyncData({ $content, store, params }) {
@@ -58,8 +61,8 @@ export default {
     return { creditsTeam, creditsSite }
   },
   mounted(){
-    shuffleArr(this.creditsTeam);
-    shuffleArr(this.creditsSite);
+    this.shuffledCreditsTeam = shuffleArr(this.creditsTeam);
+    this.shuffledCreditsSite = shuffleArr(this.creditsSite);
     this.$forceUpdate();
   }
 

@@ -1,6 +1,6 @@
 <template>
 <div class="container" id="map_page_info">
-  <h1>{{map.prefix}} {{map.name}}</h1>
+  <h1><span><span class="h1-prefix">{{map.prefix}}</span> {{map.name}} <span class="h1-version">{{map.versions[0].suffix}}</span></span></h1>
   <div class="page_container">
     <h2>About</h2>
     <div class="summary">
@@ -88,7 +88,7 @@ const type_remaps = {
   'add': 'added'
 }
 
-import { meta } from '~/js/utils';
+import { meta } from '~/utils/utils';
 import mapVersion from '../components/map-version.vue';
 import imageComparison from '../components/image-comparison.vue';
 import profile from '../components/profile.vue';
@@ -135,6 +135,28 @@ export default {
 #map_page_info {
     h1 {
         text-transform: uppercase;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 100px;
+        span {
+            position: relative;
+        }
+        span.h1-prefix {
+            position: absolute;
+            top: 16px;
+            font-size: 60px;
+            right: 100%;
+            margin-right: 10px;
+        }
+        span.h1-version {
+            position: absolute;
+            bottom: 16px;
+            font-size: 60px;
+            left: 100%;
+            margin-left: 10px;
+        }
     }
 
     .summary {

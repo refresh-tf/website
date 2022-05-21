@@ -1,0 +1,11 @@
+@font-face {
+    font-family: club27;
+    src: url("~assets/fonts/The 27 Club.otf") format("opentype");
+}
+
+@mixin woosh() {
+    font-family: club27;
+    font-weight: normal;
+    transform: skew(-10deg);
+    text-transform: uppercase;
+}
