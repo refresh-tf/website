@@ -1,6 +1,6 @@
 <template>
 <div class="container" id="map_page_info">
-  <h1><span><span class="h1-prefix">{{map.prefix}}</span> {{map.name}} <span class="h1-version">{{map.versions[0].suffix}}</span></span></h1>
+  <h1><span><span class="h1-prefix">{{map.prefix}}</span> {{map.name}} <span class="h1-suffix">{{map.versions[0].suffix}}</span></span></h1>
   <div class="page_container">
     <h2>About</h2>
     <div class="summary">
@@ -133,32 +133,6 @@ export default {
 
 <style lang="scss">
 #map_page_info {
-    h1 {
-        text-transform: uppercase;
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 100px;
-        span {
-            position: relative;
-        }
-        span.h1-prefix {
-            position: absolute;
-            top: 16px;
-            font-size: 60px;
-            right: 100%;
-            margin-right: 10px;
-        }
-        span.h1-version {
-            position: absolute;
-            bottom: 16px;
-            font-size: 60px;
-            left: 100%;
-            margin-left: 10px;
-        }
-    }
-
     .summary {
         position: relative;
 
@@ -188,7 +162,7 @@ export default {
     }
     img.thumbnail {
         height: auto;
-        border: solid white 7px;
+        border: solid #333 7px;
         border-radius : 7px;
     }
     p.ugc {
@@ -209,7 +183,6 @@ export default {
                 width: 40px;
                 margin: 10px 3px 0px;
                 padding: 5px;
-                color: white;
                 i {
                     vertical-align: unset;
                     font-size: 40px;
@@ -290,7 +263,6 @@ export default {
 
                 i.rfi {
                     font-size: 20px;
-                    color: white;
                 }
             }
         }
@@ -299,10 +271,49 @@ export default {
             position: relative;
         }
     }
-
 }
+
+#map_page_info {
+    h1 {
+        text-transform: uppercase;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 100px;
+        span {
+            position: relative;
+        }
+        span.h1-prefix {
+            position: absolute;
+            top: 16px;
+            font-size: 60px;
+            right: 100%;
+            margin-right: 10px;
+        }
+        span.h1-suffix {
+            position: absolute;
+            bottom: 16px;
+            font-size: 60px;
+            left: 100%;
+            margin-left: 10px;
+        }
+    }
+}
+
 @media only screen and (max-width: 700px) {
     #map_page_info {
+        h1 {
+            font-size: 60px;
+            span.h1-prefix {
+                font-size: 36px;
+                top: 0px;
+            }
+            span.h1-suffix {
+                font-size: 36px;
+                bottom: 0px;
+            }
+        }
         .summary {
             display:flex;
             flex-flow: row wrap;

@@ -17,6 +17,14 @@ html {
     font-size: 16px;
 }
 
+[id]::before {
+  content: '';
+  display: block;
+  height:      115px;
+  margin-top: -115px;
+  visibility: hidden;
+}
+
 .container {
     max-width: 900px;
     width: calc(100% - 2rem);
@@ -65,7 +73,13 @@ h1, h2, h3, h4, h5, h6 {
 p {
     color: #999;
 }
-
+a {
+    cursor: pointer;
+}
+a i {
+    color: white;
+    text-decoration: none;
+}
 .button {
     display: inline-block;
     color: var(--red);
@@ -79,6 +93,10 @@ p {
     cursor: pointer;
     user-select: none;
     text-decoration: none;
+    i {
+        margin-left: -2px;
+        color: var(--red);
+    }
     &:active {
         background: #bf3c3a;
     }
@@ -86,9 +104,9 @@ p {
         text-decoration: none;
         background: var(--red);
         color: #262626;
-    }
-    i {
-        margin-left: -2px;
+        i {
+            color: #262626;
+        }
     }
     &.large {
         padding: 1rem 1.25rem;

@@ -1,5 +1,6 @@
 <template>
-<div :is="index != 0 ? 'details' : 'div'" class="map-version">
+<div :is="index != 0 ? 'details' : 'div'"
+     class="map-version" :id="uri">
   <summary>
     <div class="version">
       <h4>
@@ -8,6 +9,9 @@
       <span class="version-date">
         {{ version.date }}
       </span>
+      <a :href="url" v-on:click="versionLinked">
+        <i class="rfi rfi-link"></i>
+      </a>
     </div>
   </summary>
 
@@ -31,6 +35,8 @@
 
 <script>
 
+import mixinUri from './mixin-uri';
+
 const type_remaps = {
   'fix': 'fixed',
   'revert': 'reverted',
@@ -41,12 +47,29 @@ const type_remaps = {
 
 export default {
   name: 'map-version',
+  mixins: [mixinUri],
   props: {
     map: null,
     index: null,
     version: null
   },
+  data() {
+    return {
+      uriPrefix: 'version',
+      uriValue: this.version.suffix
+    }
+  },
+  mounted(){
+    if (this.$route.hash == '#' + this.uri &&
+        this.index != 0){
+      this.$el.open = true;
+    }
+  },
   methods: {
+    versionLinked($event){
+      this.linked($event);
+      this.$el.open = true;
+    },
     tagType(type){
       let t = type.toLowerCase()
       return type_remaps[t] || t;
