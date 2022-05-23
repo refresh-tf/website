@@ -22,7 +22,7 @@
     </ul>
     <a class="button"
        :href="version.download" target="_blank">
-      <i class="mdi mdi-download"></i>
+      <i class="rfi rfi-ic_file_download_48px"></i>
       {{ filename() }}
     </a>
   </div>

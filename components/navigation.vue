@@ -22,12 +22,11 @@
         <NuxtLink class="about" to="/about">About</NuxtLink>
 
         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2607508080"
-           title="Find the Refresh map collection on the Steam workshop" class="ext">
-          <img :src="require('~/assets/icons/steam.png')" />
-        </a>
-        <a href="https://github.com/tom288/Refresh" class="ext"
+           title="Find the Refresh map collection on the Steam workshop"
+           class="ext rfi rfi-steam">
+        </a><a href="https://github.com/tom288/Refresh"
+           class="ext rfi rfi-github"
            title="Find the Refresh project on github">
-          <img :src="require('~/assets/icons/github.png')" />
         </a>
       </div>
     </div>
@@ -156,7 +155,8 @@ header {
     left: 0;
     right: 0;
 
-    a {
+    a.rfi {
+        font-size: 40px;
     }
     .header-navigation {
         a {

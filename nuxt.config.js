@@ -21,15 +21,30 @@ module.exports = {
       { rel: 'preconnect', href: "https://fonts.googleapis.com" },
       { rel: 'preconnect', href: "https://fonts.gstatic.com" },
       { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"},
-      { rel: 'stylesheet', href: "https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css"}
     ]
   },
   css: ['~/assets/styles/style.scss'],
   loading: { color: '#3B8070' },
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", 'nuxt-fontagon'],
+  iconFont: {
+    fontName: "refresh-icons",
+    files: [
+      'node_modules/octicons/build/svg/link.svg',
+      'node_modules/octicons/build/svg/link-external.svg',
+      'node_modules/octicons/build/svg/screen-normal.svg',
+      'node_modules/octicons/build/svg/screen-full.svg',
+      'node_modules/simple-icons/icons/github.svg',
+      'node_modules/simple-icons/icons/steam.svg',
+      'node_modules/material-design-icons/file/svg/production/ic_file_download_48px.svg'],
+    style: 'css',
+    classOptions: {
+      "baseClass": "rfi",
+      "classPrefix": "rfi"
+    },
+  },
   watchers: {
     webpack: {
-      ignored: /node_modules/
+      ignored: [/node_modules/],
     }
   },
   router: {

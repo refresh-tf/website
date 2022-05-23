@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import "~/assets/font/refresh-icons.css";
 import navigation from '../components/navigation.vue';
 export default {
   components: {

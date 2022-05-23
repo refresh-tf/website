@@ -12,7 +12,7 @@
           <p class="ugc">{{ author.comment }}</p>
           <a :href="author.link" target="_blank"
              class="highlight" v-if="author.link">
-            <img :src="require('~/assets/icons/link-icon.png')">
+            <i class="rfi rfi-link-external"></i>
           </a>
         </div>
       </div>
@@ -30,13 +30,13 @@
       <div class="links">
         <a class="button large" v-if="map.versions.length > 0"
            :href="map.versions[0].download" target="_blank">
-          <i class="mdi mdi-download"></i>
+          <i class="rfi rfi-ic_file_download_48px"></i>
           Download latest version
         </a>
         <div class="sublinks">
           <a class="highlight" :href="map.workshopLink" target="_blank"
              v-if="map.workshopLink" title="workshop">
-            <img :src="require('~/assets/icons/steam.png')">
+            <i class="rfi rfi-steam"></i>
           </a>
           <a class="highlight" :href="map.tftvLink" target="_blank"
              v-if="map.tftvLink" title="teamfortress.tv">
@@ -48,7 +48,7 @@
           </a>
           <a class="highlight" :href="map.githubLink" target="_blank"
              v-if="map.githubLink" title="Photo album">
-            <img :src="require('~/assets/icons/github.png')">
+            <i class="rfi rfi-github"></i>
           </a>
           <a class="highlight" v-on:click="goalbum" title="Photo album"
              v-if=" map.comparisons && map.comparisons.length > 0">
@@ -209,6 +209,11 @@ export default {
                 width: 40px;
                 margin: 10px 3px 0px;
                 padding: 5px;
+                color: white;
+                i {
+                    vertical-align: unset;
+                    font-size: 40px;
+                }
             }
         }
     }
@@ -280,11 +285,12 @@ export default {
                 text-align: center;
 
                 height: 30px;
-                width: 30px;
+                min-width: 30px;
                 margin-left: 6px;
-                img {
-                    max-height: 30px;
-                    width: auto;
+
+                i.rfi {
+                    font-size: 20px;
+                    color: white;
                 }
             }
         }
