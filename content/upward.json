@@ -140,6 +140,14 @@
   }],
 
   "versions": [{
+    "suffix": "f8",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f8.bsp",
+    "date": "25/05/2022",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed wrap assassin bug on last."
+    }]
+	}, {
     "suffix": "f7",
     "download": "https://dl.serveme.tf/maps/pl_upward_f7.bsp",
     "date": "14/04/2022",
