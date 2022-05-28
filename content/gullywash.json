@@ -116,6 +116,20 @@
   }],
 
   "versions": [{
+    "suffix": "f8",
+    "download": "https://dl.serveme.tf/maps/cp_gullywash_f8.bsp",
+    "date": "28/05/2022",
+    "changes": [{
+      "type": "fix",
+      "message": "Last point shutter trigger now matches original."
+    }, {
+      "type": "fix",
+      "message": "Fixed light emitting wrong color on last."
+    }, {
+      "type": "improved",
+      "message": "Improved splash near second point."
+    }]
+  }, {
     "suffix": "f7",
     "download": "https://dl.serveme.tf/maps/cp_gullywash_f7.bsp",
     "date": "18/03/2022",
