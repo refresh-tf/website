@@ -116,6 +116,14 @@
   }],
 
   "versions": [{
+    "suffix": "f9",
+    "download": "https://dl.serveme.tf/maps/cp_gullywash_f9.bsp",
+    "date": "03/06/2022",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed cubemaps."
+    }]
+  }, {
     "suffix": "f8",
     "download": "https://dl.serveme.tf/maps/cp_gullywash_f8.bsp",
     "date": "28/05/2022",
@@ -173,7 +181,7 @@
   }, {
     "suffix": "f5",
     "download": "https://dl.serveme.tf/maps/cp_gullywash_f5.bsp",
-    "date": "4/1/2022",
+    "date": "04/01/2022",
 	"changes": [{
       "type": "fix",
       "message": "Mid forward spawns having collision."
@@ -230,7 +238,7 @@
   }, {
     "suffix": "f4",
     "download": "https://dl.serveme.tf/maps/cp_gullywash_f4.bsp",
-    "date": "24/9/2021",
+    "date": "24/09/2021",
     "changes": [{
       "type": "fix",
 	  "message": "The pillars outside 2nd shutter and forward spawn being too thick."
@@ -265,7 +273,7 @@
   }, {
 	"suffix": "f3",
     "download": "https://dl.serveme.tf/maps/cp_gullywash_f3.bsp",
-    "date": "4/2/2021",
+    "date": "04/02/2021",
     "changes": [{
       "type": "fix",
 	  "message": "Resolidified the metal fences outside spawn and in lobby."
@@ -312,7 +320,7 @@
   }, {
 	"suffix": "f2",
     "download": "https://dl.serveme.tf/maps/cp_gullywash_f2.bsp",
-    "date": "10/1/2021",
+    "date": "10/01/2021",
     "changes": [{
       "type": "fix",
 	  "message": "Fixed some lighting and detailing inconsistencies."
