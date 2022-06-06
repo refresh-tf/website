@@ -140,6 +140,14 @@
   }],
 
   "versions": [{
+    "suffix": "f9",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f9.bsp",
+    "date": "06/06/2022",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed non-solid roof on bridge on 3rd."
+    }]
+	}, {
     "suffix": "f8",
     "download": "https://dl.serveme.tf/maps/pl_upward_f8.bsp",
     "date": "25/05/2022",
