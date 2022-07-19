@@ -13,6 +13,9 @@
   "originalAuthors": [{
     "comment": "The original map cp_steel was made by Jamie \"Fishbus\" Manson, Dan \"Irish Taxi Driver\" Merboth and FLOOR_MASTER.",
     "link": "https://wiki.teamfortress.com/wiki/Steel"
+  }, {
+    "comment": "The improved vault doors were made by \"Asd417\".",
+    "link": "https://tf2maps.net/downloads/vault-door-improved.10365/"
   }],
 
   "refreshAuthors": ["76561198072335921", "76561198017283362", "76561198119324108", "76561198031558094"],
