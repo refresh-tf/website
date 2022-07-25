@@ -4,7 +4,7 @@
   <div class="page_container">
     <img class="aside" src="~/assets/refresh-logo.png"/>
 
-    <p>"Refresh:" is a series aimed at making maps more suitable for modern standards of TF2. We took the opportunity to use our experience to fix the issues with map geometry as well as minor aesthetic and performance improvements. We humbly invite you to try out these changes and offer your feedback, so that together we are able to increase the quality of the competitive map pool.</p>
+    <p>"Refresh" is a series aimed at making maps more suitable for modern standards of TF2. We took the opportunity to use our experience to fix the issues with map geometry as well as minor aesthetic and performance improvements. We humbly invite you to try out these changes and offer your feedback, so that together we are able to increase the quality of the competitive map pool.</p>
   </div>
 
   <div class="page_title">The Team</div>
