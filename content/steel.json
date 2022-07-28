@@ -54,7 +54,7 @@
     "title": "B-Point"
   }, {
     "name": "B5",
-    "version": "f10",
+    "version": "f11",
     "title": "B-Point"
   }, {
     "name": "B6",
@@ -138,7 +138,7 @@
     "title": "E-Point"
   }, {
     "name": "whiteroom1",
-    "version": "f10",
+    "version": "f11",
     "title": "Whiteroom"
   }, {
     "name": "whiteroom2",
@@ -183,6 +183,19 @@
   }],
 
   "versions": [{
+    "suffix": "f11",
+    "download": "https://dl.serveme.tf/maps/cp_steel_f11.bsp",
+    "date": "29/07/2022",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed 'Ice-Skating' on the glass in deathhall."
+    }, {
+      "type": "improved",
+      "message": "Improved splash handling across the map."
+    }, {
+      "type": "improved",
+      "message": "Changed BLU setup gate to B to face the correct way."
+    }]
     "suffix": "f10",
     "download": "https://dl.serveme.tf/maps/cp_steel_f10.bsp",
     "date": "25/04/2022",
