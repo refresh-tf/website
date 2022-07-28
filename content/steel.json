@@ -196,6 +196,7 @@
       "type": "improved",
       "message": "Changed BLU setup gate to B to face the correct way."
     }]
+  }, {
     "suffix": "f10",
     "download": "https://dl.serveme.tf/maps/cp_steel_f10.bsp",
     "date": "25/04/2022",
