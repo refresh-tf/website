@@ -67,7 +67,7 @@
     "title": "Second"
   }, {
     "name": "house",
-    "version": "f7",
+    "version": "f10",
     "title": "House-Boiler"
   }, {
     "name": "sewers",
@@ -135,11 +135,28 @@
     "title": "Red/Blue-Spawn"
   }, {
     "name": "spawn4",
-    "version": "f7",
+    "version": "f10",
     "title": "Red-Last-Spawn"
   }],
 
   "versions": [{
+    "suffix": "f10",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f10.bsp",
+    "date": "30/07/2022",
+	"changes": [{
+      "type": "fix",
+      "message": "Fixed the catwalk roof on third."
+    }, {
+      "type": "improved",
+      "message": "Improved splash handling by removing leftover spawn signs collision."
+    }, {
+      "type": "improved",
+      "message": "Added clip to window on last near dropdown."
+    }, {
+      "type": "revert",
+      "message": "Brought back PC props instead of the resupply cabinet in last spawn."
+    }]
+	}, {
     "suffix": "f9",
     "download": "https://dl.serveme.tf/maps/pl_upward_f9.bsp",
     "date": "06/06/2022",
