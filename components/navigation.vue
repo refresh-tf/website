@@ -54,7 +54,7 @@ export default {
     padding: 5px 0;
     margin: 2px 0 0;
     text-align: center;
-    background: #fff;
+    background: #262626;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid #ccc;
