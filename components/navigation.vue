@@ -77,7 +77,7 @@ export default {
     line-height: 2rem;
     padding: 0.25rem 1.25rem;
     clear: both;
-    color: #f1f1f1;
+    color: #f2f2f2;
     text-align: center;
     border-radius: 0;
 
