@@ -19,7 +19,7 @@
 
   "comparisons": [{
     "name": "last1",
-    "version": "f9a",
+    "version": "f12",
     "title": "Last"
   }, {
     "name": "second1",
@@ -35,7 +35,7 @@
     "title": "Spawn"
   }, {
     "name": "last2",
-    "version": "f9a",
+    "version": "f12",
     "title": "Last"
   }, {
     "name": "lobby1",
@@ -76,6 +76,23 @@
   }],
 
   "versions": [{
+    "suffix": "f12",
+    "download": "https://dl.serveme.tf/maps/cp_process_f12.bsp",
+    "date": "18/01/2022",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed the glass ramps on last being slippery."
+    }, {
+      "type": "fix",
+      "message": "Fixed some particularly noticeable misaligned textures."
+    }, {
+      "type": "improved",
+      "message": "Improved blockbullet by lobby railing."
+    }, {
+      "type": "added",
+      "message": "Added detailing to the glass ramps on last."
+    }]
+  }, {
     "suffix": "f11",
     "download": "https://dl.serveme.tf/maps/cp_process_f11.bsp",
     "date": "09/05/2022",
