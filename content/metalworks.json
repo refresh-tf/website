@@ -19,11 +19,11 @@
 
     "comparisons": [{
       "name": "last1",
-      "version": "f2",
+      "version": "f5",
       "title": "Last"
     }, {
       "name": "second1",
-      "version": "f2",
+      "version": "f5",
       "title": "Second"
     }, {
       "name": "mid1",
@@ -63,7 +63,7 @@
       "title": "Second"
     }, {
       "name": "spawn2",
-      "version": "f3",
+      "version": "f5",
       "title": "Spawn"
     }, {
       "name": "ally",
@@ -71,11 +71,11 @@
       "title": "Alley"
     }, {
       "name": "house1",
-      "version": "f2",
+      "version": "f5",
       "title": "House"
     }, {
       "name": "house2",
-      "version": "f2",
+      "version": "f5",
       "title": "House"
     }, {
       "name": "spawn3",
@@ -85,6 +85,25 @@
 
 
   "versions": [{
+    "suffix": "f5",
+    "download": "https://dl.serveme.tf/maps/cp_metalworks_f5.bsp",
+    "date": "18/01/2022",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed a few asymmetries and texture misalignments."
+    }, {
+      "type": "fix",
+      "message": "Fixed vents fading too quickly in lobby."
+    }, {
+      "type": "improved",
+      "message": "Improved splash in various parts."
+    }, {
+      "type": "improved",
+      "message": "Improved the visual of the grating on near last point."
+    }, {
+      "type": "improved",
+      "message": "Made the spawn door on second wider and improved the door trigger."
+    }, {
     "suffix": "f4",
     "download": "https://dl.serveme.tf/maps/cp_metalworks_f4.bsp",
     "date": "26/03/2022",
