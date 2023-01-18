@@ -78,7 +78,7 @@
   "versions": [{
     "suffix": "f12",
     "download": "https://dl.serveme.tf/maps/cp_process_f12.bsp",
-    "date": "18/01/2022",
+    "date": "18/01/2023",
     "changes": [{
       "type": "fix",
       "message": "Fixed the glass ramps on last being slippery."
