@@ -261,8 +261,12 @@ header {
         a.home {
             display: block !important;
         }
-        a.ext, a.maps {
+        a.maps {
             display: none !important;
+        }
+        a.ext {
+            display: inline-block !important;
+            padding: 0.25rem !important;
         }
         .maps-navigation, .maps-navigation-menu {
             display: contents !important;

@@ -77,7 +77,7 @@ export default {
 <style lang="scss">
 @import '/utils/mixins';
 
-@-webkit-keyframes top-enter {
+@keyframes top-enter {
     0% {
         left: -100%;
         opacity: 0;
@@ -87,7 +87,7 @@ export default {
         opacity: 1;
     }
 }
-@-webkit-keyframes top-leave {
+@keyframes top-leave {
     0% {
         left: 0%;
         opacity: 1;
@@ -97,7 +97,7 @@ export default {
         opacity: 0;
     }
 }
-@-webkit-keyframes bottom-enter {
+@keyframes bottom-enter {
     0% {
         right: -100%;
         opacity: 0;
@@ -107,7 +107,7 @@ export default {
         opacity: 1;
     }
 }
-@-webkit-keyframes bottom-leave {
+@keyframes bottom-leave {
     0% {
         right: 0%;
         opacity: 1;
