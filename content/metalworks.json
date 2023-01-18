@@ -87,7 +87,7 @@
   "versions": [{
     "suffix": "f5",
     "download": "https://dl.serveme.tf/maps/cp_metalworks_f5.bsp",
-    "date": "18/01/2022",
+    "date": "18/01/2023",
     "changes": [{
       "type": "fix",
       "message": "Fixed a few asymmetries and texture misalignments."
