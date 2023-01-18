@@ -103,7 +103,7 @@
     }, {
       "type": "improved",
       "message": "Made the spawn door on second wider and improved the door trigger."
-    }]
+    	}]
     }, { 
     "suffix": "f4",
     "download": "https://dl.serveme.tf/maps/cp_metalworks_f4.bsp",
