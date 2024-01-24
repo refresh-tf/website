@@ -140,6 +140,20 @@
   }],
 
   "versions": [{
+    "suffix": "f11",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f11.bsp",
+    "date": "25/01/2024",
+	"changes": [{
+      "type": "improved",
+      "message": "Added back occluders from stock upward."
+    }, {
+      "type": "improved",
+      "message": "Added more hints, areaportals and occluders for optimization."
+    }, {
+      "type": "improved",
+      "message": "Redone skybox brushes for optimization."
+    }]
+	  }, {
     "suffix": "f10",
     "download": "https://dl.serveme.tf/maps/pl_upward_f10.bsp",
     "date": "30/07/2022",
