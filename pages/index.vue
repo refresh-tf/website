@@ -3,7 +3,7 @@
   <div class="page_container">
     <NuxtLink :to="'/' + map.name" class="grid_map"
               v-for="map in maps" :key="map.name">
-      <img :src="require('~/assets/banners/' + map.name + '/background.png')">
+      <!--img :src="require('~/assets/banners/' + map.name + '/background.png')"-->
 
       <span class="version">{{map.version}}</span>
       <div class="text-name text-top"><span>{{map.name}}</span></div>
@@ -15,63 +15,62 @@
 </div>
 </template>
 
-<script>
-import { meta } from '~/utils/utils';
+<script setup>
+
+const meta = await queryContent('meta').findOne();
+const maps = [];
+
+for (let i = 1; i < meta.maps.length; i++){
+  let mapData = await queryContent(meta.maps[i]).only(['name', 'thumbnail', 'versions']).findOne();
+
+  let latestVersion = null;
+  let latestDate = null;
+  let hotDate = new Date();
+  hotDate.setDate(hotDate.getDate() - 30);
+
+  for (let i = 0; i < mapData.versions.length; i++){
+    latestVersion = latestVersion || mapData.versions[i].suffix;
+    var parts = mapData.versions[i].date.split('/');
+    latestDate = latestDate || new Date(parts[2], parts[1] - 1, parts[0]);
+  }
+  let map = {
+    name: mapData.name,
+    thumbnail: mapData.thumbnail,
+    version: latestVersion,
+    date: latestDate,
+    hot: latestDate > hotDate,
+  }
+  if (maps.length == 0){ maps.push(map); }
+  else {
+    for (let m = 0; m < maps.length; m++){
+      if (map.date > maps[m].date){
+        maps.splice(m, 0, map);
+        break;
+      }
+    }
+  }
+  if (maps.indexOf(map) == -1){
+    maps.push(map);
+  }
+}
+
+//import { meta } from '~/utils/utils';
+
+/*
 export default {
+
   head() {
     let baseUrl = 'https://refresh.tf';
-    let url = baseUrl + '/'
+    let url = baseUrl + '/';
     let imageUrl =  baseUrl + require('~/assets/opengraph.jpeg');
-    let title = 'Refresh'
-    let description = 'The Refresh project'
+    let title = 'Refresh';
+    let description = 'The Refresh project';
     return meta(title, description, url, imageUrl);
   },
-  data(){
-    return {
-      maps: [],
-    }
-  },
-  async asyncData({ $content, store, params }) {
-    const meta = await $content('meta').fetch();
-    const maps = [];
 
-    for (let i = 0; i < meta.maps.length; i++ ){
-      let mapData = await $content(meta.maps[i]).only(['name', 'thumbnail', 'versions']).fetch();
-
-      let latestVersion = null;
-      let latestDate = null;
-      let hotDate = new Date();
-      hotDate.setDate(hotDate.getDate() - 30);
-
-      for (let i = 0; i < mapData.versions.length; i++){
-        latestVersion = latestVersion || mapData.versions[i].suffix;
-        var parts = mapData.versions[i].date.split('/');
-        latestDate = latestDate || new Date(parts[2], parts[1] - 1, parts[0]);
-      }
-      let map = {
-        name: mapData.name,
-        thumbnail: mapData.thumbnail,
-        version: latestVersion,
-        date: latestDate,
-        hot: latestDate > hotDate,
-      }
-      if (maps.length == 0){ maps.push(map); }
-      else {
-        for (let m = 0; m < maps.length; m++){
-          if (map.date > maps[m].date){
-            maps.splice(m, 0, map);
-            break;
-          }
-        }
-      }
-      if (maps.indexOf(map) == -1){
-        maps.push(map);
-      }
-    }
-    store.commit('RESET_LAYOUT_BG');
-    return { maps };
-  },
+  store.commit('RESET_LAYOUT_BG');
 };
+*/
 </script>
 
 <style lang="scss">

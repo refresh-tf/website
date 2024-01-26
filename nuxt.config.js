@@ -1,5 +1,6 @@
-baseurl = '/'
-module.exports = {
+const baseurl = '/';
+
+export default defineNuxtConfig({
   head: {
     content: {},
     title: 'Refresh',
@@ -23,9 +24,10 @@ module.exports = {
       { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"},
     ]
   },
-  css: ['~/assets/styles/style.scss'],
+  modules: ["@nuxt/content"],
+  css: ['~/public/styles/style.scss'],
   loading: { color: '#3B8070' },
-  modules: ["@nuxt/content", 'nuxt-fontagon'],
+
   iconFont: {
     fontName: "refresh-icons",
     files: [
@@ -47,7 +49,7 @@ module.exports = {
       ignored: [/node_modules/],
     }
   },
-  router: {
+  /*router: {
     base: baseurl,
     async extendRoutes(routes, resolve) {
       const {$content} = require('@nuxt/content');
@@ -60,6 +62,6 @@ module.exports = {
         });
       });
     }
-  },
+  },*/
   target: 'static',
-}
+})

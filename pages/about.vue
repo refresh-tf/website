@@ -2,7 +2,7 @@
 <div class="container">
   <h1>About Refresh!</h1>
   <div class="page_container">
-    <img class="aside" src="~/assets/refresh-logo.png"/>
+    <img class="aside" src="~/public/refresh-logo.png"/>
 
     <p>"Refresh" is a series aimed at making maps more suitable for modern standards of TF2. We took the opportunity to use our experience to fix the issues with map geometry as well as minor aesthetic and performance improvements. We humbly invite you to try out these changes and offer your feedback, so that together we are able to increase the quality of the competitive map pool.</p>
   </div>
@@ -18,9 +18,8 @@
 </div>
 </template>
 
-<script>
-import { meta } from '~/utils/utils';
-import profile from '~/components/profile';
+<script setup>
+//import { meta } from '~/utils/utils';
 
 function shuffleArr (array){
   var shuffled = [].concat(array);
@@ -29,7 +28,20 @@ function shuffleArr (array){
   });
  return shuffled;
 }
-export default {
+const meta = await queryContent('meta').findOne();
+
+const creditsTeam = [];
+const creditsSite = [];
+
+for (const [key, value] of Object.entries(meta["credits"])){
+  if (value.role == 'team'){ creditsTeam.push(key) }
+  if (value.role == 'site'){ creditsSite.push(key) }
+}
+
+const shuffledCreditsTeam = creditsTeam;
+const shuffledCreditsSite = creditsSite;
+
+/*export default {
   head() {
     let baseUrl = 'https://refresh.tf';
     let url = baseUrl + '/about'
@@ -38,35 +50,17 @@ export default {
     let description = 'About the Refresh project'
     return meta(title, description, url, imageUrl);
   },
-  components: {
-    profile: profile
-  },
-  data(){
-    return {
-      creditsTeam: [],
-      creditsSite: [],
-      shuffledCreditsTeam: null,
-      shuffledCreditsSite: null,
-    }
-  },
-  async asyncData({ $content, store, params }) {
-    const meta = await $content('meta').fetch();
-    const creditsTeam = [];
-    const creditsSite = [];
-    for (const [key, value] of Object.entries(meta["credits"])){
-      if (value.role == 'team'){ creditsTeam.push(key) }
-      if (value.role == 'site'){ creditsSite.push(key) }
-    }
-    store.commit('RESET_LAYOUT_BG');
-    return { creditsTeam, creditsSite }
-  },
+
+  store.commit('RESET_LAYOUT_BG');
+
   mounted(){
     this.shuffledCreditsTeam = shuffleArr(this.creditsTeam);
     this.shuffledCreditsSite = shuffleArr(this.creditsSite);
     this.$forceUpdate();
   }
-
 }
+*/
+
 </script>
 
 <style lang="scss">
