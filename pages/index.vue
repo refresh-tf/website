@@ -3,7 +3,7 @@
   <div class="page_container">
     <NuxtLink :to="'/' + map.name" class="grid_map"
               v-for="map in maps" :key="map.name">
-      <!--img :src="require('~/assets/banners/' + map.name + '/background.png')"-->
+      <img :src="'/banners/' + map.name + '/background.png'">
 
       <span class="version">{{map.version}}</span>
       <div class="text-name text-top"><span>{{map.name}}</span></div>

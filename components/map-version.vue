@@ -1,13 +1,13 @@
 <template>
-<div :is="index != 0 ? 'details' : 'div'"
-     class="map-version" :id="uri">
+<div :is="'details'"
+  :id="uri" ref="el" class="map-version">
   <summary>
     <div class="version">
       <h4>
         {{ version.suffix }}
       </h4>
       <span class="version-date">
-        {{ version.date }}
+        {{ props.version.date }}
       </span>
       <a :href="url" v-on:click="versionLinked">
         <i class="rfi rfi-link"></i>
@@ -17,7 +17,7 @@
 
   <div class="changelog">
     <ul>
-      <li v-for="change in version.changes">
+      <li v-for="change in props.version.changes">
         <div :class="'tag ' + tagColor(change.type)">
           <span>{{tagType(change.type)}}</span>
         </div>
@@ -33,9 +33,19 @@
 </div>
 </template>
 
-<script>
+<script setup>
 
-import mixinUri from './mixin-uri';
+//name: 'map-version',
+
+import { ref, onMounted, computed } from 'vue';
+
+const el = ref('el');
+
+const props = defineProps({
+  map: null,
+  index: null,
+  version: null
+});
 
 const type_remaps = {
   'fix': 'fixed',
@@ -43,57 +53,58 @@ const type_remaps = {
   'improved': 'improvement',
   'remove' : 'removed',
   'add': 'added'
+};
+
+const route = useRoute();
+
+const uriPrefix = 'version';
+const uriValue = props.version.suffix;
+
+const uri = uriPrefix + '-' + uriValue;
+const url = route.path + '#' + uri;
+
+onMounted(() => {
+  if (route.hash == '#' + uri && props.index != 0){
+    el.open = true;
+  }
+});
+
+const versionLinked = ($event) => {
+  linked($event);
+  el.open = true;
 }
 
-export default {
-  name: 'map-version',
-  mixins: [mixinUri],
-  props: {
-    map: null,
-    index: null,
-    version: null
-  },
-  data() {
-    return {
-      uriPrefix: 'version',
-      uriValue: this.version.suffix
-    }
-  },
-  mounted(){
-    if (this.$route.hash == '#' + this.uri &&
-        this.index != 0){
-      this.$el.open = true;
-    }
-  },
-  methods: {
-    versionLinked($event){
-      this.linked($event);
-      this.$el.open = true;
-    },
-    tagType(type){
-      let t = type.toLowerCase()
-      return type_remaps[t] || t;
-    },
-    tagColor(type){
-      let ttype = this.tagType(type);
-      if (ttype == 'improvement'){
-        return 'lime';
-      } else if (ttype == 'reverted'){
-        return 'yellow';
-      } else if (ttype == 'removed'){
-        return 'red';
-      } else if (ttype == 'fixed'){
-        return 'green';
-      } else if (ttype == 'added'){
-        return 'blue';
-      } else {
-        return 'white';
-      }
-    },
-    filename(){
-      return [this.map.prefix, this.map.name, this.version.suffix].join('_')
-    },
+const linked = ($event) => {
+  $event.preventDefault();
+  window.location.hash = uri;
+  navigator.clipboard.writeText(window.location.host + url);
+  el.open = true;
+}
+
+const tagType = (type) => {
+  let t = type.toLowerCase()
+  return type_remaps[t] || t;
+}
+
+const tagColor = (type) => {
+  let ttype = tagType(type);
+  if (ttype == 'improvement'){
+    return 'lime';
+  } else if (ttype == 'reverted'){
+    return 'yellow';
+  } else if (ttype == 'removed'){
+    return 'red';
+  } else if (ttype == 'fixed'){
+    return 'green';
+  } else if (ttype == 'added'){
+    return 'blue';
+  } else {
+    return 'white';
   }
+}
+
+const filename = () => {
+  return [props.map.prefix, props.map.name, props.version.suffix].join('_')
 }
 
 </script>
@@ -112,6 +123,7 @@ details.map-version>summary {
         font-weight: bold;
         display: inline-block;
         h4 {
+            min-width: 40px;
             margin: 0;
             display: inline-block;
             text-transform: uppercase;

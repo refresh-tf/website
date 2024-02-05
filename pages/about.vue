@@ -2,24 +2,27 @@
 <div class="container">
   <h1>About Refresh!</h1>
   <div class="page_container">
-    <img class="aside" src="~/public/refresh-logo.png"/>
+    <img class="aside" src="/refresh-logo.png"/>
 
     <p>"Refresh" is a series aimed at making maps more suitable for modern standards of TF2. We took the opportunity to use our experience to fix the issues with map geometry as well as minor aesthetic and performance improvements. We humbly invite you to try out these changes and offer your feedback, so that together we are able to increase the quality of the competitive map pool.</p>
   </div>
 
   <div class="page_title">The Team</div>
   <div class="page_container contributors" ref="creditsTeam">
-    <profile :steamid="sid" v-for="sid in shuffledCreditsTeam" :key="sid"></profile>
+    <profile :steamid="sid" v-for="sid in shuffledCreditsTeam"
+             :key="sid"></profile>
   </div>
   <div class="page_title">Website Contributors</div>
   <div class="page_container contributors" ref="CreditsSite">
-    <profile :steamid="sid" v-for="sid in shuffledCreditsSite" :key="sid"></profile>
+    <profile :steamid="sid" v-for="sid in shuffledCreditsSite"
+             :key="sid"></profile>
   </div>
 </div>
 </template>
 
 <script setup>
 //import { meta } from '~/utils/utils';
+import { onMounted } from 'vue';
 
 function shuffleArr (array){
   var shuffled = [].concat(array);
@@ -38,8 +41,13 @@ for (const [key, value] of Object.entries(meta["credits"])){
   if (value.role == 'site'){ creditsSite.push(key) }
 }
 
-const shuffledCreditsTeam = creditsTeam;
-const shuffledCreditsSite = creditsSite;
+let shuffledCreditsTeam = creditsTeam;
+let shuffledCreditsSite = creditsSite;
+
+onMounted(() => {
+  shuffledCreditsTeam = shuffleArr(creditsTeam);
+  shuffledCreditsSite = shuffleArr(creditsSite);
+});
 
 /*export default {
   head() {
@@ -52,12 +60,6 @@ const shuffledCreditsSite = creditsSite;
   },
 
   store.commit('RESET_LAYOUT_BG');
-
-  mounted(){
-    this.shuffledCreditsTeam = shuffleArr(this.creditsTeam);
-    this.shuffledCreditsSite = shuffleArr(this.creditsSite);
-    this.$forceUpdate();
-  }
 }
 */
 

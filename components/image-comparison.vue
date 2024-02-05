@@ -80,10 +80,10 @@ export default {
     let afterNormal = imgpath + this.comp.name + '_' + this.comp.version + '_collision_off.jpg';
     let afterCollide = imgpath + this.comp.name + '_' + this.comp.version + '_collision_on.jpg';
 
-    this.comparison['before-normal'] = require('~/assets' + beforeNormal);
-    this.comparison['before-collision'] = require('~/assets' + beforeCollide);
-    this.comparison['after-normal'] = require('~/assets' + afterNormal);
-    this.comparison['after-collision'] = require('~/assets' + afterCollide);
+    this.comparison['before-normal'] = beforeNormal;
+    this.comparison['before-collision'] = beforeCollide;
+    this.comparison['after-normal'] = afterNormal;
+    this.comparison['after-collision'] = afterCollide;
 
     this.before = this.comparison['before-normal'];
     this.after = this.comparison['after-normal'];

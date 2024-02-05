@@ -1,7 +1,7 @@
 <template>
-  <a :href="'https://steamcommunity.com/profiles/' + steamid"
+  <a :href="'https://steamcommunity.com/profiles/' + profile.id"
      target="_blank" class="profile" v-if="profile">
-    <img :src="avatarUrl"/>
+    <img :src="profile.avatar"/>
     <span>{{profile.name}}</span>
   </a>
 </template>
@@ -9,11 +9,11 @@
 <script setup>
 
 const props = defineProps({
-  steamid: String
+  steamid: String,
 });
 const meta = await queryContent('meta').findOne();
 const profile = meta.credits[props.steamid];
-const avatarUrl = 'public/contributors/' + profile.avatar;
+
 </script>
 
 

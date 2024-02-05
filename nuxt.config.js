@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     ]
   },
   modules: ["@nuxt/content"],
-  css: ['~/public/styles/style.scss'],
+  css: ['/styles/style.scss'],
   loading: { color: '#3B8070' },
 
   iconFont: {

@@ -5,7 +5,7 @@
     <h2>About</h2>
     <div class="summary">
 
-      <img class="thumbnail" ref="thumbnail" :src="imgUrl"/>
+      <img class="thumbnail" ref="thumbnail" :src="'/images/' + map.thumbnail"/>
 
       <div class="credits" v-if="map.originalAuthors.length > 0">
         <div class="credit" v-for="author in map.originalAuthors">
@@ -40,11 +40,11 @@
           </a>
           <a class="highlight" :href="map.tftvLink" target="_blank"
              v-if="map.tftvLink" title="teamfortress.tv">
-            <img :src="require('~/assets/icons/teamfortress_tv.png')">
+            <img src="/icons/teamfortress_tv.png">
           </a>
           <a class="highlight" :href="map.tf2mLink" target="_blank"
              v-if="map.tf2mLink" title="TF2Maps">
-            <img :src="require('~/assets/icons/tf2maps.png')">
+            <img src="/icons/tf2maps.png">
           </a>
           <a class="highlight" :href="map.githubLink" target="_blank"
              v-if="map.githubLink" title="Photo album">
@@ -52,7 +52,7 @@
           </a>
           <a class="highlight" v-on:click="goalbum" title="Photo album"
              v-if=" map.comparisons && map.comparisons.length > 0">
-            <img :src="require('~/assets/icons/image.png')">
+            <img src="/icons/image.png">
           </a>
         </div>
       </div>
@@ -79,7 +79,18 @@
 </div>
 </template>
 
-<script>
+<script setup>
+
+
+const route = useRoute()
+console.log(route.params.slug)
+
+// query map
+const map = await queryContent(route.params.slug).findOne();
+console.log(map);
+
+// query authors
+
 const type_remaps = {
   'fix': 'fixed',
   'revert': 'reverted',
@@ -88,6 +99,7 @@ const type_remaps = {
   'add': 'added'
 }
 
+/*
 import { meta } from '~/utils/utils';
 import mapVersion from '../components/map-version.vue';
 import imageComparison from '../components/image-comparison.vue';
@@ -128,6 +140,8 @@ export default {
     return { map };
   }
 }
+*/
+
 </script>
 
 

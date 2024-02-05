@@ -28,9 +28,10 @@ useHead({
   ],
 });
 
-const background = null;
+//const background = null;
 const maps = [];
 
+const background = '/images/background.jpg';
 /*
 import "~/assets/font/refresh-icons.css";
 import navigation from '../components/navigation.vue';
