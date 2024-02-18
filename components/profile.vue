@@ -13,6 +13,7 @@ const props = defineProps({
 });
 const meta = await queryContent('meta').findOne();
 const profile = meta.credits[props.steamid];
+profile.id = props.steamid;
 
 </script>
 

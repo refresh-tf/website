@@ -21,8 +21,8 @@
 </template>
 
 <script setup>
-//import { meta } from '~/utils/utils';
-import { onMounted } from 'vue';
+import { onBeforeMount } from 'vue';
+import { metaFactory } from '../utils/utils';
 
 function shuffleArr (array){
   var shuffled = [].concat(array);
@@ -31,12 +31,12 @@ function shuffleArr (array){
   });
  return shuffled;
 }
-const meta = await queryContent('meta').findOne();
 
+const credits = await queryContent('meta').only('credits').findOne();
 const creditsTeam = [];
 const creditsSite = [];
 
-for (const [key, value] of Object.entries(meta["credits"])){
+for (const [key, value] of Object.entries(credits.credits)){
   if (value.role == 'team'){ creditsTeam.push(key) }
   if (value.role == 'site'){ creditsSite.push(key) }
 }
@@ -44,24 +44,24 @@ for (const [key, value] of Object.entries(meta["credits"])){
 let shuffledCreditsTeam = creditsTeam;
 let shuffledCreditsSite = creditsSite;
 
-onMounted(() => {
+onBeforeMount(() => {
   shuffledCreditsTeam = shuffleArr(creditsTeam);
   shuffledCreditsSite = shuffleArr(creditsSite);
 });
 
-/*export default {
-  head() {
-    let baseUrl = 'https://refresh.tf';
-    let url = baseUrl + '/about'
-    let imageUrl =  baseUrl + require('~/assets/opengraph.jpeg');
-    let title = 'About Refresh'
-    let description = 'About the Refresh project'
-    return meta(title, description, url, imageUrl);
-  },
-
-  store.commit('RESET_LAYOUT_BG');
+let makeMeta = () => {
+  let baseUrl = 'https://refresh.tf';
+  let url = baseUrl + '/about';
+  let imageUrl =  baseUrl + '/public/opengraph.jpeg';
+  let title = 'About Refresh';
+  let description = 'About the Refresh project';
+  return metaFactory(title, description, url, imageUrl);
 }
-*/
+
+useHead(makeMeta());
+
+import { useBackground } from '../state';
+useBackground().value = '/images/background.jpg';
 
 </script>
 

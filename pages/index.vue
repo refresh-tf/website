@@ -17,10 +17,12 @@
 
 <script setup>
 
+import { metaFactory } from '../utils/utils';
+
 const meta = await queryContent('meta').findOne();
 const maps = [];
 
-for (let i = 1; i < meta.maps.length; i++){
+for (let i = 0; i < meta.maps.length; i++){
   let mapData = await queryContent(meta.maps[i]).only(['name', 'thumbnail', 'versions']).findOne();
 
   let latestVersion = null;
@@ -54,23 +56,20 @@ for (let i = 1; i < meta.maps.length; i++){
   }
 }
 
-//import { meta } from '~/utils/utils';
 
-/*
-export default {
+let makeMeta = () => {
+  let baseUrl = 'https://refresh.tf';
+  let url = baseUrl + '/';
+  let imageUrl =  baseUrl + '/public/opengraph.jpeg';
+  let title = 'Refresh';
+  let description = 'The Refresh project';
+  return metaFactory(title, description, url, imageUrl);
+}
 
-  head() {
-    let baseUrl = 'https://refresh.tf';
-    let url = baseUrl + '/';
-    let imageUrl =  baseUrl + require('~/assets/opengraph.jpeg');
-    let title = 'Refresh';
-    let description = 'The Refresh project';
-    return meta(title, description, url, imageUrl);
-  },
+useHead(makeMeta());
 
-  store.commit('RESET_LAYOUT_BG');
-};
-*/
+import { useBackground } from '../state';
+useBackground().value = '/images/background.jpg';
 </script>
 
 <style lang="scss">
@@ -248,6 +247,7 @@ export default {
             .text-name.text-bottom {
                 animation: bottom-enter 0.35s normal forwards ease-in;
             }
+
             .text-name.text-top span { transform: skew(-10deg); }
             .text-name.text-bottom span { transform: skew(-10deg); }
             &:before {

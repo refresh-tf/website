@@ -50,7 +50,7 @@
              v-if="map.githubLink" title="Photo album">
             <i class="rfi rfi-github"></i>
           </a>
-          <a class="highlight" v-on:click="goalbum" title="Photo album"
+          <a class="highlight" v-on:click="goAlbum" title="Photo album"
              v-if=" map.comparisons && map.comparisons.length > 0">
             <img src="/icons/image.png">
           </a>
@@ -68,7 +68,7 @@
       </map-version>
     </div>
 
-    <div v-if=" map.comparisons && map.comparisons.length > 0" ref="album">
+    <div ref="album">
       <div class="separator"></div>
       <image-comparison
         v-for="(comp, index) in map.comparisons" :key="index"
@@ -81,67 +81,31 @@
 
 <script setup>
 
+import { ref } from 'vue';
+import { metaFactory } from '../utils/utils';
 
-const route = useRoute()
-console.log(route.params.slug)
-
-// query map
+const route = useRoute();
 const map = await queryContent(route.params.slug).findOne();
-console.log(map);
 
-// query authors
+import { useBackground } from '../state';
+useBackground().value = 'images/' + map.thumbnail;
 
-const type_remaps = {
-  'fix': 'fixed',
-  'revert': 'reverted',
-  'improved': 'improvement',
-  'remove' : 'removed',
-  'add': 'added'
+const album = ref();
+const goAlbum = () => {
+  const y = album.value.getBoundingClientRect().top + window.pageYOffset - 100;
+  window.scrollTo({top: y, behavior: 'smooth'})
 }
 
-/*
-import { meta } from '~/utils/utils';
-import mapVersion from '../components/map-version.vue';
-import imageComparison from '../components/image-comparison.vue';
-import profile from '../components/profile.vue';
-
-export default {
-  components: {
-    mapVersion: mapVersion,
-    imageComparison: imageComparison,
-    profile: profile
-  },
-  head() {
-    let baseUrl = 'https://refresh.tf';
-    let url = baseUrl + '/' + this.map.name.toLowerCase();
-    let imageUrl =  baseUrl + this.imgUrl;
-    let title = 'Refresh - ' + this.mapname();
-    let description = this.map.description;
-    return meta(title, description, url, imageUrl);
-  },
-  computed: {
-    imgUrl(){
-      return require('~/assets/images/' + this.map.thumbnail);
-    },
-  },
-  methods: {
-    mapname(){
-      return this.map.name.charAt(0).toUpperCase() + this.map.name.slice(1);
-    },
-    goalbum(){
-      const y = this.$refs.album.getBoundingClientRect().top + window.pageYOffset - 100;
-      window.scrollTo({top: y, behavior: 'smooth'})
-    }
-  },
-  async asyncData({$content, store, params}) {
-    const map = await $content(params.slug).fetch();
-    store.commit('CHANGE_LAYOUT_BG',
-                 require('~/assets/images/' + map.thumbnail));
-    return { map };
-  }
+let makeMeta = () =>{
+  let mapName = map.name.charAt(0).toUpperCase() + map.name.slice(1);
+  let baseUrl = 'https://refresh.tf';
+  let url = baseUrl + '/' + map.name.toLowerCase();
+  let imgUrl = baseUrl + '/images/' + map.thumbnail;
+  let title = 'Refresh - ' + mapName;
+  let description = map.description;
+  return metaFactory(title, description, url, imgUrl);
 }
-*/
-
+useHead(makeMeta());
 </script>
 
 

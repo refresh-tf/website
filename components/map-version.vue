@@ -1,6 +1,5 @@
 <template>
-<div :is="'details'"
-  :id="uri" ref="el" class="map-version">
+<details :id="uri" ref="el" class="map-version">
   <summary>
     <div class="version">
       <h4>
@@ -30,12 +29,10 @@
       {{ filename() }}
     </a>
   </div>
-</div>
+</details>
 </template>
 
 <script setup>
-
-//name: 'map-version',
 
 import { ref, onMounted, computed } from 'vue';
 
@@ -64,21 +61,22 @@ const uri = uriPrefix + '-' + uriValue;
 const url = route.path + '#' + uri;
 
 onMounted(() => {
-  if (route.hash == '#' + uri && props.index != 0){
-    el.open = true;
+  if (props.index == 0 || route.hash == '#' + uri){
+    el._value.open = true;
   }
 });
 
 const versionLinked = ($event) => {
   linked($event);
-  el.open = true;
+  el._value.open = true;
 }
 
 const linked = ($event) => {
   $event.preventDefault();
+  console.log('linked', el);
   window.location.hash = uri;
   navigator.clipboard.writeText(window.location.host + url);
-  el.open = true;
+  el._value.open = true;
 }
 
 const tagType = (type) => {
@@ -114,6 +112,13 @@ const filename = () => {
 details.map-version>summary {
     cursor: pointer;
 }
+details:nth-of-type(1) {
+
+    ::marker {
+        display: none;
+        content: none;
+    }
+}
 
 .map-version {
     margin-bottom: 10px;
@@ -130,6 +135,10 @@ details.map-version>summary {
         }
         span.version-date {
             color: #555;
+            min-width: 600px;
+        }
+        a {
+            margin-left: 10px;
         }
     }
 
