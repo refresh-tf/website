@@ -1,12 +1,12 @@
-let meta = (title, description, url, imageUrl) => {
+let metaFactory = (title, description, url, imageUrl) => {
   return {
     title: title,
     meta: [{ name: 'title', content: title },
-           { name: 'description', content: description },
+           { hid: 'description', name: 'description', content: description },
 
            { property: 'og:type', content: 'website'},
            { property: 'og:url', content: url},
-           { property: 'og:title', title },
+           { property: 'og:title', content: title },
            { property: 'og:description', content: description},
            { property: 'og:image', content: imageUrl },
 
@@ -15,6 +15,6 @@ let meta = (title, description, url, imageUrl) => {
            { property: 'twitter:title', content: title},
            { property: 'twitter:description', content: description},
            { property: 'twitter:image', content: imageUrl}]
-  };
+  }
 }
-export { meta }
+export { metaFactory }

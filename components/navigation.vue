@@ -2,7 +2,7 @@
 <header>
   <div class="header-container">
     <div class="logo">
-      <NuxtLink to="/"><img src="~/assets/refresh.png" alt=""></NuxtLink>
+      <NuxtLink to="/"><img src="/refresh.png" alt=""></NuxtLink>
     </div>
 
     <div class="header-navigation">
@@ -34,8 +34,11 @@
 </header>
 </template>
 
-<script>
-export default {
+<script setup>
+
+const meta = await queryContent('meta').findOne();
+const maps = meta.maps;
+/*export default {
   data(){
     return {
       maps: []
@@ -45,7 +48,7 @@ export default {
     const meta = await this.$content('meta').fetch();
     this.maps = meta.maps;
   },
-}
+}*/
 </script>
 
 <style lang="scss">

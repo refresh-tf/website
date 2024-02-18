@@ -1,27 +1,20 @@
 <template>
-  <a :href="'https://steamcommunity.com/profiles/' + steamid"
+  <a :href="'https://steamcommunity.com/profiles/' + profile.id"
      target="_blank" class="profile" v-if="profile">
-    <img :src="require('~/assets/contributors/' + profile.avatar)"/>
+    <img :src="profile.avatar"/>
     <span>{{profile.name}}</span>
   </a>
 </template>
 
-<script>
-export default {
-  name: 'profile',
-  props: {
-    steamid: null,
-  },
-  data(){
-    return {
-      profile: null,
-    }
-  },
-  async fetch() {
-    const meta = await this.$content('meta').fetch();
-    this.profile = meta.credits[this.steamid];
-  },
-}
+<script setup>
+
+const props = defineProps({
+  steamid: String,
+});
+const meta = await queryContent('meta').findOne();
+const profile = meta.credits[props.steamid];
+profile.id = props.steamid;
+
 </script>
 
 

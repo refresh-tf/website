@@ -4,22 +4,23 @@
   "description": "Refresh Website",
   "author": "Maxime Dupuis <mdupuis@hotmail.ca>",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "nuxi start",
+    "generate": "nuxi generate"
   },
   "devDependencies": {
-    "@nuxt/content": "^1.15.1",
-    "nuxt": "^2.15.8",
-    "nuxt-fontagon": "^1.0.4",
-    "sass": "^1.44.0",
-    "sass-loader": "^10.2.0",
-    "webpack": "^4.46.0"
+    "@nuxt/content": "^2.12.0",
+    "@nuxt/webpack-builder": "^3.10.2",
+    "nuxt": "^3.10.2",
+    "sass": "^1.71.0",
+    "sass-loader": "^10.5.2",
+    "webfonts-loader": "^8.0.1",
+    "webpack": "^5.90.2"
   },
   "dependencies": {
     "material-design-icons": "^3.0.1",
     "octicons": "^8.5.0",
-    "simple-icons": "^6.22.0"
+    "simple-icons": "^6.23.0"
   }
 }

@@ -1,35 +1,37 @@
-<template>
-<div>
-  <div id="background">
-    <img :src="background"/>
-  </div>
-  <div id="core">
-    <navigation></navigation>
-    <div class="content">
-      <nuxt/>
-    </div>
-  </div>
-</div>
-</template>
+<script setup>
 
-<script>
-import "~/assets/font/refresh-icons.css";
-import navigation from '../components/navigation.vue';
-export default {
-  components: {
-    navigation: navigation,
+require('./fonts/refresh-icons.font.js');
+
+import { useBackground } from './state';
+
+const background = useBackground();
+
+useHead({
+  htmlAttrs: {
+    lang: 'en',
+    dir: 'ltr',
   },
-  computed: {
-    background() {
-      return this.$store.state.backgroundImg;
-    }
-  }
-}
+});
+
+
 </script>
 
+<template>
+  <div>
+    <div id="background">
+      <img :src="background"/>
+    </div>
+    <div id="core">
+      <navigation></navigation>
+      <NuxtPage />
+      <div class="content">
+      </div>
+    </div>
+  </div>
+</template>
 
 <style lang="scss">
-body {
+  body {
     margin: 0;
     padding: 0;
     font-family: "Noto Sans", sans-serif;
@@ -67,6 +69,4 @@ body {
     width: 100%;
     padding: 90px 0;
 }
-
-
 </style>

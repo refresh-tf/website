@@ -1,6 +1,10 @@
-baseurl = '/'
-module.exports = {
+const baseurl = '/';
+
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+export default defineNuxtConfig({
   head: {
+    htmlAttrs: { lang: 'en' },
     content: {},
     title: 'Refresh',
     meta: [
@@ -20,46 +24,37 @@ module.exports = {
 
       { rel: 'preconnect', href: "https://fonts.googleapis.com" },
       { rel: 'preconnect', href: "https://fonts.gstatic.com" },
-      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"},
+      { rel: 'stylesheet',
+        href: "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"},
     ]
   },
-  css: ['~/assets/styles/style.scss'],
+  modules: ["@nuxt/content"],
+  css: ['/styles/style.scss', '/public/font/refresh-icons.css'],
   loading: { color: '#3B8070' },
-  modules: ["@nuxt/content", 'nuxt-fontagon'],
-  iconFont: {
-    fontName: "refresh-icons",
-    files: [
-      'node_modules/octicons/build/svg/link.svg',
-      'node_modules/octicons/build/svg/link-external.svg',
-      'node_modules/octicons/build/svg/screen-normal.svg',
-      'node_modules/octicons/build/svg/screen-full.svg',
-      'node_modules/simple-icons/icons/github.svg',
-      'node_modules/simple-icons/icons/steam.svg',
-      'node_modules/material-design-icons/file/svg/production/ic_file_download_48px.svg'],
-    style: 'css',
-    classOptions: {
-      "baseClass": "rfi",
-      "classPrefix": "rfi"
-    },
-  },
   watchers: {
     webpack: {
       ignored: [/node_modules/],
     }
   },
-  router: {
-    base: baseurl,
-    async extendRoutes(routes, resolve) {
-      const {$content} = require('@nuxt/content');
-      const { maps } = await $content('meta').fetch();
-      maps.forEach(map => {
-        routes.push({
-          path: '/' + map + '/',
-          component: resolve(__dirname, 'pages/_slug.vue'),
-          meta: map
-        });
+  target: 'static',
+  builder: 'webpack',
+  hooks: {
+    'webpack:config': (configs) => {
+      configs.forEach((config) =>{
+        config.module.rules.push({
+          test: /\.font\.js/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader',
+              options: {
+                url: false
+              }
+            },
+            'webfonts-loader'
+          ]
+        })
       });
     }
-  },
-  target: 'static',
-}
+  }
+})
