@@ -1,20 +1,15 @@
 <template>
-  <a :href="'https://steamcommunity.com/profiles/' + profile.id"
-     target="_blank" class="profile" v-if="profile">
-    <img :src="profile.avatar"/>
-    <span>{{profile.name}}</span>
-  </a>
+<a :href="'https://steamcommunity.com/profiles/' + profile.id"
+   target="_blank" class="profile" v-if="profile">
+  <img :src="profile.avatar"/>
+  <span>{{profile.name}}</span>
+</a>
 </template>
 
 <script setup>
-
 const props = defineProps({
-  steamid: String,
+  profile: null
 });
-const meta = await queryContent('meta').findOne();
-const profile = meta.credits[props.steamid];
-profile.id = props.steamid;
-
 </script>
 
 

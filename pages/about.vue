@@ -9,13 +9,13 @@
 
   <div class="page_title">The Team</div>
   <div class="page_container contributors" ref="creditsTeam">
-    <profile :steamid="sid" v-for="sid in shuffledCreditsTeam"
-             :key="sid"></profile>
+    <client-only><profile :profile="contributor" v-for="contributor in shuffledCreditsTeam"
+                          :key="contributor.id"></profile></client-only>
   </div>
   <div class="page_title">Website Contributors</div>
   <div class="page_container contributors" ref="CreditsSite">
-    <profile :steamid="sid" v-for="sid in shuffledCreditsSite"
-             :key="sid"></profile>
+    <client-only><profile :profile="contributor" v-for="contributor in shuffledCreditsSite"
+                          :key="contributor.id"></profile></client-only>
   </div>
 </div>
 </template>
@@ -29,10 +29,11 @@ function shuffleArr (array){
   shuffled.sort(function(){
     return 0.5 - Math.random();
   });
- return shuffled;
+  return shuffled;
 }
 
 const credits = await queryContent('meta').only('credits').findOne();
+
 const creditsTeam = [];
 const creditsSite = [];
 
@@ -41,12 +42,14 @@ for (const [key, value] of Object.entries(credits.credits)){
   if (value.role == 'site'){ creditsSite.push(key) }
 }
 
-let shuffledCreditsTeam = creditsTeam;
-let shuffledCreditsSite = creditsSite;
+let shuffledCreditsTeam = [];
+let shuffledCreditsSite = [];
 
 onBeforeMount(() => {
-  shuffledCreditsTeam = shuffleArr(creditsTeam);
-  shuffledCreditsSite = shuffleArr(creditsSite);
+  shuffledCreditsTeam = shuffleArr(creditsTeam.map((profileId) =>
+    Object.assign({id: profileId}, credits.credits[profileId])));
+  shuffledCreditsSite = shuffleArr(creditsSite.map((profileId) =>
+    Object.assign({id: profileId}, credits.credits[profileId])));
 });
 
 let makeMeta = () => {

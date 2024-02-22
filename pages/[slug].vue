@@ -19,10 +19,9 @@
 
       <div class="credits" v-if="map.refreshAuthors.length > 0">
         <p>Refreshed By:
-          <profile v-if="map.refreshAuthors"
-                   v-for="sid in map.refreshAuthors" :key="sid"
-                   :steamid="sid">{{ map.refreshAuthors }}
-          </profile>
+          <client-only><profile v-if="authors" v-for="author in authors"
+                   :profile="author" :key="author.id">
+          </profile></client-only>
         </p>
       </div>
 
@@ -85,7 +84,10 @@ import { ref } from 'vue';
 import { metaFactory } from '../utils/utils';
 
 const route = useRoute();
+const meta = await queryContent('meta').findOne();
 const map = await queryContent(route.params.slug).findOne();
+const authors = map.refreshAuthors.map((authorId) =>
+  Object.assign({id: authorId}, meta.credits[authorId]));
 
 import { useBackground } from '../state';
 useBackground().value = 'images/' + map.thumbnail;
