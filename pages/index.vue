@@ -1,6 +1,6 @@
 <template>
 <div id="maps_page_info" class="container">
-  <div class="page_container">
+  <div class="page_container component-unloaded" ref="container">
     <NuxtLink :to="'/' + map.name" class="grid_map"
               v-for="map in maps" :key="map.name">
       <img :src="'/banners/' + map.name + '/background.png'">
@@ -8,7 +8,9 @@
       <span class="version">{{map.version}}</span>
       <div class="text-name text-top"><span>{{map.name}}</span></div>
       <div class="text-name text-bottom"><span>{{map.name}}</span></div>
-      <span class="version-hot" v-if="map.hot">new!</span>
+      <client-only>
+        <span class="version-hot" v-if="map.hot">new!</span>
+      </client-only>
 
     </NuxtLink>
   </div>
@@ -22,19 +24,28 @@ import { metaFactory } from '../utils/utils';
 const meta = await queryContent('meta').findOne();
 const maps = [];
 
+const container = ref(null);
+onMounted(() => {
+  setTimeout(() =>{
+    // hides the animation at page load
+    container._value.classList.remove('component-unloaded');
+  }, 500);
+});
+
 for (let i = 0; i < meta.maps.length; i++){
   let mapData = await queryContent(meta.maps[i]).only(['name', 'thumbnail', 'versions']).findOne();
 
   let latestVersion = null;
   let latestDate = null;
-  let hotDate = new Date();
-  hotDate.setDate(hotDate.getDate() - 30);
+  const hotDate = new Date();
+  hotDate.setDate(hotDate.getDate() - 60);
 
   for (let i = 0; i < mapData.versions.length; i++){
     latestVersion = latestVersion || mapData.versions[i].suffix;
     var parts = mapData.versions[i].date.split('/');
     latestDate = latestDate || new Date(parts[2], parts[1] - 1, parts[0]);
   }
+
   let map = {
     name: mapData.name,
     thumbnail: mapData.thumbnail,
@@ -42,7 +53,9 @@ for (let i = 0; i < meta.maps.length; i++){
     date: latestDate,
     hot: latestDate > hotDate,
   }
+
   if (maps.length == 0){ maps.push(map); }
+
   else {
     for (let m = 0; m < maps.length; m++){
       if (map.date > maps[m].date){
@@ -70,6 +83,7 @@ useHead(makeMeta());
 
 import { useBackground } from '../state';
 useBackground().value = '/images/background.jpg';
+
 </script>
 
 <style lang="scss">
@@ -265,8 +279,18 @@ useBackground().value = '/images/background.jpg';
                 transition: visibility 0.01s 0.25s;
             }
         }
+
+    }
+
+    .component-unloaded .text-name {
+        opacity: 0 !important;
+        &:before,
+        &:after {
+            opacity: 0 !important;
+        }
     }
 }
+
 @media only screen and (max-width: 600px) {
     #maps_page_info {
         .page_container {

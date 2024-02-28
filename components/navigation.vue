@@ -1,6 +1,6 @@
 <template>
 <header>
-  <div class="header-container">
+  <div class="header-container open">
     <div class="logo">
       <NuxtLink to="/"><img src="/refresh.png" alt=""></NuxtLink>
     </div>
@@ -23,10 +23,10 @@
 
         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2607508080"
            title="Find the Refresh map collection on the Steam workshop"
-           class="ext rfi rfi-steam">
+           class="ext rfi rfi-steam" target="_blank">
         </a><a href="https://github.com/tom288/Refresh"
-           class="ext rfi rfi-github"
-           title="Find the Refresh project on github">
+               title="Find the Refresh project on github"
+               class="ext rfi rfi-github" target="_blank">
         </a>
       </div>
     </div>
@@ -54,7 +54,7 @@ const maps = meta.maps;
 <style lang="scss">
 @mixin menu {
     z-index: 1000;
-    padding: 5px 0;
+    padding: 5px 0 1.5rem;
     margin: 2px 0 0;
     text-align: center;
     background: #262626;
@@ -270,6 +270,7 @@ header {
         a.ext {
             display: inline-block !important;
             padding: 0.25rem !important;
+            border-radius: 5rem;
         }
         .maps-navigation, .maps-navigation-menu {
             display: contents !important;
@@ -296,6 +297,10 @@ header {
                 float: none;
                 height: 2.5rem !important;
                 line-height: 2.5rem !important;
+                &.ext {
+                    border-radius: 1rem;
+                    padding: 0.75rem !important;
+                }
             }
         }
         &[open],
