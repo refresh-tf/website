@@ -191,7 +191,7 @@
     "download": "https://dl.serveme.tf/maps/pl_upward_f7.bsp",
     "date": "14/04/2022",
 	"changes": [{
-      "type": "added",
+      "type": "fix",
       "message": "Added cubemaps."
     }, {
       "type": "fix",
