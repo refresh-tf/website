@@ -228,7 +228,7 @@
 	  "type": "improved",
       "message": "Replaced clipbrushes with blockbullets in: backstairs last, balcony/window second, house second-third, dropdown/banana last, spiral last, b house second."
     }, {
-	  "type": "custom",
+	  "type": "improved",
       "message": "Changed cabinet in spawn to no longer have shadows and prevent doors clipping out"
     }]
 	}, {
@@ -239,7 +239,10 @@
       "type": "fix",
 	  "message": "Being able to cap/deny cart from under rollercoaster on 3rd."
     }, {
-      "type": "improved",
+	  "type": "fix",
+      "message": "Sign behaviour around the map to avoid solidity/visibility issues."
+    }, {
+	  "type": "improved",
       "message": "Clipping around first point under playground and blue side of the cliff-bridge."
     }, {
       "type": "improved",
@@ -247,15 +250,12 @@
     }, {
       "type": "improved",
       "message": "Clipping around metal vertical beams and curbs under point on last."
-    }, {
+	}, {
 	  "type": "improved",
       "message": "Clipping under heavy balcony on third."
 	}, {
 	  "type": "improved",
       "message": "Splash around first-tunnel entrance wall."
-	}, {
-	  "type": "custom",
-      "message": "Sign behaviour around the map to avoid solidity/visibility issues."
 	}]
 	}, {
     "suffix": "f3",
@@ -277,7 +277,7 @@
 	  "type": "removed",
       "message": "New hiding spot above First."
 	}, {
-	  "type": "custom",
+	  "type": "improved",
       "message": "Attached a lightswitch wire to the ceiling on Third."
 	}, {
 	  "type": "custom",
@@ -303,11 +303,11 @@
 	  "type": "improved",
       "message": "Lighting on rock models."
 	}, {
+	"type": "improved",
+      "message": "Adjusted Bloom and hdr exposure settings."
+	}, {
 	  "type": "removed",
       "message": "Pop-in on specific props."
-	}, {
-	  "type": "custom",
-      "message": "Adjusted Bloom and hdr exposure settings."
 	}]
 	}, {
 	"suffix": "f1",
