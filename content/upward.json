@@ -140,6 +140,50 @@
   }],
 
   "versions": [{
+    "suffix": "f12",
+    "download": "https://dl.serveme.tf/maps/pl_upward_f12.bsp",
+    "date": "17/03/2024",
+	"changes": [{
+      "type": "improved",
+      "message": "Changed the doors in dropdown to never be opened after closing."
+    }, {
+      "type": "improved",
+      "message": "Changed the doors in dropdown from silent to making a sound when closing."
+    }, {
+      "type": "fix",
+      "message": "Fixed detail brushes flickering on 1st point."
+    }, {
+      "type": "fix",
+      "message": "Fixed some lighting issues."
+    }, {
+      "type": "fix",
+      "message": "Fixed some props and brushes being solid."
+    }, {
+      "type": "fix",
+      "message": "Fixed water brushes in skybox with various cubemaps."
+    }, {
+      "type": "fix",
+      "message": "Fixed unoptimized visleaves next to the hill."
+    }, {
+      "type": "fix",
+      "message": "Fixed floating barrel near 2nd."
+    }, {
+      "type": "improved",
+      "message": "Improved clip alignment under balcony on 3rd."
+    }, {
+      "type": "improved",
+      "message": "Added blockbullets in front of window and dropdown-elbow."
+    }, {
+      "type": "improved",
+      "message": "Added more func_occluders."
+    }, {
+      "type": "improved",
+      "message": "Added resupply sign on last RED last spawn."
+    }, {
+      "type": "improved",
+      "message": "Reduced t-junction and edicts (func_brush)."
+    }]
+  	},{
     "suffix": "f11",
     "download": "https://dl.serveme.tf/maps/pl_upward_f11.bsp",
     "date": "25/01/2024",
