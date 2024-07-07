@@ -19,11 +19,11 @@
 
   "comparisons": [{
     "name": "first1",
-    "version": "f5",
+    "version": "f12",
     "title": "First"
   }, {
     "name": "first2",
-    "version": "f7",
+    "version": "f12",
     "title": "First"
   }, {
     "name": "first3",
@@ -55,15 +55,15 @@
     "title": "Second-Hill"
   }, {
     "name": "secondhill2",
-    "version": "f5",
+    "version": "f12",
     "title": "Second-Hill"
   }, {
     "name": "second1",
-    "version": "f7",
+    "version": "f12",
     "title": "Second"
   }, {
     "name": "second2",
-    "version": "f7",
+    "version": "f12",
     "title": "Second"
   }, {
     "name": "house",
@@ -115,11 +115,11 @@
     "title": "Last-HarryPotter"
   }, {
     "name": "lastunder",
-    "version": "f5",
+    "version": "f12",
     "title": "Last-Under"
   }, {
     "name": "lastblock",
-    "version": "f5",
+    "version": "f12",
     "title": "Last"
   }, {
     "name": "spawn1",
@@ -127,11 +127,11 @@
     "title": "Blue-First-Spawn"
   }, {
     "name": "spawn2",
-    "version": "f7",
+    "version": "f12",
     "title": "Blue-Second-Spawn"
   }, {
     "name": "spawn3",
-    "version": "f7",
+    "version": "f12",
     "title": "Red/Blue-Spawn"
   }, {
     "name": "spawn4",
