@@ -32,8 +32,25 @@ jobs:
       - name: Generate
         run: yarn generate
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./.output/public
+
+      - name: Init new repo in dist folder and commit generated files
+        run: |
+          cd .output/public
+          git init
+          git add -A
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m 'deploy'
+
+      - name: Force push to destination branch
+        uses: ad-m/github-push-action@v0.5.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.output/public
+          branch: gh-pages
+          force: true
+          directory: ./.output/public
