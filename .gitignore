@@ -91,10 +91,10 @@ lerna-debug.log
 Thumbs.db
 
 
-.nuxt/*
 node_modules/*
 assets/font/*
 .output
+.nuxt/*
 
 *~
 *#
