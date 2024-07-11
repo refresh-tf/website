@@ -41,6 +41,7 @@ jobs:
       - name: Init new repo in dist folder and commit generated files
         run: |
           cd .output/public
+          touch .nojekyll
           git init
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
