@@ -2,70 +2,117 @@
   "prefix": "koth",
   "name": "lakeside",
   "thumbnail": "koth_lakeside.jpeg",
-  "description": "TODO",
+  "description": "Lakeside is an old school highlander map made originally in 2010. Becoming an official map on 2011 Lakeside hasn't been updated once to address any of the flaws and problems, that's where we come in. In this project we have aimed to fix issues with map geometry as well as minor aesthetic and performance improvements while also adjusting some of the layout for a more modern TF2.",
 
-  "tf2mLink": "https://TODO",
-  "tftvLink": "https://TODO",
-  "workshopLink": "https://TODO",
-  "albumLink": "https://TODO",
+  "tf2mLink": "https://tf2maps.net/downloads/refresh-lakeside.17884/",
+  "tftvLink": "https://www.teamfortress.tv/64788/refresh-koth-lakeside",
+  "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=3295914961",
+  "albumLink": null,
   "githubLink": null,
 
   "originalAuthors": [{
-    "comment": "The original map, koth_lakeside, was made by TODO.",
-    "link": "https://TODO"
+    "comment": "The original map, koth_lakeside, was made by Valentin \"3DNJ\" Levillain.",
+    "link": "https://steamcommunity.com/profiles/76561197987845309"
   }],
 
 
-  "refreshAuthors": ["76561198061182117", "76561198058513958"],
+  "refreshAuthors": ["76561198305181178", "76561198031558094", "76561198286039965"],
 
   "comparisons": [{
-    "name": "balcony",
-    "version": "f1",
-    "title": "TODO"
-  },{
-    "name": "ruins",
-    "version": "f1",
-    "title": "TODO"
-  },{
-    "name": "boat",
-    "version": "f1",
-    "title": "TODO"
-  },{
-    "name": "main",
-    "version": "f1",
-    "title": "TODO"
-  },{
-    "name": "spawn1",
-    "version": "f1",
-    "title": "TODO"
-  },{
-    "name": "spawn2",
-    "version": "f1",
-    "title": "TODO"
-  },{
     "name": "mid",
     "version": "f1",
-    "title": "TODO"
-  },{
-    "name": "tunnel",
-    "version": "f1",
-    "title": "TODO"
+    "title": "Mid"
   },{
     "name": "pool",
     "version": "f1",
-    "title": "TODO"
+    "title": "Pool"
+  },{
+    "name": "ruins",
+    "version": "f1",
+    "title": "Ruins"
+  },{
+    "name": "boat",
+    "version": "f1",
+    "title": "Boat"
+  },{
+    "name": "balcony",
+    "version": "f1",
+    "title": "Balcony"
+  },{
+    "name": "main",
+    "version": "f1",
+    "title": "Main"
+  },{
+    "name": "tunnel",
+    "version": "f1",
+    "title": "Tunnel"
+  },{
+    "name": "spawn1",
+    "version": "f1",
+    "title": "Spawn-Doors"
+  },{
+    "name": "spawn2",
+    "version": "f1",
+    "title": "Spawn"
   }],
 
   "versions": [{
+    "suffix": "f2",
+    "download": "https://fastdl.serveme.tf/maps/koth_lakeside_f1.bsp",
+    "date": "24/07/2024",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed hiding spot missing on red side near right side exit."
+    }, {
+      "type": "fix",
+      "message": "Attempted a fix at the tunnel stuck bug."
+    }]
+  }, {
     "suffix": "f1",
-    "download": "https://TODO",
-    "date": "TODO/TODO/2024",
+    "download": "https://fastdl.serveme.tf/maps/koth_lakeside_f1.bsp",
+    "date": "24/07/2024",
     "changes": [{
       "type": "improved",
-      "message": "TODO"
+      "message": "General clipping improvements."
     }, {
       "type": "improved",
-      "message": "TODO"
+      "message": "Better splash handling."
+    },{
+      "type": "improved",
+      "message": "Spawn room now has shutters, similar to lakeside_event."
+    },{
+      "type": "improved",
+      "message": "Spawn points are now properly ordered and have been moved forward."
+    },{
+      "type": "improved",
+      "message": "Added an extra resupply cabinet between the spawn doors for shorter travel times."
+    },{
+      "type": "improved",
+      "message": "Pool room entrances from cave area widened a bit to improve movement and splash handling."
+    },{
+      "type": "improved",
+      "message": "Replaced fence near catwalk to a wider cover variant to eliminate overpowered angles."
+    },{
+      "type": "improved",
+      "message": "Mirror improvements such as various props across the map."
+    },{
+      "type": "improved",
+      "message": "Dual mini health/ammo kits have been replaced with a single medium."
+    },{
+      "type": "improved",
+      "message": "Closed gaps on catwalk bridge to improve splash handling and movement."
+    },{
+      "type": "improved",
+      "message": "Closed off of areas below batts, similar to lakeside_event."
+    },{
+      "type": "improved",
+      "message": "Tweaked collision on battlement fences to fix broken spot."
+    },{
+      "type": "fix",
+      "message": "Fixed some exploit hiding spots."
+    },{
+      "type": "fix",
+      "message": "Fixed an asymmetry in the clipping around the ammo packs outside pool room."
     }]
   }]
 }
