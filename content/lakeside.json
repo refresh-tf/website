@@ -58,7 +58,7 @@
 
   "versions": [{
     "suffix": "f2",
-    "download": "https://fastdl.serveme.tf/maps/koth_lakeside_f1.bsp",
+    "download": "https://fastdl.serveme.tf/maps/koth_lakeside_f2.bsp",
     "date": "24/07/2024",
     "changes": [{
       "type": "fix",
