@@ -1,1 +1,1 @@
-export const useBackground = () => useState('background', () => '/images/background.jpg')
+export const useBackground = () => useState('background', () => '/images/background.png')
