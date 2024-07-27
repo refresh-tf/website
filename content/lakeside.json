@@ -57,6 +57,20 @@
   }],
 
   "versions": [{
+    "suffix": "f3",
+    "download": "https://fastdl.serveme.tf/maps/koth_lakeside_f3.bsp",
+    "date": "28/07/2024",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed up fences around the map to be properly solid."
+    }, {
+      "type": "fix",
+      "message": "Fixed wrong textures near mid."
+    }, {
+      "type": "fix",
+      "message": "Fixed chickenwire not rendering on ramps to ruins."
+    }]
+  }, {
     "suffix": "f2",
     "download": "https://fastdl.serveme.tf/maps/koth_lakeside_f2.bsp",
     "date": "24/07/2024",
