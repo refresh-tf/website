@@ -52,11 +52,27 @@
     "title": "Spawn-Doors"
   },{
     "name": "spawn2",
-    "version": "f1",
+    "version": "f5",
     "title": "Spawn"
   }],
 
   "versions": [{
+    "suffix": "f5",
+    "download": "https://fastdl.serveme.tf/maps/koth_lakeside_f5.bsp",
+    "date": "01/08/2024",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed missing texture in red spawn."
+    }]
+  }, {
+    "suffix": "f4",
+    "download": "https://fastdl.serveme.tf/maps/koth_lakeside_f4.bsp",
+    "date": "01/08/2024",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed spawn points wrong order and visualization."
+    }]
+  }, {
     "suffix": "f3",
     "download": "https://fastdl.serveme.tf/maps/koth_lakeside_f3.bsp",
     "date": "28/07/2024",
