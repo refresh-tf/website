@@ -299,7 +299,7 @@
     "date": "9/10/2021",
     "changes": [{
       "type": "fix",
-	  "message": "Being able to shoot through the red spawn doors."
+      "message": "Fixed being able to shoot through the red spawn doors."
     }, {
       "type": "fix",
       "message": "Fixed texture misalignment near the trolley in white room."
@@ -320,7 +320,7 @@
       "message": "Changed the clipping on the planks in the house on highground to a blockbullet on B."
     }, {
       "type": "improved",
-	  "message": "Removed solidity from the lamp in the house on highground on B."
+      "message": "Removed solidity from the lamp in the house on highground on B."
     }, {
       "type": "improved",
       "message": "Smoothed out the ground around the small ammopack near the truck on B."
