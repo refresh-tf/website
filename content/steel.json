@@ -346,7 +346,7 @@
     "date": "6/9/2021",
 	"changes": [{
       "type": "fix",
-      "message": "Small update to fix an oversite related to pit related deaths causing players to die as soon as they respawn."
+      "message": "Small update to fix pit related deaths causing players to die as soon as they respawn."
     }]
   }, {
     "suffix": "f5",
