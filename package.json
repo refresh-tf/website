@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "material-design-icons": "^3.0.1",
+    "mini-css-extract-plugin": "^2.9.2",
     "octicons": "^8.5.0",
     "simple-icons": "^13.1.0"
   }
