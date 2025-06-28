@@ -122,7 +122,7 @@
     "date": "21/9/2021",
     "changes": [{
       "type": "improved",
-	  "message": "Changed the clipping on the pillars near the point to help with splash."
+      "message": "Changed the clipping on the pillars near the point to help with splash."
     }, {
       "type": "custom",
       "message": "Compiled using Fubar's BSPreveal."
@@ -134,7 +134,7 @@
 	"changes": [{
       "type": "fix",
       "message": "An issue with the point activation voice lines."
-	},{
+    },{
       "type": "improved",
       "message": "Changed the ordering of the spawn points."
     }]
@@ -157,7 +157,7 @@
     }, {
       "type": "improved",
       "message": "Added a blockbullet for the openings of the elbow doors."
-	}, {
+    }, {
       "type": "improved",
       "message": "Added glass in front of the computer panels above the crates"
     }, {
@@ -172,7 +172,7 @@
     }, {
       "type": "custom",
       "message": "Changed the fence type under the big ramp."
-	}]
+    }]
   },{
     "suffix": "f5",
     "download": "https://dl.serveme.tf/maps/koth_warmtic_f5.bsp",
@@ -186,7 +186,7 @@
     }, {
       "type": "improved",
       "message": "Minor visual tweaks."
-	}, {
+    }, {
       "type": "removed",
       "message": "Many of the light poles in the spawn areas."
     }, {
@@ -206,19 +206,16 @@
     }, {
       "type": "fix",
       "message": "Removed almost every gameplay change."
-	}, {
+    }, {
       "type": "fix",
       "message": "Tidied up some previous changes."
     }, {
-      "type": "fix",
-      "message": "Restarted the project to realign focus."
-    }, {
       "type": "improved",
       "message": "Closed a gap between the concrete area and the raised middle point."
-	}, {
+    }, {
       "type": "improved",
       "message": "Flattened out some of the ground by dropdown."
-	}, {
+    }, {
       "type": "improved",
       "message": "General visual tweaks and improvements."
     }, {
@@ -227,7 +224,7 @@
     }, {
       "type": "improved",
       "message": "Moved the lamp and barrel near the left spawn route."
-	}, {
+    }, {
       "type": "improved",
       "message": "The clipping on some of the unusuable doors."
     }, {
@@ -236,13 +233,13 @@
     }, {
       "type": "added",
       "message": "More consistent patches under health and ammo."
-	}, {
+    }, {
       "type": "removed",
       "message": "A crack shot next to the crates and little dropdown on mid."
-	}, {
+    }, {
       "type": "custom",
       "message": "Made the point hologram invisible."
-	}]
+    }]
   },{
     "suffix": "f3",
     "download": "https://dl.serveme.tf/maps/koth_warmtic_f3.bsp",
@@ -256,7 +253,7 @@
     }, {
       "type": "improved",
       "message": "Clipped around the box in banana."
-	}, {
+    }, {
       "type": "improved",
       "message": "Clipped the far left pole when entering yard."
     }, {
@@ -265,7 +262,7 @@
     }, {
       "type": "improved",
       "message": "Lowered the top crates on mid to cover up a crack shot."
-	}, {
+    }, {
       "type": "improved",
       "message": "Smoothed the blockbullets on the catwalk fence."
     }, {
@@ -274,10 +271,10 @@
     }, {
       "type": "improved",
       "message": "Tweaked some prop fade times."
-	}, {
+    }, {
       "type": "added",
       "message": "Blockbullets to the corners of the room at the bottom of the stairs."
-	}, {
+    }, {
       "type": "removed",
       "message": "The lamps by the catwalk."
     }]
@@ -302,7 +299,7 @@
     }, {
       "type": "fix",
       "message": "Miscolored mirroring on RED side."
-	}, {
+    }, {
       "type": "improved",
       "message": "Closed off an area under the main ramp to battlements."
     }, {
@@ -311,13 +308,13 @@
     }, {
       "type": "removed",
       "message": "Some of the \"warm\" lighting from the windows."
-	}, {
+    }, {
       "type": "removed",
       "message": "Some of the posts on the lamps in the most gameplay heavy areas."
     }, {
       "type": "removed",
       "message": "The collision from several lights."
-	}]
+    }]
   },{
     "suffix": "f1",
     "download": "https://dl.serveme.tf/maps/koth_warmtic_f1.bsp",
@@ -331,16 +328,16 @@
     }, {
       "type": "fix",
       "message": "Sewed displacement in the courtyard."
-	}, {
+    }, {
       "type": "fix",
       "message": "Texture bugs on mid."
     }, {
       "type": "improved",
       "message": "All stairs have been given blockbullets"
-	}, {
+    }, {
       "type": "improved",
       "message": "Cleaned up balcony."
-	}, {
+    }, {
       "type": "improved",
       "message": "Cleaned up dropdown, its still just as dangerous but you won't get stuck in crouch."
     }, {
@@ -349,10 +346,10 @@
     }, {
       "type": "improved",
       "message": "Clipped ceiling in side rooms on mid."
-	}, {
+    }, {
       "type": "improved",
       "message": "Gaps on side of the point have been filled with concrete."
-	}, {
+    }, {
       "type": "improved",
       "message": "Given props that need it prop fade."
     }, {
@@ -361,16 +358,16 @@
     }, {
       "type": "improved",
       "message": "Ladder clipped with block bullets (wont have same issue has rc4 with getting caught) near shack."
-	}, {
+    }, {
       "type": "improved",
       "message": "Lower has been clipped, lights have had their clipping removed on mid."
-	}, {
+    }, {
       "type": "improved",
       "message": "Most props/brushes that created movement issues have either been deleted, clipped or had their collisions disabled."
-	}, {
+    }, {
       "type": "improved",
       "message": "Slightly better FPS."
-	}, {
+    }, {
       "type": "improved",
       "message": "Stairway to balcony has been cleaned up."
     }, {
@@ -379,7 +376,7 @@
     }, {
       "type": "removed",
       "message": "Broken window in house."
-	}, {
+    }, {
       "type": "removed",
       "message": "Broken window on mid."
     }, {
@@ -388,12 +385,12 @@
     }, {
       "type": "removed",
       "message": "Rubble in house."
-	}, {
+    }, {
       "type": "removed",
       "message": "Unnecessary lighting left over from koth_arctic."
-	}, {
+    }, {
       "type": "custom",
       "message": "HDR has been lowered slightly."
-	}]
+    }]
   }]
 }
