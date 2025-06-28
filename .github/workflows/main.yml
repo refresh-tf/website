@@ -1,41 +1,68 @@
-# https://github.com/actions/deploy-pages#usage
-name: Deploy to GitHub Pages
+name: deploy gh-pages
+
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+    push:
+        branches:
+          - master
+    pull_request:
+        branches:
+          - master
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  cd:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [22]
+
     steps:
-      - uses: actions/checkout@v4
-      - run: corepack enable
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Setup node env
+        uses: actions/setup-node@v2.1.2
         with:
-          node-version: "20"
-      # Pick your own package manager and build script
-      - run: npm install
-      - run: npx nuxt build --preset github_pages
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Generate
+        run: yarn generate
+
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./.output/public
+
+      - name: Init new repo in dist folder and commit generated files
+        run: |
+          cd .output/public
+          touch .nojekyll
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global --add safe.directory /github/workspace/.output/public
+          git add -A
+          git commit -m 'deploy'
+          # git remote add origin git@github.com:refresh-tf/website.git
+          # git push origin HEAD:gh-pages --force
+
+      # - name: Force push to destination branch
+      #   uses: ad-m/github-push-action@v0.5.0
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: gh-pages
+      #     force: true
+      #     directory: ./.output/public
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          path: ./.output/public
-  # Deployment job
-  deploy:
-    # Add a dependency to the build job
-    needs: build
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-    # Deploy to the github_pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    # Specify runner + deployment step
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          force: true
+          directory: ./.output/public
