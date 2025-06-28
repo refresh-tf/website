@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'refresh-icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("refresh-icons.eot?62663701ff0d69c8e72e4864250f0f54?#iefix") format("embedded-opentype"),
+url("refresh-icons.woff2?62663701ff0d69c8e72e4864250f0f54") format("woff2"),
+url("refresh-icons.woff?62663701ff0d69c8e72e4864250f0f54") format("woff");
+}
+
+.rfi, .rfi-icons {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.rfi-icons {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  fill: currentColor;
+}
+
+.rfi {
+  font-family: 'refresh-icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.rfi-link:before { content: "\f101"; }
+.rfi-link-external:before { content: "\f102"; }
+.rfi-screen-normal:before { content: "\f103"; }
+.rfi-screen-full:before { content: "\f104"; }
+.rfi-github:before { content: "\f105"; }
+.rfi-steam:before { content: "\f106"; }
+.rfi-ic_file_download_48px:before { content: "\f107"; }
