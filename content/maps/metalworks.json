@@ -90,7 +90,7 @@
     "date": "27/06/2025",
     "changes": [{
       "type": "fix",
-      "message": "Fixed a getting stuck in the ground in valley."
+      "message": "Fixed getting stuck in the ground in valley."
     }]
   }, {
       "suffix": "f5",
