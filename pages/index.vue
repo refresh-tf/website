@@ -20,8 +20,7 @@
 <script setup>
 
 import { metaFactory } from '../utils/utils';
-
-const meta = await queryContent('meta').findOne();
+const { data: meta } = await useAsyncData('/meta', () => queryCollection('meta').first());
 const maps = [];
 
 const container = ref(null);
@@ -32,23 +31,26 @@ onMounted(() => {
   }, 500);
 });
 
-for (let i = 0; i < meta.maps.length; i++){
-  let mapData = await queryContent(meta.maps[i]).only(['name', 'thumbnail', 'versions']).findOne();
+for (let i = 0; i < meta.value.maps.length; i++){
+
+  const { data: mapData } = await useAsyncData(`/maps/${meta.value.maps[i]}`, () =>
+        queryCollection('maps').where("name", "=", meta.value.maps[i]).first()
+  );
 
   let latestVersion = null;
   let latestDate = null;
   const hotDate = new Date();
   hotDate.setDate(hotDate.getDate() - 60);
 
-  for (let i = 0; i < mapData.versions.length; i++){
-    latestVersion = latestVersion || mapData.versions[i].suffix;
-    var parts = mapData.versions[i].date.split('/');
+  for (let i = 0; i < mapData.value.versions.length; i++){
+    latestVersion = latestVersion || mapData.value.versions[i].suffix;
+    var parts = mapData.value.versions[i].date.split('/');
     latestDate = latestDate || new Date(parts[2], parts[1] - 1, parts[0]);
   }
 
   let map = {
-    name: mapData.name,
-    thumbnail: mapData.thumbnail,
+    name: mapData.value.name,
+    thumbnail: mapData.value.thumbnail,
     version: latestVersion,
     date: latestDate,
     hot: latestDate > hotDate,
@@ -87,7 +89,7 @@ useBackground().value = '/images/background.png';
 </script>
 
 <style lang="scss">
-@import '/utils/mixins';
+@use '../utils/mixins';
 
 @keyframes top-enter {
     0% {
@@ -155,7 +157,7 @@ useBackground().value = '/images/background.png';
             object-fit: cover;
         }
         span {
-            @include woosh();
+            @include mixins.woosh();
         }
         .text-name {
             font-size: 100px;

@@ -36,19 +36,8 @@
 
 <script setup>
 
-const meta = await queryContent('meta').findOne();
-const maps = meta.maps;
-/*export default {
-  data(){
-    return {
-      maps: []
-    }
-  },
-  async fetch() {
-    const meta = await this.$content('meta').fetch();
-    this.maps = meta.maps;
-  },
-}*/
+const { data: meta } = await useAsyncData('/meta', () => queryCollection('meta').first());
+const maps = meta.value.maps;
 </script>
 
 <style lang="scss">

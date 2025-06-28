@@ -84,13 +84,15 @@ import { ref } from 'vue';
 import { metaFactory } from '../utils/utils';
 
 const route = useRoute();
-const meta = await queryContent('meta').findOne();
-const map = await queryContent(route.params.slug).findOne();
-const authors = map.refreshAuthors.map((authorId) =>
-  Object.assign({id: authorId}, meta.credits[authorId]));
+const { data: meta } = await useAsyncData('/meta', () => queryCollection('meta').first());
+const { data: map } = await useAsyncData(`/maps/${route.params.slug}`, () =>
+    queryCollection('maps').where("name", "=", route.params.slug).first()
+);
+const authors = map.value.refreshAuthors.map((authorId) =>
+  Object.assign({id: authorId}, meta.value.credits[authorId]));
 
 import { useBackground } from '../state';
-useBackground().value = 'images/' + map.thumbnail;
+useBackground().value = 'images/' + map.value.thumbnail;
 
 const album = ref();
 const goAlbum = () => {
@@ -99,12 +101,12 @@ const goAlbum = () => {
 }
 
 let makeMeta = () =>{
-  let mapName = map.name.charAt(0).toUpperCase() + map.name.slice(1);
+  let mapName = map.value.name.charAt(0).toUpperCase() + map.value.name.slice(1);
   let baseUrl = 'https://refresh.tf';
-  let url = baseUrl + '/' + map.name.toLowerCase();
-  let imgUrl = baseUrl + '/images/' + map.thumbnail;
+  let url = baseUrl + '/' + map.value.name.toLowerCase();
+  let imgUrl = baseUrl + '/images/' + map.value.thumbnail;
   let title = 'Refresh - ' + mapName;
-  let description = map.description;
+  let description = map.value.description;
   return metaFactory(title, description, url, imgUrl);
 }
 useHead(makeMeta());

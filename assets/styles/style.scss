@@ -1,4 +1,4 @@
-@import '/utils/mixins';
+@use '../../utils/mixins';
 :root {
     --red: #ff5653;
     --blue: #99c3ed;
@@ -33,7 +33,7 @@ html {
     right: 0.5rem;
 
     .page_title, h1 {
-        @include woosh();
+        @include mixins.woosh();
         text-align: center;
         padding: 3rem 0;
         font-size: 3rem;

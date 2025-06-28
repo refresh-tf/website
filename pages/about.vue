@@ -32,12 +32,15 @@ function shuffleArr (array){
   return shuffled;
 }
 
-const credits = await queryContent('meta').only('credits').findOne();
+const { data: meta } = await useAsyncData('/meta', () => queryCollection('meta').first());
+
+const credits = meta.value.credits;
+
 
 const creditsTeam = [];
 const creditsSite = [];
 
-for (const [key, value] of Object.entries(credits.credits)){
+for (const [key, value] of Object.entries(credits)){
   if (value.role == 'team'){ creditsTeam.push(key) }
   if (value.role == 'site'){ creditsSite.push(key) }
 }
@@ -47,9 +50,9 @@ let shuffledCreditsSite = [];
 
 onBeforeMount(() => {
   shuffledCreditsTeam = shuffleArr(creditsTeam.map((profileId) =>
-    Object.assign({id: profileId}, credits.credits[profileId])));
+    Object.assign({id: profileId}, credits[profileId])));
   shuffledCreditsSite = shuffleArr(creditsSite.map((profileId) =>
-    Object.assign({id: profileId}, credits.credits[profileId])));
+    Object.assign({id: profileId}, credits[profileId])));
 });
 
 let makeMeta = () => {

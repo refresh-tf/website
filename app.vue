@@ -1,6 +1,6 @@
 <script setup>
 
-require('./fonts/refresh-icons.font.js');
+import './fonts/refresh-icons.font.js';
 
 import { useBackground } from './state';
 

@@ -92,8 +92,8 @@
       "type": "fix",
       "message": "Fixed a getting stuck in the ground in valley."
     }]
-    }, { 
-    "suffix": "f5",
+  }, {
+      "suffix": "f5",
     "download": "https://dl.serveme.tf/maps/cp_metalworks_f5.bsp",
     "date": "18/01/2023",
     "changes": [{
@@ -112,7 +112,7 @@
       "type": "improved",
       "message": "Made the spawn door on second wider and improved the door trigger."
     	}]
-    }, { 
+    }, {
     "suffix": "f4",
     "download": "https://dl.serveme.tf/maps/cp_metalworks_f4.bsp",
     "date": "26/03/2022",
@@ -126,7 +126,7 @@
       "type": "improved",
 	  "message": "Attempted to fix getting stuck in the ground in valley."
 	}]
-    }, { 
+    }, {
     "suffix": "f3",
     "download": "https://dl.serveme.tf/maps/cp_metalworks_f3.bsp",
     "date": "13/03/2022",
@@ -140,7 +140,7 @@
       "type": "improved",
 	  "message": "Improved barrels on blue last to be blue."
 	}]
-    }, { 
+    }, {
     "suffix": "f2",
     "download": "https://dl.serveme.tf/maps/cp_metalworks_f2.bsp",
     "date": "27/12/2021",

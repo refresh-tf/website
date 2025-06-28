@@ -96,6 +96,8 @@ assets/font/*
 .output
 .nuxt/*
 
+.data/*
+
 *~
 *#
 .#*
