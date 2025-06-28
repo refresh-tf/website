@@ -7,7 +7,7 @@
   "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/",
   "tftvLink": "https://www.teamfortress.tv/57897/refresh-cp-gullywash",
   "workshopLink": "https://steamcommunity.com/sharedfiles/filedetails/?id=2610037819",
-  "albumLink": "https://github.com/tom288/Refresh/blob/master/Upward/Upward_F1_Changelog.md",
+  "albumLink": null,
   "githubLink": null,
 
   "originalAuthors": [{
@@ -132,7 +132,7 @@
       "message": "Last point shutter trigger now matches original."
     }, {
       "type": "fix",
-      "message": "Fixed light emitting wrong color on last."
+      "message": "Fixed light emitting the wrong color on last."
     }, {
       "type": "improved",
       "message": "Improved splash near second point."
@@ -146,7 +146,7 @@
       "message": "Fixed last point not changing color after a capture."
     }, {
       "type": "fix",
-      "message": "Fixed alot of missing textures from final1 and texture misalignments."
+      "message": "Fixed a lot of missing textures from final1 and texture misalignments."
     }, {
       "type": "fix",
       "message": "Fixed some floating props."
@@ -230,7 +230,7 @@
   }, {
     "suffix": "f4a",
     "download": "https://dl.serveme.tf/maps/cp_gullywash_f4a.bsp",
-    "date": "27/9/2021",
+    "date": "27/09/2021",
     "changes": [{
       "type": "fix",
 	  "message": "Cubemaps."
@@ -279,7 +279,7 @@
 	  "message": "Resolidified the metal fences outside spawn and in lobby."
     }, {
       "type": "fix",
-      "message": "Highground next to choke being 4 unites too high by accident."
+      "message": "Highground next to choke being 4 units too high by accident."
     }, {
       "type": "fix",
       "message": "The mid bush using the wrong model."
@@ -308,7 +308,7 @@
       "type": "added",
       "message": "Line decal across metal beam same height as the texture [useful for demomen rolling out]. If you can't see it use 'r_renderoverlayfragment 1'."
     }, {
-	  "type": "reverted",
+	  "type": "revert",
       "message": "Re-added hiding spot above the river window on 2nd as we didn't have a vote on it."
 	}, {
 	  "type": "removed",
