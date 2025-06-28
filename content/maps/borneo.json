@@ -212,7 +212,7 @@
       "message": "Added chickenwire underneath the shed outside of blue spawn."
     }, {
       "type": "improved",
-      "message": "Added clipping the bridge before garage outside third."
+      "message": "Added clipping to the bridge before garage outside third."
     }, {
       "type": "improved",
       "message": "Added clipping to the windows on last."
@@ -221,7 +221,7 @@
       "message": "Added glass to all the servers props so they act like a flat wall on last."
     }, {
       "type": "improved",
-      "message": "Removed collision all railing and replace the collision mesh with clip brushes."
+      "message": "Removed collision from all railing and replaced the collision mesh with clip brushes."
     }, {
       "type": "improved",
       "message": "Removed collision on all pipes."
@@ -251,7 +251,7 @@
       "message": "Closed off under the platform on the left route on last."
     }, {
       "type": "improved",
-      "message": "Closed the gaps beneath stairs and blockbulleted them."
+      "message": "Closed the gaps beneath stairs and added blockbullets to them."
     }]
   }]
 }
