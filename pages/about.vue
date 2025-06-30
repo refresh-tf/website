@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-  <h1>About Refresh!</h1>
+  <h1>About Refresh</h1>
   <div class="page_container">
     <img class="aside" src="/refresh-logo.png"/>
 
