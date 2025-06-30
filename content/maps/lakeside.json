@@ -2,7 +2,7 @@
   "prefix": "koth",
   "name": "lakeside",
   "thumbnail": "koth_lakeside.jpeg",
-  "description": "Lakeside is an old school highlander map made originally in 2010. Becoming an official map on 2011 Lakeside hasn't been updated once to address any of the flaws and problems, that's where we come in. In this project we have aimed to fix issues with map geometry as well as minor aesthetic and performance improvements while also adjusting some of the layout for a more modern TF2.",
+  "description": "Lakeside is an old-school Highlander map originally released in 2010.\nIt became an official map in 2011, but has never been updated to address its flaws and long-standing issues—until now.\nIn this project, we focused on fixing geometry problems, making minor aesthetic and performance improvements, and adjusting parts of the layout to better suit modern TF2 gameplay.",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-lakeside.17884/",
   "tftvLink": "https://www.teamfortress.tv/64788/refresh-koth-lakeside",
