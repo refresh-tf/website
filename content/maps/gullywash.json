@@ -2,7 +2,7 @@
   "prefix": "cp",
   "name": "gullywash",
   "thumbnail": "cp_gullywash.jpg",
-  "description": "The major changes in this version were focused on the playability of the map itself whilst maintaining the gameplay aspect intact. Much of our work has been the same as our first project -- Improving collision by fixing stairs, doorways, slopes, lights, railings, and ceilings to be consistent. Additionally, we made sure to align the map to the hammer grid and fix its horrendous asymmetry issues that will allow us to work on the map with more ease in future versions.",
+  "description": "The major changes in this version focused on improving the map’s playability while preserving its original gameplay feel.\nMuch of our work was similar to our first project fixing collision on stairs, doorways, slopes, lights, railings, and ceilings to ensure consistency.\nWe also aligned the map to the Hammer grid and corrected its severe asymmetry issues, making it easier to work on in future versions.",
 
   "tf2mLink": "https://tf2maps.net/downloads/refresh-cp_gullywash.10615/",
   "tftvLink": "https://www.teamfortress.tv/57897/refresh-cp-gullywash",
