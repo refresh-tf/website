@@ -91,8 +91,8 @@ const { data: map } = await useAsyncData(`/maps/${route.params.slug}`, () =>
 const authors = map.value.refreshAuthors.map((authorId) =>
   Object.assign({id: authorId}, meta.value.credits[authorId]));
 
-import { useBackground } from '../state';
-useBackground().value = 'images/' + map.value.thumbnail;
+const background = useState('background');
+background.value = 'images/' + map.value.thumbnail;
 
 const album = ref();
 const goAlbum = () => {

@@ -82,9 +82,8 @@ let makeMeta = () => {
 }
 
 useHead(makeMeta());
-
-import { useBackground } from '../state';
-useBackground().value = '/images/background.png';
+const background = useState('background');
+background.value = '/images/background.png';
 
 </script>
 

@@ -2,17 +2,13 @@
 
 import './fonts/refresh-icons.font.js';
 
-import { useBackground } from './state';
-
-const background = useBackground();
-
 useHead({
   htmlAttrs: {
     lang: 'en',
     dir: 'ltr',
   },
 });
-
+const background = useState('background', () => '/images/background.png')
 
 </script>
 
