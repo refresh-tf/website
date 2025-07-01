@@ -136,8 +136,9 @@ const maps = meta.value.maps;
 
 header {
     padding: 0 0.5rem;
-    box-shadow: 0px 0px 5px #000a;
-    background-color: #262626;
+    background-color: rgba(38,38,38,0.96);
+    backdrop-filter: blur(7px);
+    box-shadow: 0rem 0rem 2rem #000a;
     font-weight: bold;
     color: #f2f2f2;
 

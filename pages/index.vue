@@ -82,9 +82,8 @@ let makeMeta = () => {
 }
 
 useHead(makeMeta());
-const background = useState('background');
-background.value = '/images/background.png';
-
+let bg = useState("bg",() => '/images/background.png');
+bg.value = '/images/background.png';
 </script>
 
 <style lang="scss">

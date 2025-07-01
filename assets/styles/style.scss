@@ -25,6 +25,12 @@ html {
   visibility: hidden;
 }
 
+.page-container {
+    h1 {
+        margin-top: -3rem;
+    }
+}
+
 .container {
     max-width: 900px;
     width: calc(100% - 2rem);
@@ -43,11 +49,13 @@ html {
     }
 
     .page_container {
-        background-color: #262626;
+        background-color: rgba(38,38,38,0.75);
+        backdrop-filter: blur(7px);
+        box-shadow: 0rem 0rem 7.5rem rgba(0, 0, 0, 1);
         border-radius: 2em;
         padding: 2rem;
         overflow: hidden;
-        box-shadow: 0rem 0rem 0.5rem #000a;
+
         p {
             text-align: left;
         }
@@ -93,6 +101,7 @@ a i {
     cursor: pointer;
     user-select: none;
     text-decoration: none;
+    transition: background 0.25s ease-in, color 0.25s ease-in;
     i {
         margin-left: -2px;
         color: var(--red);

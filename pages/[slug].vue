@@ -1,7 +1,7 @@
 <template>
 <div class="container" id="map_page_info">
-  <h1><span><span class="h1-prefix">{{map.prefix}}</span> {{map.name}} <span class="h1-suffix">{{map.versions[0].suffix}}</span></span></h1>
   <div class="page_container">
+    <h1><span><span class="h1-prefix">{{map.prefix}}</span> {{map.name}} <span class="h1-suffix">{{map.versions[0].suffix}}</span></span></h1>
     <h2>About</h2>
     <div class="summary">
 
@@ -79,20 +79,16 @@
 </template>
 
 <script setup>
-
 import { ref } from 'vue';
 import { metaFactory } from '../utils/utils';
 
 const route = useRoute();
 const { data: meta } = await useAsyncData('/meta', () => queryCollection('meta').first());
 const { data: map } = await useAsyncData(`/maps/${route.params.slug}`, () =>
-    queryCollection('maps').where("name", "=", route.params.slug).first()
+  queryCollection('maps').where("name", "=", route.params.slug).first()
 );
 const authors = map.value.refreshAuthors.map((authorId) =>
   Object.assign({id: authorId}, meta.value.credits[authorId]));
-
-const background = useState('background');
-background.value = 'images/' + map.value.thumbnail;
 
 const album = ref();
 const goAlbum = () => {
@@ -110,10 +106,12 @@ let makeMeta = () =>{
   return metaFactory(title, description, url, imgUrl);
 }
 useHead(makeMeta());
+let bg = useState("bg",() => '/images/background.png')
+bg.value = `/images/${map.value.thumbnail}`;
 </script>
 
-
 <style lang="scss">
+
 #map_page_info {
     .summary {
         position: relative;
@@ -254,15 +252,22 @@ useHead(makeMeta());
         }
     }
 }
+.container .page_container {
+    overflow: visible;
+}
 
 #map_page_info {
+    overflow: visible;
+    margin-top: 10rem;
     h1 {
         text-transform: uppercase;
         position: relative;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        font-size: 100px;
+        margin-top: -5rem;
+        margin-bottom: 4rem;
+        font-size: 8rem;
         span {
             position: relative;
         }
@@ -271,14 +276,14 @@ useHead(makeMeta());
             top: 16px;
             font-size: 60px;
             right: 100%;
-            margin-right: 10px;
+            margin-right: 20px;
         }
         span.h1-suffix {
             position: absolute;
             bottom: 16px;
             font-size: 60px;
             left: 100%;
-            margin-left: 10px;
+            margin-left: 0px;
         }
     }
 }

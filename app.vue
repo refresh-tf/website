@@ -1,25 +1,31 @@
 <script setup>
 
 import './fonts/refresh-icons.font.js';
-
 useHead({
   htmlAttrs: {
     lang: 'en',
     dir: 'ltr',
   },
 });
-const background = useState('background', () => '/images/background.png')
-
+let bg = useState("bg",() => '/images/background.png')
+const route = useRoute();
+if (route.params.slug){
+    console.log("route.params.slug");
+    const { data: map } = await useAsyncData(`/index/maps/${route.params.slug}`, () =>
+        queryCollection('maps').where("name", "=", route.params.slug).first()
+    );
+    bg.value = `/images/${map.value.thumbnail}`;
+}
 </script>
 
 <template>
   <div>
     <div id="background">
-      <img :src="background"/>
+      <img :src="bg"/>
     </div>
     <div id="core">
       <navigation></navigation>
-      <NuxtPage />
+      <NuxtPage ref="myRef" />
       <div class="content">
       </div>
     </div>
