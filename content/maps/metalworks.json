@@ -85,6 +85,17 @@
 
 
   "versions": [{
+    "suffix": "f7",
+    "download": "https://dl.serveme.tf/maps/cp_metalworks_f7.bsp",
+    "date": "08/07/2025",
+    "changes": [{
+      "type": "fix",
+      "message": "Fixed shadows going through walls in problematic locations."
+    }, {
+      "type": "fix",
+      "message": "Fixed blue house above choke on second being non solid and improved splash on props near it."
+    }]
+  }, {
     "suffix": "f6",
     "download": "https://dl.serveme.tf/maps/cp_metalworks_f6.bsp",
     "date": "27/06/2025",
